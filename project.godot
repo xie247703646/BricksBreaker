@@ -1,0 +1,205 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "Ball",
+"language": "GDScript",
+"path": "res://script/game/Ball.gd"
+}, {
+"base": "RigidBody2D",
+"class": "Brick",
+"language": "GDScript",
+"path": "res://script/game/Brick.gd"
+}, {
+"base": "Node2D",
+"class": "Game",
+"language": "GDScript",
+"path": "res://script/game/Game.gd"
+}, {
+"base": "Area2D",
+"class": "ItemBase",
+"language": "GDScript",
+"path": "res://script/game/item/ItemBase.gd"
+}, {
+"base": "Reference",
+"class": "MathUtil",
+"language": "GDScript",
+"path": "res://script/util/MathUtil.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Paddle",
+"language": "GDScript",
+"path": "res://script/game/Paddle.gd"
+}, {
+"base": "ItemBase",
+"class": "PaddleExpand",
+"language": "GDScript",
+"path": "res://script/game/item/PaddleExpand.gd"
+}, {
+"base": "ItemBase",
+"class": "PaddleShrink",
+"language": "GDScript",
+"path": "res://script/game/item/PaddleShrink.gd"
+}, {
+"base": "UICloseAnim",
+"class": "ScaleClose",
+"language": "GDScript",
+"path": "res://script/ui/anim/ScaleClose.gd"
+}, {
+"base": "UIOpenAnim",
+"class": "ScaleOpen",
+"language": "GDScript",
+"path": "res://script/ui/anim/ScaleOpen.gd"
+}, {
+"base": "ItemBase",
+"class": "SplitBall",
+"language": "GDScript",
+"path": "res://script/game/item/SplitBall.gd"
+}, {
+"base": "ItemBase",
+"class": "ThreeBall",
+"language": "GDScript",
+"path": "res://script/game/item/ThreeBall.gd"
+}, {
+"base": "Reference",
+"class": "UI",
+"language": "GDScript",
+"path": "res://script/ui/UI.gd"
+}, {
+"base": "Node",
+"class": "UIAnimBase",
+"language": "GDScript",
+"path": "res://script/ui/anim/UIAnimBase.gd"
+}, {
+"base": "Control",
+"class": "UIBase",
+"language": "GDScript",
+"path": "res://script/ui/src/UIBase.gd"
+}, {
+"base": "UIAnimBase",
+"class": "UICloseAnim",
+"language": "GDScript",
+"path": "res://script/ui/anim/UICloseAnim.gd"
+}, {
+"base": "UIBase",
+"class": "UIGame",
+"language": "GDScript",
+"path": "res://script/ui/src/UIGame.gd"
+}, {
+"base": "UIBase",
+"class": "UIMain",
+"language": "GDScript",
+"path": "res://script/ui/src/UIMain.gd"
+}, {
+"base": "UIAnimBase",
+"class": "UIOpenAnim",
+"language": "GDScript",
+"path": "res://script/ui/anim/UIOpenAnim.gd"
+}, {
+"base": "UIBase",
+"class": "UIPause",
+"language": "GDScript",
+"path": "res://script/ui/src/UIPause.gd"
+} ]
+_global_script_class_icons={
+"Ball": "",
+"Brick": "",
+"Game": "",
+"ItemBase": "",
+"MathUtil": "",
+"Paddle": "",
+"PaddleExpand": "",
+"PaddleShrink": "",
+"ScaleClose": "",
+"ScaleOpen": "",
+"SplitBall": "",
+"ThreeBall": "",
+"UI": "",
+"UIAnimBase": "",
+"UIBase": "",
+"UICloseAnim": "",
+"UIGame": "",
+"UIMain": "",
+"UIOpenAnim": "",
+"UIPause": ""
+}
+
+[application]
+
+config/name="BricksBreaker"
+run/main_scene="res://scene/Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+ConfigMgr="*res://script/manager/ConfigMgr.gd"
+GameMgr="*res://script/manager/GameMgr.gd"
+AudioMgr="*res://script/manager/AudioMgr.gd"
+SignalMgr="*res://script/manager/SignalMgr.gd"
+UIMgr="*res://script/manager/UIMgr.gd"
+
+[display]
+
+window/size/width=720
+window/size/height=1280
+window/size/resizable=false
+window/size/always_on_top=true
+window/size/test_width=360
+window/size/test_height=640
+window/dpi/allow_hidpi=true
+window/handheld/orientation="portrait"
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[layer_names]
+
+2d_physics/layer_1="Static"
+2d_physics/layer_2="Ball"
+2d_physics/layer_3="Brick"
+2d_physics/layer_4="Item"
+2d_physics/layer_5="DeadArea"
+2d_physics/layer_6="Paddle"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_clear_color=Color( 0.0980392, 0.113725, 0.403922, 1 )

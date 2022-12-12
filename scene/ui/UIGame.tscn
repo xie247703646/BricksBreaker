@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://asset/brickBreaker-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://asset/resource/btnSound_on.tres" type="Texture" id=2]
+[ext_resource path="res://asset/resource/btnPause.tres" type="Texture" id=3]
+[ext_resource path="res://asset/resource/btnSound_off.tres" type="Texture" id=4]
+[ext_resource path="res://script/ui/src/UIGame.gd" type="Script" id=5]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 16, 64, 64 )
+
+[node name="UIGame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="BtnSound" type="TextureButton" parent="."]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 80.0
+margin_bottom = 80.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 2 )
+
+[node name="BtnPause" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -80.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = 80.0
+mouse_default_cursor_shape = 2
+texture_normal = SubResource( 1 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 3 )
+texture_disabled = ExtResource( 3 )
+texture_focused = ExtResource( 3 )
+
+[connection signal="pressed" from="BtnPause" to="." method="_on_BtnPause_pressed"]
