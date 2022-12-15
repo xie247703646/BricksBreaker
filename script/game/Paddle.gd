@@ -20,10 +20,10 @@ func _physics_process(delta: float) -> void:
 	global_position.x += move_speed * dir * delta
 	global_position.x = clamp(global_position.x,min_move_offset,max_move_offset)
 
-	if Input.is_action_just_pressed("ui_up"):
-		update_size(16)
-	elif Input.is_action_just_pressed("ui_down"):
-		update_size(-16)
+#	if Input.is_action_just_pressed("ui_up"):
+#		update_size(16)
+#	elif Input.is_action_just_pressed("ui_down"):
+#		update_size(-16)
 
 func _update_move_offset()->void:
 	var half_size = get_half_size()

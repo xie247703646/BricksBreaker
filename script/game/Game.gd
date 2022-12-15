@@ -23,7 +23,7 @@ var item_scenes:Array = [
 ]
 
 var item_weight:Array = [
-	40,25,25,10
+	30,35,25,10
 ]
 
 const MAX_BALL_CNT = 500
@@ -84,8 +84,8 @@ func _on_brick_broken(global_pos:Vector2)->void:
 		return
 
 	var ball_cnt = ball_container.get_child_count()
-	var p = 0.15 * (MAX_BALL_CNT - ball_cnt * 10 + 10) / MAX_BALL_CNT
-	p = clamp(p,0.01,0.15)
+	var p = 0.1 * (MAX_BALL_CNT - ball_cnt * 10 + 10) / MAX_BALL_CNT
+	p = clamp(p,0.01,0.1)
 #	print("当前概率%s" % p)
 	if randf() < p:
 		var idx = MathUtil.rand_weight(item_weight)
