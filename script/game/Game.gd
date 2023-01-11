@@ -2,7 +2,7 @@ extends Node2D
 class_name Game
 
 var ball_scene:PackedScene = preload("res://scene/game/Ball.tscn")
-
+var paddle_scene:PackedScene = preload("res://scene/game/Paddle.tscn")
 var brick_scenes:Array = [
 	preload("res://scene/game//brick/RedBrick.tscn"),
 	preload("res://scene/game//brick/OrangeBrick.tscn"),
@@ -32,18 +32,17 @@ onready var brick_container: Node2D = $BrickContainer
 onready var ball_container: Node2D = $BallContainer
 onready var static_container: Node2D = $StaticContainer
 onready var item_container: Node2D = $ItemContainer
-onready var paddle: Paddle = $Paddle
-
-var is_first_ball_shot:bool = false
+var paddle: Paddle
 
 func _ready() -> void:
 	SignalMgr.connect("brick_broken",self,"_on_brick_broken")
+	paddle = create_paddle()
+	yield(get_tree().create_timer(1),"timeout")
+	create_paddle_ball()
 
 func _physics_process(delta: float) -> void:
-	if is_first_ball_shot: return
 	if Input.is_action_just_pressed("ui_accept"):
-		is_first_ball_shot = true
-		create_paddle_ball()
+		GameMgr.game_over(true)
 
 func init_level(level_map:TileMap)->void:
 	var cell_map_pos_arr:Array = level_map.get_used_cells()
@@ -52,6 +51,12 @@ func init_level(level_map:TileMap)->void:
 		var brick_global_pos = level_map.map_to_world(cell_map_pos) + Vector2.ONE * 8
 		create_brick(brick_global_pos,type)
 	level_map.queue_free()
+
+func create_paddle():
+	var paddle_ins = paddle_scene.instance()
+	add_child(paddle_ins)
+	paddle_ins.global_position = Vector2(360,1000)
+	return paddle_ins
 
 func create_brick(global_pos:Vector2,type:int)->void:
 	var brick_ins = brick_scenes[type].instance()
@@ -68,7 +73,7 @@ func create_ball(global_pos:Vector2,dir:Vector2)->void:
 	ball_ins.call_deferred("set_dir",dir)
 
 func create_paddle_ball()->void:
-	var rad = PI/3
+	var rad = PI / 3
 	var dir = Vector2(rand_range(-cos(rad),cos(rad)),-1)
 	create_ball(paddle.ball_spawn.global_position,dir)
 
@@ -82,7 +87,7 @@ func _on_brick_broken(global_pos:Vector2)->void:
 	if brick_container.get_child_count() <= 0:
 		GameMgr.call_deferred("game_over",true)
 		return
-
+	DeviceMgr.vibrate(50)
 	var ball_cnt = ball_container.get_child_count()
 	var p = 0.1 * (MAX_BALL_CNT - ball_cnt * 10 + 10) / MAX_BALL_CNT
 	p = clamp(p,0.01,0.1)
@@ -97,4 +102,4 @@ func _on_DeadArea_body_entered(body: Node) -> void:
 		GameMgr.call_deferred("game_over",false)
 
 func _on_DeadArea_area_entered(area: Area2D) -> void:
-	area.free()
+	area.queue_free()

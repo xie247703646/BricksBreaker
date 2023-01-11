@@ -1,7 +1,7 @@
 extends RigidBody2D
 class_name Ball
 
-export var speed:float = 320
+export var speed:float = 280
 export var dir:Vector2 = Vector2.UP
 
 func set_dir(new_dir:Vector2)->void:

@@ -1,7 +1,7 @@
 extends StaticBody2D
 class_name Paddle
 
-export var move_speed:float = 600
+export var move_speed:float = 550
 onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 onready var ball_spawn: Position2D = $BallSpawn
 onready var sprite: Sprite = $Sprite
@@ -16,19 +16,18 @@ func _ready() -> void:
 	_update_move_offset()
 
 func _physics_process(delta: float) -> void:
-	var dir = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	global_position.x += move_speed * dir * delta
-	global_position.x = clamp(global_position.x,min_move_offset,max_move_offset)
-
-#	if Input.is_action_just_pressed("ui_up"):
-#		update_size(16)
-#	elif Input.is_action_just_pressed("ui_down"):
-#		update_size(-16)
+	if Input.is_mouse_button_pressed(BUTTON_LEFT):
+		var mouse_pos = get_global_mouse_position()
+		global_position.x = clamp(mouse_pos.x,min_move_offset,max_move_offset)
+	else:
+		var dir = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+		global_position.x += move_speed * dir * delta
+		global_position.x = clamp(global_position.x,min_move_offset,max_move_offset)
 
 func _update_move_offset()->void:
 	var half_size = get_half_size()
 	min_move_offset = half_size
-	max_move_offset = get_viewport_rect().size.x - half_size
+	max_move_offset = 720 - half_size
 
 func update_size(value:int)->void:
 	var shape:RectangleShape2D = collision_shape_2d.shape

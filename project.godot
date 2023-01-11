@@ -95,6 +95,11 @@ _global_script_classes=[ {
 "path": "res://script/ui/src/UIGame.gd"
 }, {
 "base": "UIBase",
+"class": "UILevelEditor",
+"language": "GDScript",
+"path": "res://script/ui/src/UILevelEditor.gd"
+}, {
+"base": "UIBase",
 "class": "UIMain",
 "language": "GDScript",
 "path": "res://script/ui/src/UIMain.gd"
@@ -127,6 +132,7 @@ _global_script_class_icons={
 "UIBase": "",
 "UICloseAnim": "",
 "UIGame": "",
+"UILevelEditor": "",
 "UIMain": "",
 "UIOpenAnim": "",
 "UIPause": ""
@@ -136,28 +142,30 @@ _global_script_class_icons={
 
 config/name="BricksBreaker"
 run/main_scene="res://scene/Main.tscn"
+boot_splash/use_filter=false
 config/icon="res://icon.png"
 
 [autoload]
 
-ConfigMgr="*res://script/manager/ConfigMgr.gd"
-GameMgr="*res://script/manager/GameMgr.gd"
-AudioMgr="*res://script/manager/AudioMgr.gd"
 SignalMgr="*res://script/manager/SignalMgr.gd"
+ConfigMgr="*res://script/manager/ConfigMgr.gd"
+AudioMgr="*res://script/manager/AudioMgr.gd"
+DeviceMgr="*res://script/manager/DeviceMgr.gd"
+GameMgr="*res://script/manager/GameMgr.gd"
 UIMgr="*res://script/manager/UIMgr.gd"
+LevelEditorMgr="*res://script/manager/LevelEditorMgr.gd"
 
 [display]
 
 window/size/width=720
 window/size/height=1280
-window/size/resizable=false
 window/size/always_on_top=true
 window/size/test_width=360
 window/size/test_height=640
 window/dpi/allow_hidpi=true
 window/handheld/orientation="portrait"
 window/stretch/mode="2d"
-window/stretch/aspect="keep"
+window/stretch/aspect="keep_width"
 
 [gui]
 
@@ -199,6 +207,7 @@ texture={
 [physics]
 
 common/enable_pause_aware_picking=true
+common/physics_interpolation=true
 
 [rendering]
 

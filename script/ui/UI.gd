@@ -9,3 +9,4 @@ enum Type{
 const UIMain = "UIMain"
 const UIGame = "UIGame"
 const UIPause = "UIPause"
+const UILevelEditor = "UILevelEditor"
