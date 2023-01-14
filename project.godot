@@ -74,6 +74,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://script/ui/UI.gd"
 }, {
+"base": "UIBase",
+"class": "UIAdvice",
+"language": "GDScript",
+"path": "res://script/ui/src/UIAdvice.gd"
+}, {
 "base": "Node",
 "class": "UIAnimBase",
 "language": "GDScript",
@@ -113,6 +118,11 @@ _global_script_classes=[ {
 "class": "UIPause",
 "language": "GDScript",
 "path": "res://script/ui/src/UIPause.gd"
+}, {
+"base": "UIBase",
+"class": "UIPolicy",
+"language": "GDScript",
+"path": "res://script/ui/src/UIPolicy.gd"
 } ]
 _global_script_class_icons={
 "Ball": "",
@@ -128,6 +138,7 @@ _global_script_class_icons={
 "SplitBall": "",
 "ThreeBall": "",
 "UI": "",
+"UIAdvice": "",
 "UIAnimBase": "",
 "UIBase": "",
 "UICloseAnim": "",
@@ -135,7 +146,8 @@ _global_script_class_icons={
 "UILevelEditor": "",
 "UIMain": "",
 "UIOpenAnim": "",
-"UIPause": ""
+"UIPause": "",
+"UIPolicy": ""
 }
 
 [application]

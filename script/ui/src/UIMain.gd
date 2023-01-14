@@ -26,7 +26,7 @@ func show_level()->void:
 
 	var is_level_locked = not GameMgr.is_level_unlocked(select_level)
 	btn_start.disabled = is_level_locked
-	btn_start.text = "Locked" if is_level_locked else "Start Game"
+	btn_start.text = "暂未解锁" if is_level_locked else "开始游戏"
 
 func _on_BtnExit_pressed() -> void:
 	get_tree().quit()
