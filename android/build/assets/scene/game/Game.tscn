@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://script/game/Game.gd" type="Script" id=6]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 8, 656 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 360, 8 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 360, 8 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="LeftWall" type="StaticBody2D" parent="." groups=["Static"]]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2( -8, 640 )
+shape = SubResource( 2 )
+
+[node name="RightWall" type="StaticBody2D" parent="." groups=["Static"]]
+position = Vector2( 736, 0 )
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+position = Vector2( -8, 640 )
+shape = SubResource( 2 )
+
+[node name="Ceil" type="StaticBody2D" parent="." groups=["Static"]]
+position = Vector2( 360, 0 )
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ceil"]
+position = Vector2( 0, -8 )
+shape = SubResource( 3 )
+
+[node name="DeadArea" type="Area2D" parent="."]
+position = Vector2( 360, 1288 )
+collision_layer = 16
+collision_mask = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeadArea"]
+shape = SubResource( 8 )
+
+[node name="BrickContainer" type="Node2D" parent="."]
+
+[node name="StaticContainer" type="Node2D" parent="."]
+
+[node name="ItemContainer" type="Node2D" parent="."]
+
+[node name="BallContainer" type="Node2D" parent="."]
+
+[connection signal="area_entered" from="DeadArea" to="." method="_on_DeadArea_area_entered"]
+[connection signal="body_entered" from="DeadArea" to="." method="_on_DeadArea_body_entered"]

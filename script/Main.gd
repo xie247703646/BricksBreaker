@@ -10,7 +10,7 @@ func _game_init()->void:
 	GameMgr.init($GameRoot)
 
 func _game_ready()->void:
-	if ConfigMgr.has_section_key("Policy","policy_agreed"):
-		UIMgr.open_ui(UI.UIAdvice)
-	else:
-		UIMgr.open_ui(UI.UIPolicy)
+	UIMgr.open_ui(UI.UIAdvice)
+#	if ConfigMgr.has_section_key("Policy","policy_agreed"):
+#	else:
+#		UIMgr.open_ui(UI.UIPolicy)

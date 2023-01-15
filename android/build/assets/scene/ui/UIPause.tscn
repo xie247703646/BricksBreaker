@@ -1,0 +1,122 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://script/ui/src/UIPause.gd" type="Script" id=1]
+[ext_resource path="res://script/ui/anim/ScaleOpen.gd" type="Script" id=2]
+[ext_resource path="res://script/ui/anim/ScaleClose.gd" type="Script" id=3]
+[ext_resource path="res://asset/font/m5x7.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=5]
+[ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=6]
+[ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=7]
+[ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=8]
+[ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 4 )
+
+[node name="UIPause" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 360, 640 )
+script = ExtResource( 1 )
+ui_type = 1
+
+[node name="GameMode" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.0
+margin_top = -24.0
+margin_right = 240.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 480, 48 )
+custom_constants/separation = 30
+
+[node name="BtnResume" type="Button" parent="GameMode"]
+margin_right = 480.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 9 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "返回游戏"
+
+[node name="BtnRestart" type="Button" parent="GameMode"]
+margin_top = 78.0
+margin_right = 480.0
+margin_bottom = 126.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 9 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "重新开始"
+
+[node name="BtnMainMenu" type="Button" parent="GameMode"]
+margin_top = 156.0
+margin_right = 480.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 9 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "主菜单"
+
+[node name="TestMode" type="VBoxContainer" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.0
+margin_top = -24.0
+margin_right = 240.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 480, 48 )
+custom_constants/separation = 30
+
+[node name="BtnResume" type="Button" parent="TestMode"]
+margin_right = 480.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "Resume Game"
+
+[node name="BtnLevelEditor" type="Button" parent="TestMode"]
+margin_top = 81.0
+margin_right = 480.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "Level Editor"
+
+[node name="ScaleOpen" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="ScaleClose" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[connection signal="pressed" from="GameMode/BtnResume" to="." method="_on_BtnResume_pressed"]
+[connection signal="pressed" from="GameMode/BtnRestart" to="." method="_on_BtnRestart_pressed"]
+[connection signal="pressed" from="GameMode/BtnMainMenu" to="." method="_on_BtnMainMenu_pressed"]
+[connection signal="pressed" from="TestMode/BtnResume" to="." method="_on_BtnResume_pressed"]
+[connection signal="pressed" from="TestMode/BtnLevelEditor" to="." method="_on_BtnLevelEditor_pressed"]

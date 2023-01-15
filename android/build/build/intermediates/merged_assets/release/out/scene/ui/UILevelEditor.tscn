@@ -1,0 +1,208 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://script/ui/src/UILevelEditor.gd" type="Script" id=1]
+[ext_resource path="res://asset/resource/BtnGroup_LevelEditor.tres" type="ButtonGroup" id=2]
+[ext_resource path="res://asset/resource/Brick_Red.tres" type="Texture" id=3]
+[ext_resource path="res://asset/resource/Brick_Green.tres" type="Texture" id=4]
+[ext_resource path="res://asset/resource/Brick_Purple.tres" type="Texture" id=5]
+[ext_resource path="res://asset/resource/Brick_Yellow.tres" type="Texture" id=6]
+[ext_resource path="res://asset/resource/Brick_Gray.tres" type="Texture" id=7]
+[ext_resource path="res://asset/resource/Brick_Blue.tres" type="Texture" id=8]
+[ext_resource path="res://asset/resource/Brick_Cyan.tres" type="Texture" id=9]
+[ext_resource path="res://asset/resource/Brick_White.tres" type="Texture" id=10]
+[ext_resource path="res://asset/resource/Brick_Orange.tres" type="Texture" id=11]
+[ext_resource path="res://asset/font/m5x7.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://scene/game/level/Level_1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=14]
+[ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=15]
+[ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=16]
+[ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=17]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 12 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 12 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = ExtResource( 12 )
+
+[node name="UILevelEditor" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+btn_group = ExtResource( 2 )
+
+[node name="LevelMap" parent="." instance=ExtResource( 13 )]
+tile_data = PoolIntArray(  )
+
+[node name="Tabs" type="Tabs" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -79.0
+custom_constants/label_valign_bg = 10
+custom_fonts/font = SubResource( 1 )
+custom_styles/tab_fg = ExtResource( 17 )
+custom_styles/tab_bg = ExtResource( 16 )
+scrolling_enabled = false
+
+[node name="Colors" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -244.0
+margin_bottom = -180.0
+rect_min_size = Vector2( 720, 72 )
+custom_constants/separation = 9
+
+[node name="BtnRed" type="Button" parent="Colors"]
+margin_right = 72.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 3 )
+flat = true
+expand_icon = true
+
+[node name="BtnOrange" type="Button" parent="Colors"]
+margin_left = 81.0
+margin_right = 153.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 11 )
+flat = true
+expand_icon = true
+
+[node name="BtnYellow" type="Button" parent="Colors"]
+margin_left = 162.0
+margin_right = 234.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 6 )
+flat = true
+expand_icon = true
+
+[node name="BtnGreen" type="Button" parent="Colors"]
+margin_left = 243.0
+margin_right = 315.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="BtnCyan" type="Button" parent="Colors"]
+margin_left = 324.0
+margin_right = 396.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 9 )
+flat = true
+expand_icon = true
+
+[node name="BtnBlue" type="Button" parent="Colors"]
+margin_left = 405.0
+margin_right = 477.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+
+[node name="BtnPurple" type="Button" parent="Colors"]
+margin_left = 486.0
+margin_right = 558.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 5 )
+flat = true
+expand_icon = true
+
+[node name="BtnGray" type="Button" parent="Colors"]
+margin_left = 567.0
+margin_right = 639.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 7 )
+flat = true
+expand_icon = true
+
+[node name="BtnWhite" type="Button" parent="Colors"]
+margin_left = 648.0
+margin_right = 720.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 10 )
+flat = true
+expand_icon = true
+
+[node name="CBtnGridSwitch" type="CheckButton" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -120.0
+margin_top = -128.0
+margin_bottom = -88.0
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/hover_pressed = ExtResource( 17 )
+custom_styles/normal = ExtResource( 16 )
+pressed = true
+text = " Grid"
+
+[node name="BtnTest" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -128.0
+margin_right = 58.0
+margin_bottom = -96.0
+custom_fonts/font = SubResource( 4 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+text = "Test"
+
+[node name="BtnClose" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -72.0
+margin_top = -64.0
+margin_right = -6.0
+margin_bottom = -32.0
+custom_fonts/font = SubResource( 4 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+text = "Close"
+
+[connection signal="toggled" from="CBtnGridSwitch" to="." method="_on_CBtnGridSwitch_toggled"]
+[connection signal="pressed" from="BtnTest" to="." method="_on_BtnTest_pressed"]
+[connection signal="pressed" from="BtnClose" to="." method="_on_BtnClose_pressed"]
