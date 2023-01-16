@@ -17,6 +17,7 @@
         android:required="true" />
 
     <application
+        android:name=".App"
         android:allowBackup="false"
         android:hasFragileUserData="false"
         android:icon="@mipmap/icon"

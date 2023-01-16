@@ -29,8 +29,6 @@ public class PolicyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_policy);
 
-
-
         Button btn = findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -48,6 +48,5 @@ public class GodotApp extends FullScreenGodotApp {
 		setTheme(R.style.GodotAppMainTheme);
 		super.onCreate(savedInstanceState);
 //		android.widget.Toast.makeText(, "", Toast.LENGTH_SHORT).show();
-
 	}
 }

@@ -56,6 +56,19 @@ custom_styles/disabled = ExtResource( 9 )
 custom_styles/normal = ExtResource( 7 )
 text = "开始游戏"
 
+[node name="BtnUnlock" type="Button" parent="VBoxContainer"]
+margin_top = 96.0
+margin_right = 480.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 480, 48 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/disabled = ExtResource( 9 )
+custom_styles/normal = ExtResource( 7 )
+text = "观看广告解锁"
+
 [node name="BtnEditor" type="Button" parent="VBoxContainer"]
 visible = false
 margin_top = 99.0
@@ -70,9 +83,9 @@ custom_styles/normal = ExtResource( 7 )
 text = "Level Editor"
 
 [node name="BtnExit" type="Button" parent="VBoxContainer"]
-margin_top = 96.0
+margin_top = 192.0
 margin_right = 480.0
-margin_bottom = 144.0
+margin_bottom = 240.0
 rect_min_size = Vector2( 480, 48 )
 custom_fonts/font = ExtResource( 10 )
 custom_styles/hover = ExtResource( 6 )
@@ -120,11 +133,12 @@ anchor_bottom = 1.0
 margin_top = -54.0
 margin_bottom = -24.0
 custom_fonts/font = SubResource( 6 )
-text = "Version: 1.0.4  "
+text = "Version: 1.0.5  "
 align = 2
 valign = 1
 
 [connection signal="pressed" from="VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnUnlock" to="." method="_on_BtnUnlock_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnEditor" to="." method="_on_BtnEditor_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnExit" to="." method="_on_BtnExit_pressed"]
 [connection signal="pressed" from="BtnRight" to="." method="_on_BtnRight_pressed"]

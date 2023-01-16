@@ -4,9 +4,11 @@ class_name UIMain
 onready var level_container: Control = $LevelContainer
 onready var lb_level: Label = $LbLevel
 onready var btn_start: Button = $VBoxContainer/BtnStart
+onready var btn_unlock: Button = $VBoxContainer/BtnUnlock
 
 var select_level:int = 1
 var level_ins:TileMap = null
+var ad_loaded:bool = false
 
 func on_open(data):
 	if data:
@@ -14,19 +16,23 @@ func on_open(data):
 	else:
 		select_level = int(ConfigMgr.get_value(GameMgr.CONFIG_SECTION,"select_level",1))
 	show_level()
+	PocketAd.preloadRewardVideoAD("id")
+	PocketAd.connect("onRewardVideoADrResult",self,"_on_level_unlocked")
 
 func on_close(data):
-	pass
+	PocketAd.disconnect("onRewardVideoADrResult",self,"_on_level_unlocked")
 
 func show_level()->void:
 	if level_ins: level_ins.free()
 	level_ins = GameMgr.load_level(select_level)
 	level_container.add_child(level_ins)
 	lb_level.text = "Level %s" % select_level
+	update_level_state()
 
+func update_level_state()->void:
 	var is_level_locked = not GameMgr.is_level_unlocked(select_level)
-	btn_start.disabled = is_level_locked
-	btn_start.text = "暂未解锁" if is_level_locked else "开始游戏"
+	btn_unlock.visible = is_level_locked
+	btn_start.visible = not is_level_locked
 
 func _on_BtnExit_pressed() -> void:
 	get_tree().quit()
@@ -47,4 +53,15 @@ func _on_BtnLeft_pressed() -> void:
 func _on_BtnEditor_pressed() -> void:
 	close()
 	UIMgr.open_ui(UI.UILevelEditor)
+
+func _on_BtnUnlock_pressed() -> void:
+	if not ad_loaded: return
+
+func _on_level_unlocked(type)->void:
+	match type:
+		"onLoaded":
+			ad_loaded = true
+		"onReward":
+			GameMgr.unlock_level(select_level)
+			update_level_state()
 
