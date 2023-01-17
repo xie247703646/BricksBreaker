@@ -172,7 +172,6 @@ PocketAd="*res://addons/pocket_ad/PocketAd.gd"
 
 window/size/width=720
 window/size/height=1280
-window/size/always_on_top=true
 window/size/test_width=360
 window/size/test_height=640
 window/dpi/allow_hidpi=true
