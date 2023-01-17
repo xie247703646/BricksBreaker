@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.pocket.topbrowser"
+3    package="com.egoist.bricksbreaker"
 4    android:installLocation="auto"
-5    android:versionCode="4"
+5    android:versionCode="5"
 6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -38,7 +38,7 @@
 24    <uses-permission android:name="android.permission.GET_TASKS" />
 24-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:13:5-68
 24-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:13:22-65
-25    <uses-permission android:name="com.pocket.topbrowser.openadsdk.permission.TT_PANGOLIN" />
+25    <uses-permission android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN" />
 25-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:5-89
 25-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:22-86
 26    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
@@ -47,7 +47,7 @@
 27
 28    <permission
 28-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:17:5-19:47
-29        android:name="com.pocket.topbrowser.openadsdk.permission.TT_PANGOLIN"
+29        android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN"
 29-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:18:9-73
 30        android:protectionLevel="signature" />
 30-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:19:9-44
@@ -99,71 +99,71 @@
 50-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:40:22-78
 51
 52    <application
-52-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-81:19
+52-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-82:19
 53        android:name="com.godot.game.App"
-53-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:1-20
+53-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:9-28
 54        android:allowBackup="false"
-54-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:29-56
+54-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-36
 55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 55-->[androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 56        android:debuggable="true"
 57        android:hasFragileUserData="false"
-57-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-43
+57-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:22:9-43
 58        android:icon="@mipmap/icon"
-58-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:22:9-36
+58-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:23:9-36
 59        android:isGame="true"
-59-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:23:9-30
+59-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:24:9-30
 60        android:label="@string/godot_project_name_string"
-60-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:24:9-58
+60-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:25:9-58
 61        android:requestLegacyExternalStorage="false"
-61-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:25:9-53
+61-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:26:9-53
 62        android:usesCleartextTraffic="true" >
 62-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:44:9-44
 63        <activity
-63-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:64:9-80:20
+63-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:9-81:20
 64            android:name="com.godot.game.GodotApp"
-64-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:13-37
+64-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:66:13-37
 65            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
-65-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:66:13-141
+65-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-141
 66            android:excludeFromRecents="false"
-66-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-47
+66-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-47
 67            android:exported="true"
-67-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-36
+67-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-36
 68            android:label="@string/godot_project_name_string"
-68-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-62
+68-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-62
 69            android:launchMode="singleTask"
-69-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-44
+69-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-44
 70            android:resizeableActivity="true"
-70-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-47
+70-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-47
 71            android:screenOrientation="portrait"
-71-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-50
+71-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-50
 72            android:theme="@style/GodotAppSplashTheme" >
-72-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-55
+72-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:74:13-55
 73        </activity>
 74        <activity
-74-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:27:9-39:20
+74-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:28:9-40:20
 75            android:name="com.godot.game.PolicyActivity"
-75-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:28:13-43
+75-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:29:13-43
 76            android:exported="true"
-76-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:13-36
+76-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:31:13-36
 77            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-77-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:29:13-69
+77-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:13-69
 78            <meta-data
-78-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:31:13-33:36
+78-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:32:13-34:36
 79                android:name="android.app.lib_name"
-79-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:32:17-52
+79-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:33:17-52
 80                android:value="" />
-80-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:33:17-33
+80-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:34:17-33
 81
 82            <intent-filter>
-82-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:35:13-38:29
+82-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:36:13-39:29
 83                <action android:name="android.intent.action.MAIN" />
-83-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:36:17-69
-83-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:36:25-66
+83-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:17-69
+83-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:25-66
 84
 85                <category android:name="android.intent.category.LAUNCHER" />
-85-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:17-77
-85-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:27-74
+85-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:38:17-77
+85-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:38:27-74
 86            </intent-filter>
 87        </activity> <!-- Records the version of the Godot editor used for building -->
 88        <meta-data
@@ -227,7 +227,7 @@
 120-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:65:9-73:20
 121            android:name="com.qq.e.comm.GDTFileProvider"
 121-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:66:13-57
-122            android:authorities="com.pocket.topbrowser.gdt.fileprovider"
+122            android:authorities="com.egoist.bricksbreaker.gdt.fileprovider"
 122-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:67:13-68
 123            android:exported="false"
 123-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:68:13-37
@@ -244,7 +244,7 @@
 129-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:74:9-82:20
 130            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
 130-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:75:13-70
-131            android:authorities="com.pocket.topbrowser.TTFileProvider"
+131            android:authorities="com.egoist.bricksbreaker.TTFileProvider"
 131-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:76:13-66
 132            android:exported="false"
 132-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:77:13-37
@@ -261,7 +261,7 @@
 138-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:83:9-86:40
 139            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
 139-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:84:13-80
-140            android:authorities="com.pocket.topbrowser.TTMultiProvider"
+140            android:authorities="com.egoist.bricksbreaker.TTMultiProvider"
 140-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:85:13-67
 141            android:exported="false" />
 141-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:86:13-37
@@ -368,7 +368,7 @@
 193-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:138:9-142:45
 194            android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
 194-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:139:13-91
-195            android:authorities="com.pocket.topbrowser.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+195            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
 195-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:140:13-118
 196            android:exported="false"
 196-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:141:13-37
@@ -378,7 +378,7 @@
 198-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:143:9-146:40
 199            android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"
 199-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:144:13-85
-200            android:authorities="com.pocket.topbrowser.pangle.servermanager.main"
+200            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.main"
 200-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:145:13-77
 201            android:exported="false" />
 201-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:146:13-37
@@ -386,7 +386,7 @@
 202-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:147:9-150:40
 203            android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
 203-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:148:13-82
-204            android:authorities="com.pocket.topbrowser.pangle.provider.proxy.main"
+204            android:authorities="com.egoist.bricksbreaker.pangle.provider.proxy.main"
 204-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:149:13-78
 205            android:exported="false" />
 205-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:150:13-37
@@ -394,7 +394,7 @@
 206-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:151:9-155:50
 207            android:name="com.bytedance.pangle.FileProvider"
 207-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:152:13-61
-208            android:authorities="com.pocket.topbrowser.pangle.fileprovider"
+208            android:authorities="com.egoist.bricksbreaker.pangle.fileprovider"
 208-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:153:13-71
 209            android:exported="false"
 209-->[GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:154:13-37
@@ -583,7 +583,7 @@
 305-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 306            android:name="androidx.startup.InitializationProvider"
 306-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-307            android:authorities="com.pocket.topbrowser.androidx-startup"
+307            android:authorities="com.egoist.bricksbreaker.androidx-startup"
 307-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 308            android:exported="false" >
 308-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37

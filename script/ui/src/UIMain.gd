@@ -16,7 +16,7 @@ func on_open(data):
 	else:
 		select_level = int(ConfigMgr.get_value(GameMgr.CONFIG_SECTION,"select_level",1))
 	show_level()
-	PocketAd.preloadRewardVideoAD("id")
+	PocketAd.preloadRewardVideoAD(PocketAd.RewardVideoId)
 	PocketAd.connect("onRewardVideoADrResult",self,"_on_level_unlocked")
 
 func on_close(data):
@@ -55,12 +55,17 @@ func _on_BtnEditor_pressed() -> void:
 	UIMgr.open_ui(UI.UILevelEditor)
 
 func _on_BtnUnlock_pressed() -> void:
-	if not ad_loaded: return
+	if not ad_loaded:
+		print("广告暂未加载")
+		return
+	PocketAd.showRewardVideoAD()
 
 func _on_level_unlocked(type)->void:
+	print("type:"+type)
 	match type:
-		"onLoaded":
+		"onADLoaded":
 			ad_loaded = true
+			print("预加载成功!")
 		"onReward":
 			GameMgr.unlock_level(select_level)
 			update_level_state()

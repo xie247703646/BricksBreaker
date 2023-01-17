@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pocket.topbrowser"
+    package="com.egoist.bricksbreaker"
     android:installLocation="auto"
-    android:versionCode="4"
+    android:versionCode="5"
     android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
     <uses-sdk
         android:minSdkVersion="21"
@@ -22,11 +22,11 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="com.pocket.topbrowser.openadsdk.permission.TT_PANGOLIN" />
+    <uses-permission android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN" />
     <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
 
     <permission
-        android:name="com.pocket.topbrowser.openadsdk.permission.TT_PANGOLIN"
+        android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN"
         android:protectionLevel="signature" />
 
     <queries>
@@ -119,7 +119,7 @@
 
         <provider
             android:name="com.qq.e.comm.GDTFileProvider"
-            android:authorities="com.pocket.topbrowser.gdt.fileprovider"
+            android:authorities="com.egoist.bricksbreaker.gdt.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -128,7 +128,7 @@
         </provider>
         <provider
             android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
-            android:authorities="com.pocket.topbrowser.TTFileProvider"
+            android:authorities="com.egoist.bricksbreaker.TTFileProvider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -137,7 +137,7 @@
         </provider>
         <provider
             android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
-            android:authorities="com.pocket.topbrowser.TTMultiProvider"
+            android:authorities="com.egoist.bricksbreaker.TTMultiProvider"
             android:exported="false" />
 
         <meta-data
@@ -192,20 +192,20 @@
 
         <provider
             android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
-            android:authorities="com.pocket.topbrowser.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
             android:exported="false"
             android:process=":downloader" />
         <provider
             android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"
-            android:authorities="com.pocket.topbrowser.pangle.servermanager.main"
+            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.main"
             android:exported="false" />
         <provider
             android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
-            android:authorities="com.pocket.topbrowser.pangle.provider.proxy.main"
+            android:authorities="com.egoist.bricksbreaker.pangle.provider.proxy.main"
             android:exported="false" />
         <provider
             android:name="com.bytedance.pangle.FileProvider"
-            android:authorities="com.pocket.topbrowser.pangle.fileprovider"
+            android:authorities="com.egoist.bricksbreaker.pangle.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" />
 
@@ -304,7 +304,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.pocket.topbrowser.androidx-startup"
+            android:authorities="com.egoist.bricksbreaker.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

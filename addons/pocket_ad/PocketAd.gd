@@ -1,5 +1,7 @@
 extends Node
 
+const RewardVideoId = "56618"
+
 signal onRewardVideoADrResult(type)
 signal onInterstitialADrResult(type)
 signal onFullscreenVideoADResult(type)

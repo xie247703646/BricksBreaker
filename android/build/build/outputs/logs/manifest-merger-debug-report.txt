@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 meta-data#org.godotengine.editor.version
-INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:41:9-43:53
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:42:9-44:53
 	android:value
 		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
 manifest
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-83:12
-INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-83:12
-INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-83:12
-INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-83:12
-MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-83:12
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
 MERGED from [godot-lib.debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3cf521938b9d3a0415959e9fcf776bb2\transformed\jetified-godot-lib.debug\AndroidManifest.xml:2:1-26:12
 MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:2:1-251:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\egoist\.gradle\caches\transforms-3\6e0140e09c68e05eb8f5d2f2ea9fff14\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -100,9 +100,9 @@ REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\Andr
 	android:required
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:17:9-32
 application
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-81:19
-MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-81:19
-MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-81:19
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-82:19
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-82:19
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-82:19
 MERGED from [godot-lib.debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3cf521938b9d3a0415959e9fcf776bb2\transformed\jetified-godot-lib.debug\AndroidManifest.xml:10:5-24:19
 MERGED from [godot-lib.debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3cf521938b9d3a0415959e9fcf776bb2\transformed\jetified-godot-lib.debug\AndroidManifest.xml:10:5-24:19
 MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:42:5-249:19
@@ -122,137 +122,137 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 	android:requestLegacyExternalStorage
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:25:9-53
-		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:25:9-53
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:26:9-53
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:26:9-53
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:24:9-58
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:25:9-58
 	tools:ignore
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:26:9-48
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:27:9-48
 	android:icon
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:22:9-36
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:23:9-36
 	android:allowBackup
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:29-56
-		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:29-56
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-36
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-36
 		REJECTED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:43:9-36
 	tools:replace
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\AndroidManifest.xml:18:9-123
 	android:isGame
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:23:9-30
-		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:23:9-30
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:24:9-30
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:24:9-30
 	android:usesCleartextTraffic
 		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:44:9-44
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:1-20
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:1-20
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:9-28
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:9-28
 	android:hasFragileUserData
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-43
-		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-43
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:22:9-43
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:22:9-43
 activity#com.godot.game.PolicyActivity
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:27:9-39:20
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:28:9-40:20
 	android:exported
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:13-36
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:31:13-36
 	android:theme
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:29:13-69
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:13-69
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:28:13-43
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:29:13-43
 meta-data#android.app.lib_name
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:31:13-33:36
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:32:13-34:36
 	android:value
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:33:17-33
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:34:17-33
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:32:17-52
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:33:17-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:35:13-38:29
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:36:13-39:29
 action#android.intent.action.MAIN
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:36:17-69
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:36:25-66
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:17-77
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:27-74
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:38:27-74
 meta-data#xr_mode_metadata_name
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:46:9-48:54
-REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:46:9-48:54
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:47:9-49:54
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:47:9-49:54
 	tools:node
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\AndroidManifest.xml:22:20-39
 	android:value
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:48:13-51
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:49:13-51
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:47:13-49
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:48:13-49
 meta-data#xr_hand_tracking_metadata_name
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:51:9-53:63
-REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:51:9-53:63
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:52:9-54:63
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:52:9-54:63
 	tools:node
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\AndroidManifest.xml:24:20-39
 	android:value
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:53:13-60
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:54:13-60
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:52:13-58
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:53:13-58
 meta-data#xr_hand_tracking_version_name
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:56:9-58:62
-REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:56:9-58:62
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:57:9-59:62
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:57:9-59:62
 	tools:node
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\AndroidManifest.xml:23:20-39
 	android:value
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:58:13-59
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:59:13-59
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:57:13-57
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:58:13-57
 meta-data#com.oculus.supportedDevices
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:60:9-62:35
-REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:60:9-62:35
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:61:9-63:35
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:61:9-63:35
 	tools:node
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\AndroidManifest.xml:25:20-39
 	android:value
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:62:13-32
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:63:13-32
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:61:13-55
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:62:13-55
 activity#com.godot.game.GodotApp
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:64:9-80:20
-MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:64:9-80:20
-MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:64:9-80:20
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:9-81:20
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:9-81:20
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:9-81:20
 	android:screenOrientation
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-50
-		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-50
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-50
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-50
 	android:label
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-62
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-62
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-62
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-62
 	android:excludeFromRecents
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-47
-		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-47
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-47
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-47
 	android:launchMode
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-44
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-44
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-44
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-44
 	android:exported
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-36
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-36
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-36
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-36
 	android:resizeableActivity
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-47
-		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-47
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-47
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-47
 	tools:ignore
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:74:13-43
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:74:13-43
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:75:13-43
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:75:13-43
 	android:configChanges
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:66:13-141
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:66:13-141
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-141
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-141
 	android:theme
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-55
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-55
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:74:13-55
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:74:13-55
 	tools:replace
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\AndroidManifest.xml:26:58-153
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:13-37
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:66:13-37
 meta-data#com.oculus.vr.focusaware
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:77:13-79:40
-REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:77:13-79:40
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:78:13-80:40
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:78:13-80:40
 	tools:node
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\debug\AndroidManifest.xml:27:24-43
 	android:value
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:79:17-37
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:80:17-37
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:78:17-56
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:79:17-56
 uses-sdk
 INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
@@ -407,7 +407,7 @@ uses-permission#${applicationId}.openadsdk.permission.TT_PANGOLIN
 ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:5-89
 	android:name
 		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:22-86
-uses-permission#com.pocket.topbrowser.openadsdk.permission.TT_PANGOLIN
+uses-permission#com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN
 ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:5-89
 	android:name
 		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:22-86
@@ -421,7 +421,7 @@ ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\tran
 		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:19:9-44
 	android:name
 		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:18:9-73
-permission#com.pocket.topbrowser.openadsdk.permission.TT_PANGOLIN
+permission#com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN
 ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:17:5-19:47
 	android:protectionLevel
 		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:19:9-44
