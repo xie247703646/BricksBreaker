@@ -27,7 +27,8 @@ func show_level()->void:
 	level_ins = GameMgr.load_level(select_level)
 	level_container.add_child(level_ins)
 	lb_level.text = "Level %s" % select_level
-	update_level_state()
+	if not GameMgr.is_debug:
+		 update_level_state()
 
 func update_level_state()->void:
 	var is_level_locked = not GameMgr.is_level_unlocked(select_level)
@@ -57,6 +58,7 @@ func _on_BtnEditor_pressed() -> void:
 func _on_BtnUnlock_pressed() -> void:
 	if not ad_loaded:
 		print("广告暂未加载")
+		PocketAd.preloadRewardVideoAD(PocketAd.RewardVideoId)
 		return
 	PocketAd.showRewardVideoAD()
 
@@ -67,6 +69,7 @@ func _on_level_unlocked(type)->void:
 			ad_loaded = true
 			print("预加载成功!")
 		"onReward":
+			ad_loaded = false
 			GameMgr.unlock_level(select_level)
 			update_level_state()
 

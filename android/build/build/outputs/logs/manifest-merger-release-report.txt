@@ -1,0 +1,871 @@
+-- Merging decision tree log ---
+meta-data#org.godotengine.editor.version
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:42:9-44:53
+	android:value
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+manifest
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:1-84:12
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:2:1-251:12
+MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\egoist\.gradle\caches\transforms-3\6e0140e09c68e05eb8f5d2f2ea9fff14\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\ec604749d429e49cd3a3202c5beeb5a8\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\1d670084c564fde212b9cbaa864e5b36\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\81cb5e47903ea2bcfba31a585e381e8e\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\egoist\.gradle\caches\transforms-3\86f30000b43d2360f8499c8aacddf412\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\81701e0e8a445a9edf9f38e90c8382d1\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\egoist\.gradle\caches\transforms-3\7b3b1cf6971f6c98a57e8bf843d35d83\transformed\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\7785d9db4c515d62fa2ce140ad06802c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\63565936315672648e68801e074e5483\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a1ba2c2b5c8bd35bba38fce7d9c93780\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\aa61a5951374539279915ead7c2cc4f1\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\a901101d84b12812e29d15111b57a79a\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\c9fcbde2dd0df6eda2f6ced33ab3522a\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f9db051387ded474c6727fa68aa0a46f\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\ac80e9cc4ca97a123b35f368d53898cf\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\egoist\.gradle\caches\transforms-3\d0ded429463fc6613f54c9a7a5726c16\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\05622b22300ecfc22a79116b56316ab5\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\71f856e9b03aeb5809d83e40217d94f1\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\d059e6aaed2c3fe156ba877958de2e1b\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\c9079074184855a45db41cbe973370ee\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a06b3104750198b8b4078bbabf442c2e\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\107cc96ee824d907c0242059a0a6391f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\68c88294892c4ed990b3692c70c825d1\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\egoist\.gradle\caches\transforms-3\862b5e0e812714c3fc3cd1b2504a5205\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\1744374d51a7b05bfbdf847371b77de1\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\df73a1ffdd03557d94499454c100db8a\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\b259f009d2850b1fe0a6ef41abf50423\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\cdb4876749ecc4f6a50fafcd80d9286a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\c8210dc27455f15ea109e82be36b0ce7\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a5a29b6b9dfbca3351b43593e314717c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\0436a56c938afa76a147b5d4fe15c2a2\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4480889c697f279b298af7af43155948\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\047bd961e46425e1eb485b8a5b77ff3e\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\643ff56190c6340eba0db367dd8dcdd0\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\egoist\.gradle\caches\transforms-3\c69a5a56921f51af48841f8791f47335\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\62fa641c44ab9be7f9ec4fc4fbe23c58\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\e03d937d9c06dc39cee6c88c2800146a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\8d14236a49502ad860ccee7ce4c042b0\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\eaeafa7ff50112d288edd4d5d27aabac\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:4:5-29
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:4:5-29
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:7:5-30
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:7:5-30
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:6:5-28
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:6:5-28
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
+	android:installLocation
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:5:5-35
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:5:5-35
+supports-screens
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:10:5-14:40
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:10:5-14:40
+	tools:node
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:5:9-29
+	android:largeScreens
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:11:9-36
+	android:smallScreens
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:13:9-36
+	android:normalScreens
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:12:9-37
+	android:xlargeScreens
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:14:9-37
+uses-feature#0x00020000
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:15:5-17:35
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:15:5-17:35
+	android:glEsVersion
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:16:9-41
+	android:required
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:17:9-32
+application
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-82:19
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-82:19
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-82:19
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:42:5-249:19
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:42:5-249:19
+MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:10:5-24:19
+MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:10:5-24:19
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\egoist\.gradle\caches\transforms-3\6e0140e09c68e05eb8f5d2f2ea9fff14\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\egoist\.gradle\caches\transforms-3\6e0140e09c68e05eb8f5d2f2ea9fff14\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\ec604749d429e49cd3a3202c5beeb5a8\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\ec604749d429e49cd3a3202c5beeb5a8\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\egoist\.gradle\caches\transforms-3\862b5e0e812714c3fc3cd1b2504a5205\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\egoist\.gradle\caches\transforms-3\862b5e0e812714c3fc3cd1b2504a5205\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+	android:requestLegacyExternalStorage
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:26:9-53
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:26:9-53
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:25:9-58
+	tools:ignore
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:27:9-48
+	android:icon
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:23:9-36
+	android:allowBackup
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-36
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-36
+		REJECTED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:43:9-36
+	tools:replace
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:18:9-123
+	android:isGame
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:24:9-30
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:24:9-30
+	android:usesCleartextTraffic
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:44:9-44
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:9-28
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:9-28
+	android:hasFragileUserData
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:22:9-43
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:22:9-43
+activity#com.godot.game.PolicyActivity
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:28:9-40:20
+	android:exported
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:31:13-36
+	android:theme
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:13-69
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:29:13-43
+meta-data#android.app.lib_name
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:32:13-34:36
+	android:value
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:34:17-33
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:33:17-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:36:13-39:29
+action#android.intent.action.MAIN
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:38:27-74
+meta-data#xr_mode_metadata_name
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:47:9-49:54
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:47:9-49:54
+	tools:node
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:22:20-39
+	android:value
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:49:13-51
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:48:13-49
+meta-data#xr_hand_tracking_metadata_name
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:52:9-54:63
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:52:9-54:63
+	tools:node
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:24:20-39
+	android:value
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:54:13-60
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:53:13-58
+meta-data#xr_hand_tracking_version_name
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:57:9-59:62
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:57:9-59:62
+	tools:node
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:23:20-39
+	android:value
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:59:13-59
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:58:13-57
+meta-data#com.oculus.supportedDevices
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:61:9-63:35
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:61:9-63:35
+	tools:node
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:25:20-39
+	android:value
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:63:13-32
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:62:13-55
+activity#com.godot.game.GodotApp
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:9-81:20
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:9-81:20
+MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:65:9-81:20
+	android:screenOrientation
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-50
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:73:13-50
+	android:label
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-62
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:70:13-62
+	android:excludeFromRecents
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-47
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:68:13-47
+	android:launchMode
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-44
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:71:13-44
+	android:exported
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-36
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:69:13-36
+	android:resizeableActivity
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-47
+		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:72:13-47
+	tools:ignore
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:75:13-43
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:75:13-43
+	android:configChanges
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-141
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:67:13-141
+	android:theme
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:74:13-55
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:74:13-55
+	tools:replace
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:26:58-153
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:66:13-37
+meta-data#com.oculus.vr.focusaware
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:78:13-80:40
+REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:78:13-80:40
+	tools:node
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:27:24-43
+	android:value
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:80:17-37
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:79:17-56
+uses-sdk
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:6:5-9:56
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:6:5-9:56
+MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:6:5-8:41
+MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\egoist\.gradle\caches\transforms-3\6e0140e09c68e05eb8f5d2f2ea9fff14\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\egoist\.gradle\caches\transforms-3\6e0140e09c68e05eb8f5d2f2ea9fff14\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\ec604749d429e49cd3a3202c5beeb5a8\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\ec604749d429e49cd3a3202c5beeb5a8\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\1d670084c564fde212b9cbaa864e5b36\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\1d670084c564fde212b9cbaa864e5b36\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\81cb5e47903ea2bcfba31a585e381e8e\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\81cb5e47903ea2bcfba31a585e381e8e\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\egoist\.gradle\caches\transforms-3\86f30000b43d2360f8499c8aacddf412\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\egoist\.gradle\caches\transforms-3\86f30000b43d2360f8499c8aacddf412\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\81701e0e8a445a9edf9f38e90c8382d1\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\81701e0e8a445a9edf9f38e90c8382d1\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\egoist\.gradle\caches\transforms-3\7b3b1cf6971f6c98a57e8bf843d35d83\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\egoist\.gradle\caches\transforms-3\7b3b1cf6971f6c98a57e8bf843d35d83\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\7785d9db4c515d62fa2ce140ad06802c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\7785d9db4c515d62fa2ce140ad06802c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\63565936315672648e68801e074e5483\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\63565936315672648e68801e074e5483\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a1ba2c2b5c8bd35bba38fce7d9c93780\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a1ba2c2b5c8bd35bba38fce7d9c93780\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\aa61a5951374539279915ead7c2cc4f1\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\aa61a5951374539279915ead7c2cc4f1\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\a901101d84b12812e29d15111b57a79a\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\a901101d84b12812e29d15111b57a79a\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\c9fcbde2dd0df6eda2f6ced33ab3522a\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\c9fcbde2dd0df6eda2f6ced33ab3522a\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f9db051387ded474c6727fa68aa0a46f\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f9db051387ded474c6727fa68aa0a46f\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\ac80e9cc4ca97a123b35f368d53898cf\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\ac80e9cc4ca97a123b35f368d53898cf\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\egoist\.gradle\caches\transforms-3\d0ded429463fc6613f54c9a7a5726c16\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\egoist\.gradle\caches\transforms-3\d0ded429463fc6613f54c9a7a5726c16\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\05622b22300ecfc22a79116b56316ab5\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\05622b22300ecfc22a79116b56316ab5\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\71f856e9b03aeb5809d83e40217d94f1\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\71f856e9b03aeb5809d83e40217d94f1\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\d059e6aaed2c3fe156ba877958de2e1b\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\d059e6aaed2c3fe156ba877958de2e1b\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\c9079074184855a45db41cbe973370ee\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\c9079074184855a45db41cbe973370ee\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a06b3104750198b8b4078bbabf442c2e\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a06b3104750198b8b4078bbabf442c2e\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\107cc96ee824d907c0242059a0a6391f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\107cc96ee824d907c0242059a0a6391f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\68c88294892c4ed990b3692c70c825d1\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\68c88294892c4ed990b3692c70c825d1\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\db48b52b10dc05608bb3143a95aee276\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\egoist\.gradle\caches\transforms-3\862b5e0e812714c3fc3cd1b2504a5205\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\egoist\.gradle\caches\transforms-3\862b5e0e812714c3fc3cd1b2504a5205\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\1744374d51a7b05bfbdf847371b77de1\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\1744374d51a7b05bfbdf847371b77de1\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\df73a1ffdd03557d94499454c100db8a\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\df73a1ffdd03557d94499454c100db8a\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\b259f009d2850b1fe0a6ef41abf50423\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\b259f009d2850b1fe0a6ef41abf50423\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\cdb4876749ecc4f6a50fafcd80d9286a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\cdb4876749ecc4f6a50fafcd80d9286a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\c8210dc27455f15ea109e82be36b0ce7\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\c8210dc27455f15ea109e82be36b0ce7\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a5a29b6b9dfbca3351b43593e314717c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\a5a29b6b9dfbca3351b43593e314717c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\0436a56c938afa76a147b5d4fe15c2a2\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\0436a56c938afa76a147b5d4fe15c2a2\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4480889c697f279b298af7af43155948\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4480889c697f279b298af7af43155948\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\047bd961e46425e1eb485b8a5b77ff3e\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\egoist\.gradle\caches\transforms-3\047bd961e46425e1eb485b8a5b77ff3e\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\643ff56190c6340eba0db367dd8dcdd0\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\643ff56190c6340eba0db367dd8dcdd0\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\egoist\.gradle\caches\transforms-3\c69a5a56921f51af48841f8791f47335\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\egoist\.gradle\caches\transforms-3\c69a5a56921f51af48841f8791f47335\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\62fa641c44ab9be7f9ec4fc4fbe23c58\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\62fa641c44ab9be7f9ec4fc4fbe23c58\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\e03d937d9c06dc39cee6c88c2800146a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\e03d937d9c06dc39cee6c88c2800146a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\8d14236a49502ad860ccee7ce4c042b0\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\8d14236a49502ad860ccee7ce4c042b0\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\eaeafa7ff50112d288edd4d5d27aabac\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\eaeafa7ff50112d288edd4d5d27aabac\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:9:9-53
+	android:targetSdkVersion
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
+		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
+uses-feature#0x00030000
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:5-78
+	android:glEsVersion
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:19-51
+	android:required
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:52-75
+uses-permission#android.permission.INTERNET
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:11:5-67
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:11:5-67
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:12:5-66
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:39:5-66
+MERGED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:39:5-66
+	android:name
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:12:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.GET_TASKS
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:13:22-65
+uses-permission#${applicationId}.openadsdk.permission.TT_PANGOLIN
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:5-89
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:22-86
+uses-permission#com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:5-89
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:14:22-86
+uses-permission#com.asus.msa.SupplementaryDID.ACCESS
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:15:22-73
+permission#${applicationId}.openadsdk.permission.TT_PANGOLIN
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:17:5-19:47
+	android:protectionLevel
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:19:9-44
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:18:9-73
+permission#com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:17:5-19:47
+	android:protectionLevel
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:19:9-44
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:18:9-73
+queries
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:21:5-29:15
+intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:https
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:22:9-28:18
+action#android.intent.action.VIEW
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:23:13-65
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:23:21-62
+category#android.intent.category.BROWSABLE
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:25:13-74
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:25:23-71
+data
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:27:13-44
+	android:scheme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:27:19-41
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:31:5-79
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:31:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:32:5-81
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:32:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:33:5-80
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:33:22-77
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:34:5-76
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:34:22-73
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:35:5-83
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:35:22-80
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:36:5-79
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:36:22-76
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:37:5-77
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:37:22-74
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:38:5-72
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:38:22-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:40:5-81
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:40:22-78
+meta-data#org.godotengine.plugin.v1.GodotPocketAD
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:46:9-48:61
+	android:value
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:48:13-58
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:47:13-67
+activity#com.qq.e.ads.PortraitADActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:50:9-56:57
+	android:screenOrientation
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:54:13-49
+	android:multiprocess
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:53:13-40
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:52:13-83
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:55:13-66
+	tools:replace
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:56:13-54
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:51:13-59
+activity#com.qq.e.ads.LandscapeADActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:57:9-63:57
+	android:screenOrientation
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:61:13-56
+	android:multiprocess
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:60:13-40
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:59:13-83
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:62:13-66
+	tools:replace
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:63:13-54
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:58:13-60
+provider#com.qq.e.comm.GDTFileProvider
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:65:9-73:20
+	android:grantUriPermissions
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:69:13-47
+	android:authorities
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:67:13-68
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:68:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:66:13-57
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:70:13-72:57
+	android:resource
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:72:17-54
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:71:17-67
+provider#com.bytedance.sdk.openadsdk.TTFileProvider
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:74:9-82:20
+	android:grantUriPermissions
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:78:13-47
+	android:authorities
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:76:13-66
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:77:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:75:13-70
+provider#com.bytedance.sdk.openadsdk.multipro.TTMultiProvider
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:83:9-86:40
+	android:authorities
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:85:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:86:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:84:13-80
+meta-data#ZEUS_PLUGIN_PANGLE
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:88:9-90:1487
+	android:value
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:90:13-1484
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:89:13-46
+activity#com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:92:9-97:70
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:96:13-42
+	android:windowSoftInputMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:97:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:95:13-37
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:94:13-85
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:93:13-92
+activity#com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:98:9-104:70
+	android:screenOrientation
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:103:13-49
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:102:13-42
+	android:windowSoftInputMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:104:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:101:13-37
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:100:13-85
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:99:13-101
+activity#com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:105:9-111:70
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:109:13-42
+	android:windowSoftInputMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:111:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:108:13-37
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:107:13-85
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:110:13-61
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:106:13-94
+activity#com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:112:9-118:70
+	android:screenOrientation
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:117:13-50
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:116:13-42
+	android:windowSoftInputMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:118:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:115:13-37
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:114:13-85
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:113:13-102
+activity#com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:119:9-123:70
+	android:windowSoftInputMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:123:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:122:13-37
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:121:13-85
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:120:13-83
+activity#com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:124:9-130:70
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:128:13-44
+	android:windowSoftInputMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:130:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:127:13-37
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:126:13-85
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:129:13-61
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:125:13-96
+activity#com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:131:9-136:70
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:135:13-44
+	android:windowSoftInputMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:136:13-67
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:134:13-37
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:133:13-85
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:132:13-94
+provider#com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:138:9-142:45
+	android:process
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:142:13-42
+	android:authorities
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:140:13-118
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:141:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:139:13-91
+provider#com.bytedance.sdk.openadsdk.stub.server.MainServerManager
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:143:9-146:40
+	android:authorities
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:145:13-77
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:146:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:144:13-85
+provider#com.bytedance.pangle.provider.MainProcessProviderProxy
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:147:9-150:40
+	android:authorities
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:149:13-78
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:150:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:148:13-82
+provider#com.bytedance.pangle.FileProvider
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:151:9-155:50
+	android:grantUriPermissions
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:155:13-47
+	android:authorities
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:153:13-71
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:154:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:152:13-61
+activity#com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:157:9-159:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:159:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:158:13-101
+activity#com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:160:9-162:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:162:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:161:13-98
+activity#com.ss.android.downloadlib.activity.TTDelegateActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:163:9-167:75
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:166:13-44
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:165:13-37
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:167:13-72
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:164:13-82
+activity#com.ss.android.downloadlib.activity.JumpKllkActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:168:9-172:75
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:171:13-44
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:170:13-37
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:172:13-72
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:169:13-80
+receiver#com.ss.android.downloadlib.core.download.DownloadReceiver
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:174:9-176:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:176:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:175:13-85
+service#com.ss.android.socialbase.appdownloader.DownloadHandlerService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:178:9-180:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:180:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:179:13-90
+activity#com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:182:9-186:59
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:185:13-44
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:184:13-37
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:186:13-56
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:183:13-99
+activity#com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:187:9-191:59
+	android:launchMode
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:190:13-44
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:189:13-37
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:191:13-56
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:188:13-98
+service#com.ss.android.socialbase.appdownloader.RetryJobSchedulerService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:193:9-197:72
+	android:enabled
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:195:13-35
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:196:13-37
+	android:permission
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:197:13-69
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:194:13-92
+service#com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:198:9-205:19
+	android:process
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:201:13-42
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:200:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:199:13-109
+intent-filter#action:name:com.ss.android.socialbase.downloader.remote
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:202:13-204:29
+action#com.ss.android.socialbase.downloader.remote
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:203:17-86
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:203:25-83
+service#com.ss.android.socialbase.downloader.notification.DownloadNotificationService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:206:9-208:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:208:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:207:13-105
+service#com.ss.android.socialbase.downloader.downloader.DownloadService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:209:9-211:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:211:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:210:13-91
+service#com.ss.android.socialbase.downloader.impls.DownloadHandleService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:212:9-214:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:214:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:213:13-92
+service#com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:215:9-217:40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:217:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:216:13-99
+service#com.qq.e.comm.DownloadService
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:218:9-221:43
+	android:multiprocess
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:221:13-40
+	android:exported
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:220:13-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:219:13-57
+activity#com.qq.e.ads.ADActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:222:9-225:43
+	android:multiprocess
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:225:13-40
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:224:13-83
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:223:13-51
+activity#com.qq.e.ads.RewardvideoPortraitADActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:226:9-234:20
+	android:multiprocess
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:229:13-40
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:228:13-83
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:230:13-66
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:227:13-70
+meta-data#android.notch_support
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:231:13-233:40
+	android:value
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:233:17-37
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:232:17-53
+activity#com.qq.e.ads.RewardvideoLandscapeADActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:235:9-244:20
+	android:screenOrientation
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:239:13-50
+	android:multiprocess
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:238:13-40
+	android:configChanges
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:237:13-83
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:240:13-66
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:236:13-71
+activity#com.qq.e.ads.DialogActivity
+ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:245:9-248:86
+	android:multiprocess
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:247:13-40
+	android:theme
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:248:13-83
+	android:name
+		ADDED from [GodotPocketAD.1.0.0.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\6bb211427b4de669fba0c6ac9b56c381\transformed\jetified-GodotPocketAD.1.0.0.release\AndroidManifest.xml:246:13-55
+meta-data#org.godotengine.library.version
+ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:13:9-15:44
+	android:value
+		ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:15:13-41
+	android:name
+		ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:13-59
+service#org.godotengine.godot.GodotDownloaderService
+ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:17:9-80
+	android:name
+		ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:17:18-77
+activity#org.godotengine.godot.utils.ProcessPhoenix
+ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:19:9-23:75
+	android:process
+		ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:22:13-39
+	android:exported
+		ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:21:13-37
+	android:theme
+		ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:23:13-72
+	android:name
+		ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\0d2259d9d7cfc11a376316903c9b467e\transformed\jetified-godot-lib.release\AndroidManifest.xml:20:13-70
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\4df206549ce2ca3c831320a03aea2d7b\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\601747e17c552cd5425399f7ab142cf7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\06056ac5e5c31a046b20380f03b32408\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78

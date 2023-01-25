@@ -12,6 +12,8 @@ var _is_testing:bool = false
 var level_cnt = 0
 var unlocked_levels:Array = [1]
 
+var is_debug:bool = true
+
 func init(game_root:Node2D)->void:
 	_game_root = game_root
 	var level_idx = 1
