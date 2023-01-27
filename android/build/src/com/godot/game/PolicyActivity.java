@@ -18,6 +18,9 @@ public class PolicyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+
         SharedPreferences preference = PolicyActivity.this.getSharedPreferences("Godot",Context.MODE_PRIVATE);
 
         if(!preference.getBoolean("isFirstStart",true)){
@@ -26,7 +29,7 @@ public class PolicyActivity extends AppCompatActivity {
             return;
         }
 
-        super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_policy);
 
         Button btn = findViewById(R.id.button);
