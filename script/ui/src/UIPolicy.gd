@@ -13,7 +13,7 @@ func _on_RichTextLabel_meta_clicked(meta) -> void:
 func _on_BtnAgree_pressed() -> void:
 	UIMgr.open_ui(UI.UIAdvice)
 	close()
-	ConfigMgr.set_value("Policy","policy_agreed",true)
+	SaveMgr.set_value("Policy","policy_agreed",true)
 
 func _on_BtnDisagree_pressed() -> void:
 	get_tree().quit()

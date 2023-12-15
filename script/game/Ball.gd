@@ -10,20 +10,19 @@ func set_dir(new_dir:Vector2)->void:
 
 func _on_Ball_body_entered(body: Node2D) -> void:
 	dir = linear_velocity.normalized()
+	
 	if "Static" in body.get_groups():
 		if dir.x < 0.1 and dir.x >= 0:
 			dir += Vector2(rand_range(0,0.3),0)
 		elif dir.x > -0.1 and dir.x < 0:
 			dir += Vector2(rand_range(-0.3,0),0)
-
 		if dir.y < 0.2 and dir.y >= 0:
 			dir += Vector2(0,rand_range(0,0.4))
 		elif dir.y > -0.2 and dir.y < 0:
 			dir += Vector2(0,rand_range(-0.4,0))
 		dir = dir.normalized()
 		set_dir(dir)
-
-	if "Paddle" in body.get_groups():
+	elif "Paddle" in body.get_groups():
 		var paddle:Paddle = body
 		var dis = global_position.x - paddle.global_position.x
 		var rad = PI / 4
@@ -32,8 +31,7 @@ func _on_Ball_body_entered(body: Node2D) -> void:
 		dir = Vector2(rad * rate, -1)
 		dir = dir.normalized()
 		set_dir(dir)
-
-	if "Brick" in body.get_groups():
+	elif "Brick" in body.get_groups():
 		var global_pos = body.global_position
 		body.free()
 		SignalMgr.emit_signal("brick_broken",global_pos)

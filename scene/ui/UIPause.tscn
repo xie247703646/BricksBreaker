@@ -1,8 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://script/ui/src/UIPause.gd" type="Script" id=1]
-[ext_resource path="res://script/ui/anim/ScaleOpen.gd" type="Script" id=2]
-[ext_resource path="res://script/ui/anim/ScaleClose.gd" type="Script" id=3]
 [ext_resource path="res://asset/font/m5x7.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=5]
 [ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=6]
@@ -108,12 +106,6 @@ custom_styles/pressed = ExtResource( 5 )
 custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
 text = "Level Editor"
-
-[node name="ScaleOpen" type="Node" parent="."]
-script = ExtResource( 2 )
-
-[node name="ScaleClose" type="Node" parent="."]
-script = ExtResource( 3 )
 
 [connection signal="pressed" from="GameMode/BtnResume" to="." method="_on_BtnResume_pressed"]
 [connection signal="pressed" from="GameMode/BtnRestart" to="." method="_on_BtnRestart_pressed"]

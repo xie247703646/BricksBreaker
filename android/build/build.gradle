@@ -53,9 +53,16 @@ configurations {
 dependencies {
     implementation libraries.kotlinStdLib
     implementation libraries.androidxFragment
+
     implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.4.+'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.2'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
+
+    implementation files('libs/csj_ad_sdk_230215.aar')
+    implementation files('libs/gdt_ad_sdk_230210.aar')
+    implementation files('libs/ks_ad_sdk_230116.aar')
+    implementation files('libs/pocket_ad_sdk_3.2.8.aar')
 
     if (rootProject.findProject(":lib")) {
         implementation project(":lib")
@@ -207,38 +214,38 @@ android {
         main {
             manifest.srcFile 'AndroidManifest.xml'
             java.srcDirs = [
-                'src'
+                    'src'
 //DIR_SRC_BEGIN
 //DIR_SRC_END
             ]
             res.srcDirs = [
-                'res'
+                    'res'
 //DIR_RES_BEGIN
 //DIR_RES_END
             ]
             aidl.srcDirs = [
-                'aidl'
+                    'aidl'
 //DIR_AIDL_BEGIN
 //DIR_AIDL_END
             ]
             assets.srcDirs = [
-                'assets'
+                    'assets'
 //DIR_ASSETS_BEGIN
 //DIR_ASSETS_END
             ]
         }
         debug.jniLibs.srcDirs = [
-            'libs/debug'
+                'libs/debug'
 //DIR_JNI_DEBUG_BEGIN
 //DIR_JNI_DEBUG_END
         ]
         dev.jniLibs.srcDirs = [
-            'libs/dev'
+                'libs/dev'
 //DIR_JNI_DEV_BEGIN
 //DIR_JNI_DEV_END
         ]
         release.jniLibs.srcDirs = [
-            'libs/release'
+                'libs/release'
 //DIR_JNI_RELEASE_BEGIN
 //DIR_JNI_RELEASE_END
         ]

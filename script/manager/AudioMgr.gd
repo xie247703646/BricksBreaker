@@ -14,7 +14,6 @@ var sound_dic = {
 var music_dic = {
 }
 
-const CONFIG_SECTION = "Audio"
 const MIN_VOLUME = -80
 const MAX_VOLUME = 24
 const MAX_SOUND_CNT = 30
@@ -25,15 +24,8 @@ var cur_music:Dictionary = {
 }
 
 func _ready() -> void:
-	var music_mute = ConfigMgr.get_value(CONFIG_SECTION,"music_mute",false)
-	var sound_mute = ConfigMgr.get_value(CONFIG_SECTION,"sound_mute",false)
-	var music_volume = ConfigMgr.get_value(CONFIG_SECTION,"music_volume",0.0)
-	var sound_volume = ConfigMgr.get_value(CONFIG_SECTION,"sound_volume",0.0)
-	set_music_mute(music_mute,false)
-	set_sound_mute(sound_mute,false)
-	set_music_volume(music_volume,false)
-	set_sound_volume(sound_volume,false)
-	ConfigMgr.save()
+	pause_mode = Node.PAUSE_MODE_PROCESS
+	set_sound_mute(not Setting.sfx_enabled)
 
 func play_sound(sound_name:String)->void:
 	if is_sound_muted(): return
@@ -92,19 +84,19 @@ func resume_music()->void:
 
 func set_music_mute(mute:bool,save:bool = true)->void:
 	AudioServer.set_bus_mute(Bus.Music,mute)
-	ConfigMgr.set_value(CONFIG_SECTION,"music_mute",mute,save)
+#	SaveMgr.set_value(CONFIG_SECTION,"music_mute",mute,save)
 
 func set_music_volume(volume:float,save:bool = true)->void:
 	AudioServer.set_bus_volume_db(Bus.Music,volume)
-	ConfigMgr.set_value(CONFIG_SECTION,"music_volume",volume,save)
+#	SaveMgr.set_value(CONFIG_SECTION,"music_volume",volume,save)
 
 func set_sound_mute(mute:bool,save:bool = true)->void:
 	AudioServer.set_bus_mute(Bus.Sound,mute)
-	ConfigMgr.set_value(CONFIG_SECTION,"sound_mute",mute,save)
+#	SaveMgr.set_value(CONFIG_SECTION,"sound_mute",mute,save)
 
 func set_sound_volume(volume:float,save:bool = true)->void:
 	AudioServer.set_bus_volume_db(Bus.Sound,volume)
-	ConfigMgr.set_value(CONFIG_SECTION,"sound_volume",volume,save)
+#	SaveMgr.set_value(CONFIG_SECTION,"sound_volume",volume,save)
 
 func get_music_volume()->float:
 	return AudioServer.get_bus_volume_db(Bus.Music)

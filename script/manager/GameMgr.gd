@@ -8,7 +8,7 @@ var game_scene:PackedScene = preload("res://scene/game/Game.tscn")
 var _game_root:Node2D
 var _game:Game
 var _cur_level:int = 1
-var _is_testing:bool = false
+var is_testing:bool = false
 var level_cnt = 0
 var unlocked_levels:Array = [1]
 
@@ -20,16 +20,16 @@ func init(game_root:Node2D)->void:
 	while ResourceLoader.exists(LEVEL_PATH % String(level_idx)):
 		level_cnt += 1
 		level_idx += 1
-	if not ConfigMgr.has_section(CONFIG_SECTION):
-		ConfigMgr.set_value(CONFIG_SECTION,"select_level",1)
-		ConfigMgr.set_value(CONFIG_SECTION,"unlocked_levels",[1])
+	if not SaveMgr.has_section(CONFIG_SECTION):
+		SaveMgr.set_value(CONFIG_SECTION,"select_level",1)
+		SaveMgr.set_value(CONFIG_SECTION,"unlocked_levels",[1])
 	else:
-		unlocked_levels = ConfigMgr.get_value(CONFIG_SECTION,"unlocked_levels")
+		unlocked_levels = SaveMgr.get_value(CONFIG_SECTION,"unlocked_levels")
 
 func game_start(level:int)->void:
-	_is_testing = false
+	is_testing = false
 	_cur_level = level
-	ConfigMgr.set_value(CONFIG_SECTION,"select_level",level)
+	SaveMgr.set_value(CONFIG_SECTION,"select_level",level)
 	_game = game_scene.instance()
 	_game_root.add_child(_game)
 	var level_ins = load_level(level)
@@ -44,13 +44,13 @@ func game_over(win:bool)->void:
 	_game = null
 	get_tree().paused = false
 	UIMgr.close_ui(UI.UIGame)
-	if _is_testing:
+	if is_testing:
 		UIMgr.open_ui(UI.UILevelEditor)
 	else:
 		var level = _cur_level + 1 if win else _cur_level
 		level = clamp_level(level)
 		UIMgr.open_ui(UI.UIMain,level)
-		ConfigMgr.set_value(CONFIG_SECTION,"select_level",level)
+		SaveMgr.set_value(CONFIG_SECTION,"select_level",level)
 
 func game_quit()->void:
 	AudioMgr.clear()
@@ -73,11 +73,11 @@ func load_level(level:int)->TileMap:
 	return level_ins
 
 func test_level(level_ins:TileMap)->void:
-	_is_testing = true
+	is_testing = true
 	_game = game_scene.instance()
 	_game_root.add_child(_game)
 	_game.init_level(level_ins)
-	UIMgr.open_ui(UI.UIGame,true)
+	UIMgr.open_ui(UI.UIGame)
 
 func clamp_level(level:int)->int:
 	if level > level_cnt:
@@ -89,7 +89,7 @@ func clamp_level(level:int)->int:
 func unlock_level(level:int)->void:
 	if is_level_unlocked(level): return
 	unlocked_levels.append(level)
-	ConfigMgr.set_value(CONFIG_SECTION,"unlocked_levels",unlocked_levels)
+	SaveMgr.set_value(CONFIG_SECTION,"unlocked_levels",unlocked_levels)
 
 func is_level_unlocked(level:int)->bool:
 	return level in unlocked_levels

@@ -19,10 +19,25 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://script/game/Brick.gd"
 }, {
+"base": "Reference",
+"class": "Debug",
+"language": "GDScript",
+"path": "res://script/util/Debug.gd"
+}, {
+"base": "Reference",
+"class": "DeviceUtil",
+"language": "GDScript",
+"path": "res://script/util/DeviceUtil.gd"
+}, {
 "base": "Node2D",
 "class": "Game",
 "language": "GDScript",
 "path": "res://script/game/Game.gd"
+}, {
+"base": "Reference",
+"class": "Global",
+"language": "GDScript",
+"path": "res://Global.gd"
 }, {
 "base": "Area2D",
 "class": "ItemBase",
@@ -48,6 +63,11 @@ _global_script_classes=[ {
 "class": "PaddleShrink",
 "language": "GDScript",
 "path": "res://script/game/item/PaddleShrink.gd"
+}, {
+"base": "Reference",
+"class": "SDKPocketAd",
+"language": "GDScript",
+"path": "res://script/sdk/SDKPocketAd.gd"
 }, {
 "base": "UICloseAnim",
 "class": "ScaleClose",
@@ -127,12 +147,16 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Ball": "",
 "Brick": "",
+"Debug": "",
+"DeviceUtil": "",
 "Game": "",
+"Global": "",
 "ItemBase": "",
 "MathUtil": "",
 "Paddle": "",
 "PaddleExpand": "",
 "PaddleShrink": "",
+"SDKPocketAd": "",
 "ScaleClose": "",
 "ScaleOpen": "",
 "SplitBall": "",
@@ -160,18 +184,24 @@ config/icon="res://icon.png"
 [autoload]
 
 SignalMgr="*res://script/manager/SignalMgr.gd"
-ConfigMgr="*res://script/manager/ConfigMgr.gd"
+SaveMgr="*res://script/manager/SaveMgr.gd"
+Setting="*res://Setting.gd"
 AudioMgr="*res://script/manager/AudioMgr.gd"
-DeviceMgr="*res://script/manager/DeviceMgr.gd"
 GameMgr="*res://script/manager/GameMgr.gd"
 UIMgr="*res://script/manager/UIMgr.gd"
 LevelEditorMgr="*res://script/manager/LevelEditorMgr.gd"
-PocketAd="*res://addons/pocket_ad/PocketAd.gd"
+AdMgr="*res://script/manager/AdMgr.gd"
+
+[debug]
+
+settings/fps/force_fps=60
+gdscript/warnings/enable=false
 
 [display]
 
 window/size/width=720
 window/size/height=1280
+window/size/always_on_top=true
 window/size/test_width=360
 window/size/test_height=640
 window/dpi/allow_hidpi=true
@@ -181,7 +211,7 @@ window/stretch/aspect="keep_width"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/pocket_ad/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [gui]
 

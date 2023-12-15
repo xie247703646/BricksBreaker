@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\godotProjects\\remote\\BricksBreaker\\android\\build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v17\\values-sw720dp-v17.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-sw720dp-v17/values-sw720dp-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\6bb211427b4de669fba0c6ac9b56c381\\transformed\\jetified-GodotPocketAD.1.0.0.release\\res\\values-sw720dp-v17\\values-sw720dp-v17.xml",
+                    "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\391199589ec9c4edd51fe78db707f67e\\transformed\\jetified-gdt_ad_sdk_230210\\res\\values-sw720dp-v17\\values-sw720dp-v17.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

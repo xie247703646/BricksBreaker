@@ -11,10 +11,8 @@ func _ready() -> void:
 func _game_init()->void:
 	UIMgr.init($UIRoot,$"%InputBlock",$"%WindowMask")
 	GameMgr.init($GameRoot)
+	AdMgr.init()
 
 func _game_ready()->void:
 	var ui = UI.UIMain if is_debug else UI.UIAdvice
 	UIMgr.open_ui(ui)
-#	if ConfigMgr.has_section_key("Policy","policy_agreed"):
-#	else:
-#		UIMgr.open_ui(UI.UIPolicy)

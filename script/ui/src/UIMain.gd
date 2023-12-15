@@ -14,25 +14,26 @@ func on_open(data):
 	if data:
 		select_level = data
 	else:
-		select_level = int(ConfigMgr.get_value(GameMgr.CONFIG_SECTION,"select_level",1))
+		select_level = int(SaveMgr.get_value(GameMgr.CONFIG_SECTION,"select_level",1))
 	show_level()
-	PocketAd.preloadRewardVideoAD(PocketAd.RewardVideoId)
-	PocketAd.connect("onRewardVideoADrResult",self,"_on_level_unlocked")
+	AdMgr.show_banner()
+	if AdMgr.is_valid():
+		AdMgr.sdk_ad.connect("reward_video_rewarded",self,"_on_level_unlocked")
 
 func on_close(data):
-	PocketAd.disconnect("onRewardVideoADrResult",self,"_on_level_unlocked")
+	if AdMgr.is_valid():
+		AdMgr.sdk_ad.disconnect("reward_video_rewarded",self,"_on_level_unlocked")
 
 func show_level()->void:
 	if level_ins: level_ins.free()
 	level_ins = GameMgr.load_level(select_level)
 	level_container.add_child(level_ins)
-	lb_level.text = "Level %s" % select_level
-	if not GameMgr.is_debug:
-		 update_level_state()
+	lb_level.text = "关卡-%s" % select_level
+	if not GameMgr.is_debug: update_level_state()
 
 func update_level_state()->void:
 	var is_level_locked = not GameMgr.is_level_unlocked(select_level)
-	btn_unlock.visible = is_level_locked
+	btn_unlock.visible = GameMgr.is_debug or is_level_locked
 	btn_start.visible = not is_level_locked
 
 func _on_BtnExit_pressed() -> void:
@@ -56,20 +57,9 @@ func _on_BtnEditor_pressed() -> void:
 	UIMgr.open_ui(UI.UILevelEditor)
 
 func _on_BtnUnlock_pressed() -> void:
-	if not ad_loaded:
-		print("广告暂未加载")
-		PocketAd.preloadRewardVideoAD(PocketAd.RewardVideoId)
-		return
-	PocketAd.showRewardVideoAD()
+	AdMgr.show_reward_video()
 
-func _on_level_unlocked(type)->void:
-	print("type:"+type)
-	match type:
-		"onADLoaded":
-			ad_loaded = true
-			print("预加载成功!")
-		"onReward":
-			ad_loaded = false
-			GameMgr.unlock_level(select_level)
-			update_level_state()
+func _on_level_unlocked()->void:
+	GameMgr.unlock_level(select_level)
+	update_level_state()
 

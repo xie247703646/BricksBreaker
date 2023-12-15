@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\godotProjects\\remote\\BricksBreaker\\android\\build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\1d670084c564fde212b9cbaa864e5b36\\transformed\\appcompat-1.4.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\c2d2a33f85140c16aae2c842f67b35ef\\transformed\\appcompat-1.4.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

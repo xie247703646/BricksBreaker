@@ -5,8 +5,8 @@ onready var game_mode: VBoxContainer = $GameMode
 onready var test_mode: VBoxContainer = $TestMode
 
 func on_open(data):
-	test_mode.visible = data
-	game_mode.visible = not data
+	test_mode.visible = GameMgr.is_testing
+	game_mode.visible = not GameMgr.is_testing
 	get_tree().paused = true
 
 func on_close(data):

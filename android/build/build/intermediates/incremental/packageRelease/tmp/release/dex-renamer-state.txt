@@ -1,4 +1,4 @@
-#Thu Jan 26 13:23:57 CST 2023
+#Fri Dec 15 15:15:33 CST 2023
 base.1=D\:\\godotProjects\\remote\\BricksBreaker\\android\\build\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
 path.1=classes2.dex
 base.0=D\:\\godotProjects\\remote\\BricksBreaker\\android\\build\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
