@@ -153,6 +153,19 @@ text = "关卡-1"
 align = 1
 valign = 1
 
+[node name="Button" type="Button" parent="LbLevel"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -24.0
+margin_right = 48.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 96, 48 )
+flat = true
+
 [node name="LbVersion" type="Label" parent="."]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -172,3 +185,4 @@ valign = 1
 [connection signal="pressed" from="VBoxContainer/BtnExit" to="." method="_on_BtnExit_pressed"]
 [connection signal="pressed" from="BtnLeft" to="." method="_on_BtnLeft_pressed"]
 [connection signal="pressed" from="BtnRight" to="." method="_on_BtnRight_pressed"]
+[connection signal="pressed" from="LbLevel/Button" to="." method="_on_level_unlocked"]

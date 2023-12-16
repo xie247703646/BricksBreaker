@@ -34,6 +34,8 @@ static func encode(input_str:String)->String:
 	return encode_str  
   
 static func decode(encode_str:String)->String:
+	if not encode_str: return ""
+	
 	var total_len:int = len(encode_str)
 	var count_str:String
 	var final_str:String

@@ -14,10 +14,17 @@ func show_banner()->void:
 	else:
 		print("AdMgr --> banner展示失败")
 
+func hide_banner()->void:
+	if is_valid():
+		sdk_ad.call("hide_banner")
+	else:
+		print("AdMgr --> banner隐藏失败")
+
 func show_reward_video()->void:
 	if is_valid():
 		sdk_ad.call("show_reward_video")
 	else:
+		UIMgr.show_toast(UI.UIToast,"暂无合适广告")
 		print("AdMgr --> reward_video展示失败")
 
 func is_valid()->bool:

@@ -11,6 +11,8 @@ var _cur_level:int = 1
 var is_testing:bool = false
 var level_cnt = 0
 var unlocked_levels:Array = [1]
+var is_co_create_level:bool = false
+var level_ins
 
 var is_debug:bool = true
 
@@ -28,11 +30,12 @@ func init(game_root:Node2D)->void:
 
 func game_start(level:int)->void:
 	is_testing = false
+	is_co_create_level = false
 	_cur_level = level
 	SaveMgr.set_value(CONFIG_SECTION,"select_level",level)
 	_game = game_scene.instance()
 	_game_root.add_child(_game)
-	var level_ins = load_level(level)
+	level_ins = load_level(level)
 	_game.init_level(level_ins)
 
 func game_over(win:bool)->void:
@@ -46,6 +49,8 @@ func game_over(win:bool)->void:
 	UIMgr.close_ui(UI.UIGame)
 	if is_testing:
 		UIMgr.open_ui(UI.UILevelEditor)
+	elif is_co_create_level:
+		UIMgr.open_ui(UI.UICoCreate)
 	else:
 		var level = _cur_level + 1 if win else _cur_level
 		level = clamp_level(level)
@@ -69,11 +74,18 @@ func load_level(level:int)->TileMap:
 	if not ResourceLoader.exists(level_path,"PackedScene"):
 		level_path = LEVEL_PATH % String(1)
 	var level_scene:PackedScene = load(level_path)
-	var level_ins = level_scene.instance()
+	level_ins = level_scene.instance()
 	return level_ins
 
 func test_level(level_ins:TileMap)->void:
 	is_testing = true
+	_game = game_scene.instance()
+	_game_root.add_child(_game)
+	_game.init_level(level_ins)
+	UIMgr.open_ui(UI.UIGame)
+
+func load_co_create_level(level_ins:TileMap)->void:
+	is_co_create_level = true
 	_game = game_scene.instance()
 	_game_root.add_child(_game)
 	_game.init_level(level_ins)

@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.egoist.bricksbreaker"
 4    android:installLocation="auto"
-5    android:versionCode="7"
+5    android:versionCode="8"
 6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -1073,11 +1073,11 @@
 550        </provider>
 551
 552        <meta-data
-552-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
+552-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
 553            android:name="org.godotengine.plugin.v1.PocketAd"
-553-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
+553-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
 554            android:value="com.godot.pocketad.PocketAd" /> <!-- Records the version of the Godot library -->
-554-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
+554-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
 555        <meta-data
 555-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:9-16:44
 556            android:name="org.godotengine.library.version"

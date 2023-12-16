@@ -92,6 +92,27 @@ func close_ui(ui_name:String,data = null)->bool:
 	ui_node.queue_free()
 	return true
 
+func show_toast(toast_name:String,msg:String)->void:
+	var path = _ui_path % toast_name
+	if not ResourceLoader.exists(path,"PackedScene"):
+		printerr('UIMgr --> 不存在路径为%s的toast'%[path])
+		return
+	var toast_scene:PackedScene = load(path) as PackedScene
+	if not toast_scene:
+		printerr('UIMgr --> %s加载失败'%[toast_name])
+		return
+	var toast_node = toast_scene.instance()
+	if not toast_node:
+		printerr('UIMgr --> %s实例化失败'%[toast_name])
+		return
+
+	var toast_parent = _ui_root.get_node_or_null("Toast")
+	for toast in toast_parent.get_children(): toast.on_hide()
+
+	toast_parent.call_deferred("add_child",toast_node)
+	toast_node.call_deferred("on_show",msg)
+
+
 func is_ui_opened(ui_name:String)->bool:
 	return _open_ui_dic.has(ui_name)
 

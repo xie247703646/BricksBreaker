@@ -53,9 +53,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified@jar"
-      jars="C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug\jars\classes.jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified"
-      folder="C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

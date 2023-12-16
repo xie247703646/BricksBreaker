@@ -1,5 +1,4 @@
 extends UIBase
-class_name UILevelEditor
 
 export(ButtonGroup) var btn_group_color:ButtonGroup
 export(ButtonGroup) var btn_group_tool:ButtonGroup
@@ -13,10 +12,11 @@ onready var erase_tool: Control = $EraseTool
 
 var view_scale:float = 1.0
 var move_start_pos:Vector2 = Vector2.ZERO
+var move_speed:float = 10.0
 
 func _init_map()->void:
 	var mgr = LevelEditorMgr
-#	var level_saved:Array = SaveMgr.get_value(Global.Section_Level_Edit,"level_edit_saved",[])
+#	var level_saved:Array = SaveMgr.get_value(Global.Section_Co_Create_Level,"co_create_level",[])
 	var level_map_data = LevelEditorMgr.level_map_data
 	if level_map_data.empty():
 		for x in range(0,mgr.MAX_COL):
@@ -49,7 +49,8 @@ func _input(event: InputEvent) -> void:
 		var pos = mouse_pos
 		var dir = move_start_pos.direction_to(pos)
 		var dis = move_start_pos.distance_to(pos)
-		level_map.position += dir * 10 * view_scale
+		level_map.position += dir * move_speed
+		move_start_pos = mouse_pos
 	
 func _process(delta: float) -> void:
 	if not Input.is_mouse_button_pressed(BUTTON_LEFT): return
@@ -88,21 +89,29 @@ func _on_CBtnGridSwitch_toggled(button_pressed: bool) -> void:
 	level_map.show_grid = button_pressed
 
 func _on_BtnTest_pressed() -> void:
-	close()
-	GameMgr.test_level(level_map)
+	var level_map_data = LevelEditorMgr.level_map_data
+	if LevelEditorMgr.is_map_empty(level_map_data):
+		UIMgr.show_toast(UI.UIToast,"空关卡无法测试")
+	else:
+		close()
+		GameMgr.test_level(level_map)
 
 func _on_BtnSave_pressed() -> void:
-	var encode_map_str:String = LevelEditorMgr.encode_map_data(LevelEditorMgr.level_map_data)
-	var level_saved:Array = SaveMgr.get_value(Global.Section_Level_Edit,"level_edit_saved",[])
-	if level_saved.has(encode_map_str):
-		Debug.Warn(name,"已经有了")
+	var level_map_data = LevelEditorMgr.level_map_data
+	var encode_map_str:String = LevelEditorMgr.encode_map_data(level_map_data)
+	var level_saved:Array = SaveMgr.get_value(Global.Section_Co_Create_Level,"co_create_level",[])
+	if LevelEditorMgr.is_map_empty(level_map_data):
+		UIMgr.show_toast(UI.UIToast,"无法保存空关卡")
+	elif level_saved.has(encode_map_str):
+		UIMgr.show_toast(UI.UIToast,"本地已有与其相同的关卡")
 	else:
 		level_saved.append(encode_map_str)
-		SaveMgr.set_value(Global.Section_Level_Edit,"level_edit_saved",level_saved)
+		SaveMgr.set_value(Global.Section_Co_Create_Level,"co_create_level",level_saved)
+		UIMgr.show_toast(UI.UIToast,"保存成功")
 
 func _on_BtnClose_pressed() -> void:
 	close()
-	UIMgr.open_ui(UI.UIMain)
+	UIMgr.open_ui(UI.UICoCreate)
 
 func is_drawing()->bool:
 	var btn = btn_group_tool.get_pressed_button()
@@ -124,6 +133,9 @@ func _on_BtnPosReset_pressed() -> void:
 	level_map.position = Vector2.ZERO
 
 func _on_BtnEraseAll_pressed() -> void:
+	UIMgr.open_ui(UI.UIConfirm,{"tip":"是否要擦除所有砖块?","func_yes":funcref(self,"erase_all")})
+	
+func erase_all()->void:
 	LevelEditorMgr.level_map_data.clear()
 	level_map.clear()
 
@@ -133,3 +145,6 @@ func _on_change_tool()->void:
 	if is_drawing(): draw_tool.show()
 	if is_moving(): move_tool.show()
 	if is_erasing(): erase_tool.show()
+
+func _on_HsMoveSpeed_value_changed(value: float) -> void:
+	move_speed = value

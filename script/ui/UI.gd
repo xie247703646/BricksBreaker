@@ -3,7 +3,7 @@ class_name UI
 enum Type{
 	Common,
 	Window,
-	AlwaysTop
+	AlwaysTop,
 }
 
 const UIMain = "UIMain"
@@ -12,3 +12,8 @@ const UIPause = "UIPause"
 const UILevelEditor = "UILevelEditor"
 const UIAdvice = "UIAdvice"
 const UIPolicy = "UIPolicy"
+const UIConfirm = "UIConfirm"
+const UIToast = "UIToast"
+const UICoCreate = "UICoCreate"
+const UIImportLevel = "UIImportLevel"
+const UILevelCode = "UILevelCode"

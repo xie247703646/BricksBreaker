@@ -1114,11 +1114,11 @@
 573        </provider>
 574
 575        <meta-data
-575-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
+575-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
 576            android:name="org.godotengine.plugin.v1.PocketAd"
-576-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
+576-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
 577            android:value="com.godot.pocketad.PocketAd" />
-577-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\3e6349f84cde6af99a479936e3565c40\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
+577-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
 578
 579        <provider
 579-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20

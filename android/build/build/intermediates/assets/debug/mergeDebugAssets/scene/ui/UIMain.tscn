@@ -1,19 +1,15 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://script/ui/src/UIMain.gd" type="Script" id=1]
-[ext_resource path="res://asset/resource/btnRight.tres" type="Texture" id=2]
+[ext_resource path="res://asset/resource/icon_arrow.svg" type="Texture" id=2]
 [ext_resource path="res://asset/font/m5x7.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://asset/resource/btnLeft.tres" type="Texture" id=4]
+[ext_resource path="res://asset/resource/font_64px.tres" type="DynamicFont" id=4]
 [ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=5]
 [ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=6]
 [ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=7]
 [ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=8]
 [ext_resource path="res://asset/resource/StyleBox_BtnDisabled.stylebox" type="StyleBox" id=9]
 [ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=10]
-
-[sub_resource type="DynamicFont" id=5]
-size = 96
-font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 32
@@ -75,9 +71,10 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 5 )
 custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
-text = "共创关卡"
+text = "玩创关卡"
 
 [node name="BtnExit" type="Button" parent="VBoxContainer"]
+visible = false
 margin_top = 288.0
 margin_right = 480.0
 margin_bottom = 336.0
@@ -90,34 +87,69 @@ custom_styles/disabled = ExtResource( 9 )
 custom_styles/normal = ExtResource( 7 )
 text = "结束游戏"
 
+[node name="BtnLeft" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -688.0
+margin_top = 72.0
+margin_right = -640.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 48, 48 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+flip_h = true
+
+[node name="ColorRect" type="ColorRect" parent="BtnLeft"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
+
 [node name="BtnRight" type="TextureButton" parent="."]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -64.0
-margin_top = -32.0
-margin_bottom = 32.0
+margin_left = -80.0
+margin_top = 72.0
+margin_right = -32.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 48, 48 )
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 2 )
 
-[node name="BtnLeft" type="TextureButton" parent="."]
+[node name="ColorRect" type="ColorRect" parent="BtnRight"]
+show_behind_parent = true
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
+margin_left = -32.0
 margin_top = -32.0
-margin_right = 64.0
+margin_right = 32.0
 margin_bottom = 32.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 4 )
-texture_hover = ExtResource( 4 )
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
 
 [node name="LbLevel" type="Label" parent="."]
 anchor_right = 1.0
 margin_top = 48.0
 margin_bottom = 112.0
-custom_fonts/font = SubResource( 5 )
-text = "Level 1"
+custom_fonts/font = ExtResource( 4 )
+text = "关卡-1"
 align = 1
 valign = 1
 
@@ -130,7 +162,7 @@ margin_top = -50.0
 margin_right = -16.0
 margin_bottom = -16.0
 custom_fonts/font = SubResource( 6 )
-text = "Version: 1.0.7"
+text = "Version: 1.1"
 align = 2
 valign = 1
 
@@ -138,5 +170,5 @@ valign = 1
 [connection signal="pressed" from="VBoxContainer/BtnUnlock" to="." method="_on_BtnUnlock_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnEditor" to="." method="_on_BtnEditor_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnExit" to="." method="_on_BtnExit_pressed"]
-[connection signal="pressed" from="BtnRight" to="." method="_on_BtnRight_pressed"]
 [connection signal="pressed" from="BtnLeft" to="." method="_on_BtnLeft_pressed"]
+[connection signal="pressed" from="BtnRight" to="." method="_on_BtnRight_pressed"]

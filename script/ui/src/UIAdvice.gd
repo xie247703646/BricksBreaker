@@ -1,5 +1,4 @@
 extends UIBase
-class_name UIAdvice
 
 func on_open(data):
 	pass

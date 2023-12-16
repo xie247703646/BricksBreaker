@@ -45,6 +45,11 @@ _global_script_classes=[ {
 "path": "res://script/game/item/ItemBase.gd"
 }, {
 "base": "Reference",
+"class": "ManualTimer",
+"language": "GDScript",
+"path": "res://script/misc/ManualTimer.gd"
+}, {
+"base": "Reference",
 "class": "MathUtil",
 "language": "GDScript",
 "path": "res://script/util/MathUtil.gd"
@@ -94,11 +99,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://script/ui/UI.gd"
 }, {
-"base": "UIBase",
-"class": "UIAdvice",
-"language": "GDScript",
-"path": "res://script/ui/src/UIAdvice.gd"
-}, {
 "base": "Node",
 "class": "UIAnimBase",
 "language": "GDScript",
@@ -114,35 +114,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://script/ui/anim/UICloseAnim.gd"
 }, {
-"base": "UIBase",
-"class": "UIGame",
-"language": "GDScript",
-"path": "res://script/ui/src/UIGame.gd"
-}, {
-"base": "UIBase",
-"class": "UILevelEditor",
-"language": "GDScript",
-"path": "res://script/ui/src/UILevelEditor.gd"
-}, {
-"base": "UIBase",
-"class": "UIMain",
-"language": "GDScript",
-"path": "res://script/ui/src/UIMain.gd"
-}, {
 "base": "UIAnimBase",
 "class": "UIOpenAnim",
 "language": "GDScript",
 "path": "res://script/ui/anim/UIOpenAnim.gd"
-}, {
-"base": "UIBase",
-"class": "UIPause",
-"language": "GDScript",
-"path": "res://script/ui/src/UIPause.gd"
-}, {
-"base": "UIBase",
-"class": "UIPolicy",
-"language": "GDScript",
-"path": "res://script/ui/src/UIPolicy.gd"
 } ]
 _global_script_class_icons={
 "Ball": "",
@@ -152,6 +127,7 @@ _global_script_class_icons={
 "Game": "",
 "Global": "",
 "ItemBase": "",
+"ManualTimer": "",
 "MathUtil": "",
 "Paddle": "",
 "PaddleExpand": "",
@@ -162,16 +138,10 @@ _global_script_class_icons={
 "SplitBall": "",
 "ThreeBall": "",
 "UI": "",
-"UIAdvice": "",
 "UIAnimBase": "",
 "UIBase": "",
 "UICloseAnim": "",
-"UIGame": "",
-"UILevelEditor": "",
-"UIMain": "",
-"UIOpenAnim": "",
-"UIPause": "",
-"UIPolicy": ""
+"UIOpenAnim": ""
 }
 
 [application]

@@ -1,5 +1,4 @@
 extends UIBase
-class_name UIMain
 
 onready var level_container: Control = $LevelContainer
 onready var lb_level: Label = $LbLevel
@@ -8,7 +7,6 @@ onready var btn_unlock: Button = $VBoxContainer/BtnUnlock
 
 var select_level:int = 1
 var level_ins:TileMap = null
-var ad_loaded:bool = false
 
 func on_open(data):
 	if data:
@@ -16,13 +14,15 @@ func on_open(data):
 	else:
 		select_level = int(SaveMgr.get_value(GameMgr.CONFIG_SECTION,"select_level",1))
 	show_level()
-	AdMgr.show_banner()
 	if AdMgr.is_valid():
 		AdMgr.sdk_ad.connect("reward_video_rewarded",self,"_on_level_unlocked")
+		AdMgr.sdk_ad.connect("reward_video_failed",self,"_on_reward_video_failed")
+
 
 func on_close(data):
 	if AdMgr.is_valid():
 		AdMgr.sdk_ad.disconnect("reward_video_rewarded",self,"_on_level_unlocked")
+		AdMgr.sdk_ad.disconnect("reward_video_failed",self,"_on_reward_video_failed")
 
 func show_level()->void:
 	if level_ins: level_ins.free()
@@ -53,8 +53,11 @@ func _on_BtnLeft_pressed() -> void:
 	show_level()
 
 func _on_BtnEditor_pressed() -> void:
-	close()
-	UIMgr.open_ui(UI.UILevelEditor)
+	if GameMgr.unlocked_levels.size() >= 10:
+		close()
+		UIMgr.open_ui(UI.UICoCreate)
+	else:
+		UIMgr.show_toast(UI.UIToast,"通过10个关卡后解锁")
 
 func _on_BtnUnlock_pressed() -> void:
 	AdMgr.show_reward_video()
@@ -63,3 +66,5 @@ func _on_level_unlocked()->void:
 	GameMgr.unlock_level(select_level)
 	update_level_state()
 
+func _on_reward_video_failed()->void:
+	UIMgr.show_toast(UI.UIToast,"暂无合适的广告")

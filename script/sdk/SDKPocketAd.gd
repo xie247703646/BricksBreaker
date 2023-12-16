@@ -64,6 +64,12 @@ func show_banner()->void:
 		return
 	pocket_ad.loadBannerAd(BANNER_ID)
 
+func hide_banner()->void:
+	if not pocket_ad:
+		print("PocketAd --> 插件实例不存在，无法隐藏Banner")
+		return
+	pocket_ad.hideBannerAd()
+
 func show_reward_video()->void:
 	if not pocket_ad:
 		print("PocketAd --> 插件实例不存在，无法展示RewardVideo")
