@@ -3,6 +3,7 @@ extends Node
 export var is_debug:bool = false
 
 func _ready() -> void:
+	print(ord("\n"))
 	randomize()
 	GameMgr.is_debug = is_debug
 	_game_init()

@@ -63,6 +63,7 @@ dependencies {
     implementation files('libs/gdt_ad_sdk_230210.aar')
     implementation files('libs/ks_ad_sdk_230116.aar')
     implementation files('libs/pocket_ad_sdk_3.2.8.aar')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
     if (rootProject.findProject(":lib")) {
         implementation project(":lib")

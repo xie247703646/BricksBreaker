@@ -133,6 +133,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.constraintlayout:constraintlayout:2.1.3@aar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\jars\classes.jar"
+      resolved="androidx.constraintlayout:constraintlayout:2.1.3"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0@jar"
       jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.7.0\51736992f422993a1e741051bdf3c12801bc1ca1\kotlin-stdlib-common-1.7.0.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0"/>
@@ -593,6 +606,10 @@
       name="androidx.concurrent:concurrent-futures:1.0.0@jar"
       jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\androidx.concurrent\concurrent-futures\1.0.0\c1e77e3ee6f4643b77496a1ddf7a2eef1aefdaa1\concurrent-futures-1.0.0.jar"
       resolved="androidx.concurrent:concurrent-futures:1.0.0"/>
+  <library
+      name="androidx.constraintlayout:constraintlayout-core:1.0.3@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\androidx.constraintlayout\constraintlayout-core\1.0.3\e3b33a654966aaf882b869e9aad3fa2113264c61\constraintlayout-core-1.0.3.jar"
+      resolved="androidx.constraintlayout:constraintlayout-core:1.0.3"/>
   <library
       name="com.google.guava:listenablefuture:1.0@jar"
       jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\1.0\c949a840a6acbc5268d088e47b04177bf90b3cad\listenablefuture-1.0.jar"

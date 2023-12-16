@@ -45,13 +45,13 @@ static func decode(encode_str:String)->String:
 		var s:String = encode_str[i]
 		i += 1
 		var asc = ord(s)
-		if asc == 32: 
+		if asc == 32 or asc == 10: 
 			print("space")
 		elif asc >= 65 and asc <= 90:
 			if count_str.is_valid_integer():
 				var count:int = count_str.to_int()
 				for j in count: final_str += s
 			count_str = ""
-		else:
+		elif asc >= 48 and asc <= 57:
 			count_str += s
 	return final_str

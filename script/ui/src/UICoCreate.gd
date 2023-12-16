@@ -79,6 +79,8 @@ func _on_ui_closed(ui_name:String)->void:
 		UI.UIImportLevel: 
 			misc.visible = true
 			co_create_level = SaveMgr.get_value(Global.Section_Co_Create_Level,"co_create_level",[])
+			var has_co_create_level:bool = not co_create_level.empty()
+			lb_tip.visible = not has_co_create_level
 			if not co_create_level.empty():
 				set("select_level",co_create_level.find(LevelEditorMgr.last_import_map_str))
 				load_map_data(co_create_level[select_level])
