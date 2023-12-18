@@ -1,0 +1,116 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://script/ui/src/UIFinish.gd" type="Script" id=1]
+[ext_resource path="res://asset/resource/font_64px.tres" type="DynamicFont" id=2]
+[ext_resource path="res://asset/resource/font_48px.tres" type="DynamicFont" id=3]
+[ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=4]
+[ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=5]
+[ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=6]
+[ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=7]
+[ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=8]
+
+[node name="UIFinish" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_vertical_guides_": [ 360.0 ]
+}
+ui_type = 1
+
+[node name="CtWin" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LbTitle" type="Label" parent="CtWin"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -320.0
+margin_bottom = -256.0
+custom_fonts/font = ExtResource( 2 )
+text = "砖块已全部清除"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LbTime" type="Label" parent="CtWin"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -120.0
+margin_bottom = -72.0
+custom_fonts/font = ExtResource( 3 )
+text = "用时：1分20秒"
+align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CtFail" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LbTitle" type="Label" parent="CtFail"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -220.0
+margin_bottom = -156.0
+custom_fonts/font = ExtResource( 2 )
+text = "游戏结束"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Content" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.0
+margin_top = 64.0
+margin_right = 240.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 480, 48 )
+custom_constants/separation = 30
+
+[node name="BtnRoast" type="Button" parent="Content"]
+margin_right = 480.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 7 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/normal = ExtResource( 8 )
+text = "我要吐槽"
+
+[node name="BtnClose" type="Button" parent="Content"]
+margin_top = 78.0
+margin_right = 480.0
+margin_bottom = 126.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 7 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/normal = ExtResource( 8 )
+text = "返回"
+
+[connection signal="pressed" from="Content/BtnRoast" to="." method="_on_BtnRoast_pressed"]
+[connection signal="pressed" from="Content/BtnClose" to="." method="_on_BtnClose_pressed"]

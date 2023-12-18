@@ -46,7 +46,7 @@ margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
-color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
 [node name="BtnVibrate" type="TextureButton" parent="."]
 margin_left = 120.0
@@ -75,7 +75,7 @@ margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
-color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
 [node name="BtnAd" type="TextureButton" parent="."]
 margin_left = 208.0
@@ -104,7 +104,7 @@ margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
-color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
 [node name="BtnPause" type="TextureButton" parent="."]
 anchor_left = 1.0
@@ -136,7 +136,7 @@ margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
-color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
 [connection signal="toggled" from="BtnVibrate" to="." method="_on_BtnVibrate_toggled"]
 [connection signal="toggled" from="BtnAd" to="." method="_on_BtnAd_toggled"]

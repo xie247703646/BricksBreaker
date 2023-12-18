@@ -45,9 +45,7 @@ static func decode(encode_str:String)->String:
 		var s:String = encode_str[i]
 		i += 1
 		var asc = ord(s)
-		if asc == 32 or asc == 10: 
-			print("space")
-		elif asc >= 65 and asc <= 90:
+		if asc >= 65 and asc <= 90:
 			if count_str.is_valid_integer():
 				var count:int = count_str.to_int()
 				for j in count: final_str += s

@@ -39,10 +39,7 @@ func _ready() -> void:
 	paddle = create_paddle()
 	yield(get_tree().create_timer(1),"timeout")
 	create_paddle_ball()
-
-#func _physics_process(delta: float) -> void:
-#	if Input.is_action_just_pressed("ui_accept"):
-#		GameMgr.game_over(true)
+	GameMgr.start_time = Time.get_ticks_msec()
 
 func init_level(level_map:TileMap)->void:
 	var cell_map_pos_arr:Array = level_map.get_used_cells()
@@ -91,7 +88,6 @@ func _on_brick_broken(global_pos:Vector2)->void:
 	var ball_cnt = ball_container.get_child_count()
 	var p = 0.1 * (MAX_BALL_CNT - ball_cnt * 10 + 10) / MAX_BALL_CNT
 	p = clamp(p,0.01,0.1)
-#	print("当前概率%s" % p)
 	if randf() < p:
 		var idx = MathUtil.rand_weight(item_weight)
 		create_item(idx,global_pos)

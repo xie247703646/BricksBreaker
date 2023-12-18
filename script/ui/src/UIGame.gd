@@ -18,11 +18,9 @@ func on_close(data):
 
 func _on_btn_sound_toggled(btn_pressed:bool)->void:
 	Setting.sfx_enabled = not btn_pressed
-#	AudioMgr.set_sound_mute(btn_pressed)
 
 func _on_BtnVibrate_toggled(button_pressed: bool) -> void:
 	Setting.vibrate_enabled = not button_pressed
-#	DeviceMgr.vibrate_on = not button_pressed
 
 func _on_BtnPause_pressed() -> void:
 	UIMgr.open_ui(UI.UIPause)

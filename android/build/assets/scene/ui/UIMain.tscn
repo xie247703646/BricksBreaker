@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://script/ui/src/UIMain.gd" type="Script" id=1]
 [ext_resource path="res://asset/resource/icon_arrow.svg" type="Texture" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=8]
 [ext_resource path="res://asset/resource/StyleBox_BtnDisabled.stylebox" type="StyleBox" id=9]
 [ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=10]
+[ext_resource path="res://asset/resource/icon_double_arrow.svg" type="Texture" id=11]
+[ext_resource path="res://asset/resource/font_24px.tres" type="DynamicFont" id=12]
 
 [sub_resource type="DynamicFont" id=6]
 size = 32
@@ -19,10 +21,16 @@ font_data = ExtResource( 3 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="LevelContainer" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
@@ -35,6 +43,9 @@ margin_right = 240.0
 margin_bottom = -122.0
 rect_min_size = Vector2( 480, 48 )
 custom_constants/separation = 48
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="BtnStart" type="Button" parent="VBoxContainer"]
 margin_right = 480.0
@@ -73,28 +84,12 @@ custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
 text = "玩创关卡"
 
-[node name="BtnExit" type="Button" parent="VBoxContainer"]
-visible = false
-margin_top = 288.0
-margin_right = 480.0
-margin_bottom = 336.0
-rect_min_size = Vector2( 480, 48 )
-custom_fonts/font = ExtResource( 10 )
-custom_styles/hover = ExtResource( 6 )
-custom_styles/pressed = ExtResource( 5 )
-custom_styles/focus = ExtResource( 8 )
-custom_styles/disabled = ExtResource( 9 )
-custom_styles/normal = ExtResource( 7 )
-text = "结束游戏"
-
 [node name="BtnLeft" type="TextureButton" parent="."]
-anchor_left = 1.0
 anchor_top = 0.5
-anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -688.0
+margin_left = 32.0
 margin_top = 72.0
-margin_right = -640.0
+margin_right = 80.0
 margin_bottom = 120.0
 rect_min_size = Vector2( 48, 48 )
 texture_normal = ExtResource( 2 )
@@ -114,7 +109,34 @@ margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
-color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
+
+[node name="BtnLeft2" type="TextureButton" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 32.0
+margin_top = 160.0
+margin_right = 80.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 48, 48 )
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 11 )
+flip_h = true
+
+[node name="ColorRect" type="ColorRect" parent="BtnLeft2"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
 [node name="BtnRight" type="TextureButton" parent="."]
 anchor_left = 1.0
@@ -142,12 +164,40 @@ margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
-color = Color( 0.0392157, 0.0392157, 0.117647, 1 )
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
+
+[node name="BtnRight2" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -80.0
+margin_top = 160.0
+margin_right = -32.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 48, 48 )
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="BtnRight2"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
 [node name="LbLevel" type="Label" parent="."]
 anchor_right = 1.0
-margin_top = 48.0
-margin_bottom = 112.0
+margin_top = 64.0
+margin_bottom = 128.0
 custom_fonts/font = ExtResource( 4 )
 text = "关卡-1"
 align = 1
@@ -159,30 +209,54 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -48.0
-margin_top = -24.0
-margin_right = 48.0
-margin_bottom = 24.0
+margin_left = -104.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
 rect_min_size = Vector2( 96, 48 )
 flat = true
 
-[node name="LbVersion" type="Label" parent="."]
+[node name="LbRecord" type="Label" parent="LbLevel"]
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = 16.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 10 )
+text = "最佳记录："
+align = 1
+valign = 1
+
+[node name="LbMaker" type="Label" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
 margin_left = 16.0
-margin_top = -50.0
+margin_top = -48.0
+margin_right = 256.0
+margin_bottom = -14.0
+custom_fonts/font = ExtResource( 12 )
+text = "作者:egost"
+valign = 1
+
+[node name="LbVersion" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -144.0
+margin_top = -48.0
 margin_right = -16.0
-margin_bottom = -16.0
+margin_bottom = -14.0
 custom_fonts/font = SubResource( 6 )
-text = "Version: 1.1"
+text = "Version: 1.2"
 align = 2
 valign = 1
 
 [connection signal="pressed" from="VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnUnlock" to="." method="_on_BtnUnlock_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnEditor" to="." method="_on_BtnEditor_pressed"]
-[connection signal="pressed" from="VBoxContainer/BtnExit" to="." method="_on_BtnExit_pressed"]
 [connection signal="pressed" from="BtnLeft" to="." method="_on_BtnLeft_pressed"]
+[connection signal="pressed" from="BtnLeft2" to="." method="_on_BtnLeft2_pressed"]
 [connection signal="pressed" from="BtnRight" to="." method="_on_BtnRight_pressed"]
+[connection signal="pressed" from="BtnRight2" to="." method="_on_BtnRight2_pressed"]
 [connection signal="pressed" from="LbLevel/Button" to="." method="_on_level_unlocked"]

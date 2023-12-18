@@ -35,6 +35,6 @@ func _on_Ball_body_entered(body: Node2D) -> void:
 		var global_pos = body.global_position
 		body.free()
 		SignalMgr.emit_signal("brick_broken",global_pos)
-		AudioMgr.play_sound("dong")
+		AudioMgr.play_sfx("dong")
 
 

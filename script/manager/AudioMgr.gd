@@ -27,7 +27,7 @@ func _ready() -> void:
 	pause_mode = Node.PAUSE_MODE_PROCESS
 	set_sound_mute(not Setting.sfx_enabled)
 
-func play_sound(sound_name:String)->void:
+func play_sfx(sound_name:String)->void:
 	if is_sound_muted(): return
 	if get_child_count() > MAX_SOUND_CNT: return
 	if not sound_dic.has(sound_name):

@@ -7,12 +7,13 @@ var game_scene:PackedScene = preload("res://scene/game/Game.tscn")
 
 var _game_root:Node2D
 var _game:Game
-var _cur_level:int = 1
+var cur_level:int = 1
 var is_testing:bool = false
 var level_cnt = 0
 var unlocked_levels:Array = [1]
 var is_co_create_level:bool = false
-var level_ins
+var level_ins:TileMap
+var start_time:int = 0
 
 var is_debug:bool = true
 
@@ -31,7 +32,7 @@ func init(game_root:Node2D)->void:
 func game_start(level:int)->void:
 	is_testing = false
 	is_co_create_level = false
-	_cur_level = level
+	cur_level = level
 	SaveMgr.set_value(CONFIG_SECTION,"select_level",level)
 	_game = game_scene.instance()
 	_game_root.add_child(_game)
@@ -39,23 +40,26 @@ func game_start(level:int)->void:
 	_game.init_level(level_ins)
 
 func game_over(win:bool)->void:
-	if win: unlock_level(_cur_level + 1)
+	if win: unlock_level(cur_level + 1)
+	
 	get_tree().paused = true
 	AudioMgr.clear()
-	yield(get_tree().create_timer(2),"timeout")
-	_game.queue_free()
-	_game = null
+	yield(get_tree().create_timer(1),"timeout")
 	get_tree().paused = false
+	get_tree().call_group("Ball","queue_free")
+	get_tree().call_group("Item","queue_free")
 	UIMgr.close_ui(UI.UIGame)
-	if is_testing:
-		UIMgr.open_ui(UI.UILevelEditor)
-	elif is_co_create_level:
-		UIMgr.open_ui(UI.UICoCreate)
-	else:
-		var level = _cur_level + 1 if win else _cur_level
-		level = clamp_level(level)
-		UIMgr.open_ui(UI.UIMain,level)
-		SaveMgr.set_value(CONFIG_SECTION,"select_level",level)
+	UIMgr.open_ui(UI.UIFinish,win)
+	
+#	if is_testing:
+#		UIMgr.open_ui(UI.UILevelEditor)
+#	elif is_co_create_level:
+#		UIMgr.open_ui(UI.UICoCreate)
+#	else:
+#		var level = cur_level + 1 if win else cur_level
+#		level = clamp_level(level)
+#		UIMgr.open_ui(UI.UIMain,level)
+#		SaveMgr.set_value(CONFIG_SECTION,"select_level",level)
 
 func game_quit()->void:
 	AudioMgr.clear()
@@ -64,7 +68,7 @@ func game_quit()->void:
 
 func game_restart()->void:
 	game_quit()
-	game_start(_cur_level)
+	game_start(cur_level)
 
 func get_game()->Game:
 	return _game

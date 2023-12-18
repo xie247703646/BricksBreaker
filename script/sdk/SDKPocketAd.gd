@@ -34,10 +34,9 @@ func _init() -> void:
 		pocket_ad = Engine.get_singleton(PocketAd)
 		pocket_ad.initSDK(Platform,Pocket_ID)
 		_init_signal()
-		print("PocketAd --> 初始化成功")
+		Debug.Log(PocketAd,"初始化成功")
 	else:
-		print("PocketAd --> 初始化失败")
-
+		Debug.Error(PocketAd,"初始化成功")
 
 func _init_signal()->void:
 	pocket_ad.connect("reward_video_loaded",self,"_on_reward_video_loaded")
@@ -60,82 +59,82 @@ func _init_signal()->void:
 
 func show_banner()->void:
 	if not pocket_ad:
-		print("PocketAd --> 插件实例不存在，无法展示Banner")
+		Debug.Error(PocketAd,"插件实例不存在，无法展示Banner")
 		return
 	pocket_ad.loadBannerAd(BANNER_ID)
 
 func hide_banner()->void:
 	if not pocket_ad:
-		print("PocketAd --> 插件实例不存在，无法隐藏Banner")
+		Debug.Error(PocketAd,"插件实例不存在，无法隐藏Banner")
 		return
 	pocket_ad.hideBannerAd()
 
 func show_reward_video()->void:
 	if not pocket_ad:
-		print("PocketAd --> 插件实例不存在，无法展示RewardVideo")
+		Debug.Error(PocketAd,"插件实例不存在，无法展示RewardVideo")
 		return
 	pocket_ad.loadRewardVideoAd(REWARD_VIDEO_ID)
 
 func _on_reward_video_loaded()->void:
 	emit_signal("reward_video_loaded")
-	print("PocketAd --> 视频加载成功")
+	Debug.Log(PocketAd,"视频加载成功")
 
 func _on_reward_video_cached()->void:
-	print("PocketAd --> 视频缓存成功")
 	emit_signal("reward_video_cached")
+	Debug.Log(PocketAd,"视频缓存成功")
 
 func _on_reward_video_showed()->void:
-	print("PocketAd --> 视频展示成功")
 	emit_signal("reward_video_showed")
+	Debug.Log(PocketAd,"视频展示成功")
 
 func _on_reward_video_exposure()->void:
-	print("PocketAd --> 视频曝光成功")
 	emit_signal("reward_video_exposure")
+	Debug.Log(PocketAd,"视频曝光成功")
 
 func _on_reward_video_rewarded()->void:
-	print("PocketAd --> 视频奖励发放")
 	emit_signal("reward_video_rewarded")
+	Debug.Log(PocketAd,"视频奖励发放")
 
 func _on_reward_video_clicked()->void:
-	print("PocketAd --> 视频点击")
 	emit_signal("reward_video_clicked")
+	Debug.Log(PocketAd,"视频被点击")
 
 func _on_reward_video_completed()->void:
-	print("PocketAd --> 视频播放完毕")
 	emit_signal("reward_video_completed")
+	Debug.Log(PocketAd,"视频播放完毕")
 
 func _on_reward_video_closed()->void:
-	print("PocketAd --> 视频关闭")
 	emit_signal("reward_video_closed")
+	Debug.Log(PocketAd,"视频关闭")
 
 func _on_reward_video_succeeded()->void:
-	print("PocketAd --> 视频加载成功")
 	emit_signal("reward_video_succeeded")
+	Debug.Log(PocketAd,"视频加载成功")
 
 func _on_reward_video_failed()->void:
-	print("PocketAd --> 视频加载失败")
 	emit_signal("reward_video_failed")
+	Debug.Log(PocketAd,"视频加载失败")
 
 func _on_reward_video_skipped()->void:
-	print("PocketAd --> 视频跳过")
 	emit_signal("reward_video_skipped")
+	Debug.Log(PocketAd,"视频被跳过")
 
 func _on_banner_load_success()->void:
-	print("PockedAd --> banner加载成功")
 	emit_signal("banner_load_success")
+	Debug.Log(PocketAd,"banner加载成功")
 
 func _on_banner_load_fail()->void:
-	print("PockedAd --> banner加载失败")
 	emit_signal("banner_load_fail")
+	Debug.Log(PocketAd,"banner加载失败")
 
 func _on_banner_exposure()->void:
-	print("PockedAd --> banner曝光")
 	emit_signal("banner_exposure")
+	Debug.Log(PocketAd,"banner曝光")
 
 func _on_banner_clicked()->void:
-	print("PockedAd --> banner被点击")
 	emit_signal("banner_clicked")
+	Debug.Log(PocketAd,"banner被点击")
 
 func _on_banner_closed()->void:
-	print("PockedAd --> banner被关闭")
 	emit_signal("banner_closed")
+	Debug.Log(PocketAd,"banner被关闭")

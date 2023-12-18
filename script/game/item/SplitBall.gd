@@ -1,7 +1,7 @@
 extends ItemBase
 class_name SplitBall
 
-func _execute()->void:
+func execute()->void:
 	var game = GameMgr.get_game()
 	var ball_container = game.ball_container
 	var balls = ball_container.get_children()

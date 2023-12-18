@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.egoist.bricksbreaker"
 4    android:installLocation="auto"
-5    android:versionCode="9"
+5    android:versionCode="10"
 6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -102,7 +102,7 @@
 53-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:68-95
 54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 54-->[androidx.core:core:1.7.0] C:\Users\egoist\.gradle\caches\transforms-3\5bc700ba9090d50813e1063492c99fc8\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-55        android:hasFragileUserData="false"
+55        android:hasFragileUserData="true"
 55-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:118-152
 56        android:icon="@mipmap/icon"
 56-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:238-265

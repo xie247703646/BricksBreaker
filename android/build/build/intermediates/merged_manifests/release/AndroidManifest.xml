@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.egoist.bricksbreaker"
     android:installLocation="auto"
-    android:versionCode="9"
+    android:versionCode="10"
     android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
     <uses-sdk
         android:minSdkVersion="21"
@@ -52,7 +52,7 @@
     <application
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:hasFragileUserData="false"
+        android:hasFragileUserData="true"
         android:icon="@mipmap/icon"
         android:isGame="true"
         android:label="@string/godot_project_name_string"

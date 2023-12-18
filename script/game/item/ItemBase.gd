@@ -8,13 +8,12 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	global_position.y += delta * fall_speed
-	pass
 
-func _execute()->void:
+func execute()->void:
 	pass
 
 func _on_body_entered(body)->void:
-	AudioMgr.play_sound("ding")
-	_execute()
+	AudioMgr.play_sfx("ding")
+	execute()
 	queue_free()
 
