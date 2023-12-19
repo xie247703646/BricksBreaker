@@ -14,5 +14,5 @@ func _game_init()->void:
 	AdMgr.init()
 
 func _game_ready()->void:
-	var ui = UI.UIMain if is_debug else UI.UIAdvice
+	var ui = UI.UIAdvice if DeviceUtil.is_mobile() else UI.UIMain
 	UIMgr.open_ui(ui)

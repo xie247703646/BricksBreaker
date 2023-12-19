@@ -7,15 +7,17 @@ var game_scene:PackedScene = preload("res://scene/game/Game.tscn")
 
 var _game_root:Node2D
 var _game:Game
+var level_ins:TileMap
+
 var cur_level:int = 1
-var is_testing:bool = false
 var level_cnt = 0
 var unlocked_levels:Array = [1]
-var is_co_create_level:bool = false
-var level_ins:TileMap
-var start_time:int = 0
 
+var is_testing:bool = false
+var is_co_create_level:bool = false
 var is_debug:bool = true
+
+var start_time:int = 0
 
 func init(game_root:Node2D)->void:
 	_game_root = game_root
@@ -50,16 +52,6 @@ func game_over(win:bool)->void:
 	get_tree().call_group("Item","queue_free")
 	UIMgr.close_ui(UI.UIGame)
 	UIMgr.open_ui(UI.UIFinish,win)
-	
-#	if is_testing:
-#		UIMgr.open_ui(UI.UILevelEditor)
-#	elif is_co_create_level:
-#		UIMgr.open_ui(UI.UICoCreate)
-#	else:
-#		var level = cur_level + 1 if win else cur_level
-#		level = clamp_level(level)
-#		UIMgr.open_ui(UI.UIMain,level)
-#		SaveMgr.set_value(CONFIG_SECTION,"select_level",level)
 
 func game_quit()->void:
 	AudioMgr.clear()
