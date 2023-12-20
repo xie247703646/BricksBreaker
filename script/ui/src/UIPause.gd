@@ -18,12 +18,10 @@ func _on_BtnClose_pressed() -> void:
 	close()
 	UIMgr.close_ui(UI.UIGame)
 	
-	if GameMgr.is_testing:
-		UIMgr.open_ui(UI.UILevelEditor)
-	elif GameMgr.is_co_create_level:
-		UIMgr.open_ui(UI.UICoCreate)
-	else:
-		UIMgr.open_ui(UI.UIMain)
+	match GameMgr.mode:
+		GameMgr.Mode.Normal: UIMgr.open_ui(UI.UIMain)
+		GameMgr.Mode.Test: UIMgr.open_ui(UI.UILevelEditor)
+		GameMgr.Mode.CoCreate: UIMgr.open_ui(UI.UICoCreate)
 
 func _on_BtnRoast_pressed() -> void:
-	OS.shell_open("https://www.taptap.cn/app/270685/review")
+	GameMgr.open_game_page()

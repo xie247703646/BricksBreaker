@@ -35,11 +35,11 @@ onready var item_container: Node2D = $ItemContainer
 var paddle: Paddle
 
 func _ready() -> void:
+	UIMgr.open_ui(UI.UIGame)
 	SignalMgr.connect("brick_broken",self,"_on_brick_broken")
 	paddle = create_paddle()
 	yield(get_tree().create_timer(1),"timeout")
 	create_paddle_ball()
-	GameMgr.start_time = Time.get_ticks_msec()
 
 func init_level(level_map:TileMap)->void:
 	var cell_map_pos_arr:Array = level_map.get_used_cells()

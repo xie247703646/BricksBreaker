@@ -31,7 +31,7 @@ func show_level()->void:
 	level_ins = GameMgr.load_level(select_level)
 	level_container.add_child(level_ins)
 	lb_level.text = "关卡-%s" % select_level
-	lb_maker.text = "作者:%s" % LevelMaker.get_name(select_level)
+	lb_maker.text = "作者:%s" % level_ins.get("maker")
 	
 	var record_dic:Dictionary = SaveMgr.get_value(GameMgr.CONFIG_SECTION,"record",{})
 	lb_record.visible = record_dic.has(select_level)
@@ -47,8 +47,7 @@ func update_level_state()->void:
 
 func _on_BtnStart_pressed() -> void:
 	close()
-	GameMgr.game_start(select_level)
-	UIMgr.open_ui(UI.UIGame)
+	GameMgr.start_normal_level(select_level)
 
 func _on_BtnRight_pressed() -> void:
 	select_level = GameMgr.clamp_level(select_level + 1)

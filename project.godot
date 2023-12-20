@@ -54,6 +54,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://script/util/MathUtil.gd"
 }, {
+"base": "Reference",
+"class": "NormalLevelHandler",
+"language": "GDScript",
+"path": "res://script/handler/NormalLevelHandler.gd"
+}, {
 "base": "StaticBody2D",
 "class": "Paddle",
 "language": "GDScript",
@@ -134,6 +139,7 @@ _global_script_class_icons={
 "LevelMaker": "",
 "ManualTimer": "",
 "MathUtil": "",
+"NormalLevelHandler": "",
 "Paddle": "",
 "PaddleExpand": "",
 "PaddleShrink": "",

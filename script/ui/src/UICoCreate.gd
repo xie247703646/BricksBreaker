@@ -42,7 +42,7 @@ func _on_BtnStart_pressed() -> void:
 		UIMgr.show_toast(UI.UIToast,"当前没有玩创关卡")
 	else:
 		close()
-		GameMgr.load_co_create_level(level_map)
+		GameMgr.start_cocreate_level(level_map)
 	
 func _on_BtnImport_pressed() -> void:
 	UIMgr.open_ui(UI.UIImportLevel)

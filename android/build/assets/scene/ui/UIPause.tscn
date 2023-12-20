@@ -75,7 +75,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 5 )
 custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
-text = "返回游戏"
+text = "继续游戏"
 
 [node name="BtnRoast" type="Button" parent="GameMode"]
 margin_top = 78.0

@@ -1,0 +1,388 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://script/ui/src/UILevelEditor.gd" type="Script" id=1]
+[ext_resource path="res://asset/resource/BtnGroup_Color.tres" type="ButtonGroup" id=2]
+[ext_resource path="res://asset/resource/Brick_Red.tres" type="Texture" id=3]
+[ext_resource path="res://asset/resource/Brick_Green.tres" type="Texture" id=4]
+[ext_resource path="res://asset/resource/Brick_Purple.tres" type="Texture" id=5]
+[ext_resource path="res://asset/resource/Brick_Yellow.tres" type="Texture" id=6]
+[ext_resource path="res://asset/resource/Brick_Gray.tres" type="Texture" id=7]
+[ext_resource path="res://asset/resource/Brick_Blue.tres" type="Texture" id=8]
+[ext_resource path="res://asset/resource/Brick_Cyan.tres" type="Texture" id=9]
+[ext_resource path="res://asset/resource/Brick_White.tres" type="Texture" id=10]
+[ext_resource path="res://asset/resource/Brick_Orange.tres" type="Texture" id=11]
+[ext_resource path="res://scene/game/level/Level_1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=14]
+[ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=15]
+[ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=16]
+[ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=17]
+[ext_resource path="res://asset/resource/font_24px.tres" type="DynamicFont" id=18]
+[ext_resource path="res://asset/resource/BtnGroup_Tool.tres" type="ButtonGroup" id=19]
+[ext_resource path="res://script/game/Map.gd" type="Script" id=20]
+
+[node name="UILevelEditor" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+btn_group_color = ExtResource( 2 )
+btn_group_tool = ExtResource( 19 )
+
+[node name="MapContainer" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 720, 960 )
+rect_clip_content = true
+color = Color( 0, 0, 0, 0.196078 )
+
+[node name="LevelMap" parent="MapContainer" instance=ExtResource( 13 )]
+tile_data = PoolIntArray(  )
+script = ExtResource( 20 )
+
+[node name="Tools" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -80.0
+rect_min_size = Vector2( 0, 32 )
+custom_constants/separation = 2
+alignment = 1
+
+[node name="BtnDraw" type="Button" parent="Tools"]
+margin_left = 1.0
+margin_right = 119.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 118, 0 )
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+toggle_mode = true
+pressed = true
+group = ExtResource( 19 )
+text = "绘制"
+
+[node name="BtnMove" type="Button" parent="Tools"]
+margin_left = 121.0
+margin_right = 239.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 118, 0 )
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+toggle_mode = true
+group = ExtResource( 19 )
+text = "移动"
+
+[node name="BtnErase" type="Button" parent="Tools"]
+margin_left = 241.0
+margin_right = 359.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 118, 0 )
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+toggle_mode = true
+group = ExtResource( 19 )
+text = "擦除"
+
+[node name="BtnTest" type="Button" parent="Tools"]
+margin_left = 361.0
+margin_right = 479.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 118, 0 )
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+text = "测试"
+
+[node name="BtnSave" type="Button" parent="Tools"]
+margin_left = 481.0
+margin_right = 599.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 118, 0 )
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+text = "保存"
+
+[node name="BtnClose" type="Button" parent="Tools"]
+margin_left = 601.0
+margin_right = 719.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 118, 0 )
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+text = "返回"
+
+[node name="Misc" type="Control" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -288.0
+margin_bottom = -256.0
+rect_min_size = Vector2( 0, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Misc"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 16.0
+margin_top = -16.0
+margin_right = 80.0
+margin_bottom = 16.0
+custom_fonts/font = ExtResource( 18 )
+text = "缩放"
+align = 1
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="Misc"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 80.0
+margin_top = -16.0
+margin_right = 280.0
+rect_min_size = Vector2( 200, 16 )
+rect_scale = Vector2( 2, 2 )
+min_value = 10.0
+max_value = 50.0
+value = 10.0
+rounded = true
+
+[node name="CBtnGridSwitch" type="CheckButton" parent="Misc"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -160.0
+margin_top = -32.0
+margin_right = -36.0
+custom_constants/hseparation = 0
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 14 )
+custom_styles/pressed = ExtResource( 14 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/hover_pressed = ExtResource( 14 )
+custom_styles/normal = ExtResource( 14 )
+pressed = true
+text = " 网格"
+
+[node name="DrawTool" type="HBoxContainer" parent="." groups=["Tool"]]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -208.0
+margin_bottom = -136.0
+rect_min_size = Vector2( 720, 72 )
+custom_constants/separation = 9
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="BtnRed" type="Button" parent="DrawTool"]
+margin_right = 72.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 3 )
+flat = true
+expand_icon = true
+
+[node name="BtnOrange" type="Button" parent="DrawTool"]
+margin_left = 81.0
+margin_right = 153.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 11 )
+flat = true
+expand_icon = true
+
+[node name="BtnYellow" type="Button" parent="DrawTool"]
+margin_left = 162.0
+margin_right = 234.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 6 )
+flat = true
+expand_icon = true
+
+[node name="BtnGreen" type="Button" parent="DrawTool"]
+margin_left = 243.0
+margin_right = 315.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="BtnCyan" type="Button" parent="DrawTool"]
+margin_left = 324.0
+margin_right = 396.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 9 )
+flat = true
+expand_icon = true
+
+[node name="BtnBlue" type="Button" parent="DrawTool"]
+margin_left = 405.0
+margin_right = 477.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+
+[node name="BtnPurple" type="Button" parent="DrawTool"]
+margin_left = 486.0
+margin_right = 558.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 5 )
+flat = true
+expand_icon = true
+
+[node name="BtnGray" type="Button" parent="DrawTool"]
+margin_left = 567.0
+margin_right = 639.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 7 )
+flat = true
+expand_icon = true
+
+[node name="BtnWhite" type="Button" parent="DrawTool"]
+margin_left = 648.0
+margin_right = 720.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+group = ExtResource( 2 )
+icon = ExtResource( 10 )
+flat = true
+expand_icon = true
+
+[node name="MoveTool" type="Control" parent="." groups=["Tool"]]
+visible = false
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -320.0
+rect_min_size = Vector2( 0, 48 )
+mouse_filter = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="MoveTool"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 16.0
+margin_top = -16.0
+margin_right = 80.0
+margin_bottom = 16.0
+custom_fonts/font = ExtResource( 18 )
+text = "速度"
+align = 1
+valign = 1
+
+[node name="HsMoveSpeed" type="HSlider" parent="MoveTool"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 80.0
+margin_top = -16.0
+margin_right = 280.0
+rect_min_size = Vector2( 200, 16 )
+rect_scale = Vector2( 2, 2 )
+min_value = 10.0
+max_value = 30.0
+value = 10.0
+rounded = true
+
+[node name="BtnPosReset" type="Button" parent="MoveTool"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 152.0
+margin_top = -32.0
+margin_right = 328.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+text = "归位"
+
+[node name="EraseTool" type="Control" parent="." groups=["Tool"]]
+visible = false
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -320.0
+rect_min_size = Vector2( 0, 48 )
+mouse_filter = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="BtnEraseAll" type="Button" parent="EraseTool"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 18 )
+custom_styles/hover = ExtResource( 15 )
+custom_styles/pressed = ExtResource( 17 )
+custom_styles/focus = ExtResource( 14 )
+custom_styles/normal = ExtResource( 16 )
+text = "全部擦除"
+
+[connection signal="pressed" from="Tools/BtnDraw" to="." method="_on_change_tool"]
+[connection signal="pressed" from="Tools/BtnMove" to="." method="_on_change_tool"]
+[connection signal="pressed" from="Tools/BtnErase" to="." method="_on_change_tool"]
+[connection signal="pressed" from="Tools/BtnTest" to="." method="_on_BtnTest_pressed"]
+[connection signal="pressed" from="Tools/BtnSave" to="." method="_on_BtnSave_pressed"]
+[connection signal="pressed" from="Tools/BtnClose" to="." method="_on_BtnClose_pressed"]
+[connection signal="value_changed" from="Misc/HSlider" to="." method="_on_HSlider_value_changed"]
+[connection signal="toggled" from="Misc/CBtnGridSwitch" to="." method="_on_CBtnGridSwitch_toggled"]
+[connection signal="value_changed" from="MoveTool/HsMoveSpeed" to="." method="_on_HsMoveSpeed_value_changed"]
+[connection signal="pressed" from="MoveTool/BtnPosReset" to="." method="_on_BtnPosReset_pressed"]
+[connection signal="pressed" from="EraseTool/BtnEraseAll" to="." method="_on_BtnEraseAll_pressed"]

@@ -94,7 +94,7 @@ func _on_BtnTest_pressed() -> void:
 		UIMgr.show_toast(UI.UIToast,"空关卡无法测试")
 	else:
 		close()
-		GameMgr.test_level(level_map)
+		GameMgr.start_test_level(level_map)
 
 func _on_BtnSave_pressed() -> void:
 	var level_map_data = LevelEditorMgr.level_map_data
