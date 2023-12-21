@@ -1,5 +1,7 @@
 extends Node
 
+#砖块增加击中数字
+
 export var is_debug:bool = false
 
 func _ready() -> void:
