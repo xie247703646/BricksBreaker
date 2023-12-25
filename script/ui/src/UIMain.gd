@@ -1,11 +1,14 @@
 extends UIBase
 
 onready var level_container: Control = $LevelContainer
-onready var lb_level: Label = $LbLevel
-onready var btn_start: Button = $VBoxContainer/BtnStart
-onready var btn_unlock: Button = $VBoxContainer/BtnUnlock
+onready var control: Control = $Control
+onready var lb_level: Label = $Control/LbLevel
+onready var lb_record: Label = $Control/LbLevel/LbRecord
 onready var lb_maker: Label = $LbMaker
-onready var lb_record: Label = $LbLevel/LbRecord
+onready var lb_version: Label = $LbVersion
+onready var btn_unlock: Button = $Control/VBoxContainer/BtnUnlock
+onready var btn_start: Button = $Control/VBoxContainer/BtnStart
+onready var btn_editor: Button = $Control/VBoxContainer/BtnEditor
 
 var select_level:int = 1
 var level_ins:TileMap = null
@@ -20,6 +23,11 @@ func on_open(data):
 		AdMgr.sdk_ad.connect("reward_video_rewarded",self,"_on_level_unlocked")
 		AdMgr.sdk_ad.connect("reward_video_failed",self,"_on_reward_video_failed")
 
+func on_show()->void:
+	control.visible = true
+
+func on_hide()->void:
+	control.visible = false
 
 func on_close(data):
 	if AdMgr.is_valid():
@@ -81,3 +89,11 @@ func _on_level_unlocked()->void:
 
 func _on_reward_video_failed()->void:
 	UIMgr.show_toast(UI.UIToast,"暂无合适的广告")
+
+func _on_BtnSetting_pressed() -> void:
+	UIMgr.open_ui(UI.UISetting)
+	on_hide()
+
+func _on_BtnNotice_pressed() -> void:
+	UIMgr.open_ui(UI.UINotice)
+	on_hide()

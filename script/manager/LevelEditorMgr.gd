@@ -6,7 +6,7 @@ const MAX_COL:int = 45
 const GRID_COLOR:Color = Color(1,1,1,0.18)
 var level_map_data:Array = []
 var last_import_map_str:String
-
+#穷 暴富一夜
 func save_co_create_level(map_str:String)->void:
 	last_import_map_str = map_str
 	var co_create_level:Array = SaveMgr.get_value(Global.Section_Co_Create_Level,"co_create_level",[])

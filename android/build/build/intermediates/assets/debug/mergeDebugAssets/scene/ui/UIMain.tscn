@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://script/ui/src/UIMain.gd" type="Script" id=1]
 [ext_resource path="res://asset/resource/icon_arrow.svg" type="Texture" id=2]
@@ -12,6 +12,12 @@
 [ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=10]
 [ext_resource path="res://asset/resource/icon_double_arrow.svg" type="Texture" id=11]
 [ext_resource path="res://asset/resource/font_24px.tres" type="DynamicFont" id=12]
+[ext_resource path="res://asset/resource/icon_setting.svg" type="Texture" id=13]
+
+[sub_resource type="StyleBoxFlat" id=7]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0, 0, 0, 0.431373 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 32
@@ -32,7 +38,15 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -47,7 +61,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="BtnStart" type="Button" parent="VBoxContainer"]
+[node name="BtnStart" type="Button" parent="Control/VBoxContainer"]
 margin_right = 480.0
 margin_bottom = 48.0
 rect_min_size = Vector2( 480, 48 )
@@ -59,7 +73,7 @@ custom_styles/disabled = ExtResource( 9 )
 custom_styles/normal = ExtResource( 7 )
 text = "开始游戏"
 
-[node name="BtnUnlock" type="Button" parent="VBoxContainer"]
+[node name="BtnUnlock" type="Button" parent="Control/VBoxContainer"]
 margin_top = 96.0
 margin_right = 480.0
 margin_bottom = 144.0
@@ -72,7 +86,7 @@ custom_styles/disabled = ExtResource( 9 )
 custom_styles/normal = ExtResource( 7 )
 text = "观看广告解锁"
 
-[node name="BtnEditor" type="Button" parent="VBoxContainer"]
+[node name="BtnEditor" type="Button" parent="Control/VBoxContainer"]
 margin_top = 192.0
 margin_right = 480.0
 margin_bottom = 240.0
@@ -84,7 +98,7 @@ custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
 text = "玩创关卡"
 
-[node name="BtnLeft" type="TextureButton" parent="."]
+[node name="BtnLeft" type="TextureButton" parent="Control"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 32.0
@@ -96,8 +110,11 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 2 )
 flip_h = true
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="ColorRect" type="ColorRect" parent="BtnLeft"]
+[node name="ColorRect" type="ColorRect" parent="Control/BtnLeft"]
 show_behind_parent = true
 anchor_left = 0.5
 anchor_top = 0.5
@@ -111,7 +128,7 @@ rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
 color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
-[node name="BtnLeft2" type="TextureButton" parent="."]
+[node name="BtnLeft2" type="TextureButton" parent="Control"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 32.0
@@ -123,8 +140,11 @@ texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 11 )
 texture_hover = ExtResource( 11 )
 flip_h = true
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="ColorRect" type="ColorRect" parent="BtnLeft2"]
+[node name="ColorRect" type="ColorRect" parent="Control/BtnLeft2"]
 show_behind_parent = true
 anchor_left = 0.5
 anchor_top = 0.5
@@ -138,7 +158,7 @@ rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
 color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
-[node name="BtnRight" type="TextureButton" parent="."]
+[node name="BtnRight" type="TextureButton" parent="Control"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -151,8 +171,11 @@ rect_min_size = Vector2( 48, 48 )
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="ColorRect" type="ColorRect" parent="BtnRight"]
+[node name="ColorRect" type="ColorRect" parent="Control/BtnRight"]
 show_behind_parent = true
 anchor_left = 0.5
 anchor_top = 0.5
@@ -166,7 +189,7 @@ rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
 color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
-[node name="BtnRight2" type="TextureButton" parent="."]
+[node name="BtnRight2" type="TextureButton" parent="Control"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -179,8 +202,43 @@ rect_min_size = Vector2( 48, 48 )
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 11 )
 texture_hover = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="ColorRect" type="ColorRect" parent="BtnRight2"]
+[node name="ColorRect" type="ColorRect" parent="Control/BtnRight2"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
+
+[node name="BtnSetting" type="TextureButton" parent="Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -80.0
+margin_top = 32.0
+margin_right = -32.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 48, 48 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 13 )
+texture_hover = ExtResource( 13 )
+texture_disabled = ExtResource( 13 )
+texture_focused = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control/BtnSetting"]
 show_behind_parent = true
 anchor_left = 0.5
 anchor_top = 0.5
@@ -223,6 +281,7 @@ anchor_bottom = 1.0
 margin_top = 16.0
 margin_bottom = 48.0
 custom_fonts/font = ExtResource( 10 )
+custom_styles/normal = SubResource( 7 )
 text = "最佳记录："
 align = 1
 valign = 1
@@ -235,7 +294,7 @@ margin_top = -48.0
 margin_right = 256.0
 margin_bottom = -14.0
 custom_fonts/font = ExtResource( 12 )
-text = "作者:egost"
+text = "作者:官方"
 valign = 1
 
 [node name="LbVersion" type="Label" parent="."]
@@ -252,11 +311,12 @@ text = "Version: 1.2"
 align = 2
 valign = 1
 
-[connection signal="pressed" from="VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
-[connection signal="pressed" from="VBoxContainer/BtnUnlock" to="." method="_on_BtnUnlock_pressed"]
-[connection signal="pressed" from="VBoxContainer/BtnEditor" to="." method="_on_BtnEditor_pressed"]
-[connection signal="pressed" from="BtnLeft" to="." method="_on_BtnLeft_pressed"]
-[connection signal="pressed" from="BtnLeft2" to="." method="_on_BtnLeft2_pressed"]
-[connection signal="pressed" from="BtnRight" to="." method="_on_BtnRight_pressed"]
-[connection signal="pressed" from="BtnRight2" to="." method="_on_BtnRight2_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/BtnUnlock" to="." method="_on_BtnUnlock_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/BtnEditor" to="." method="_on_BtnEditor_pressed"]
+[connection signal="pressed" from="Control/BtnLeft" to="." method="_on_BtnLeft_pressed"]
+[connection signal="pressed" from="Control/BtnLeft2" to="." method="_on_BtnLeft2_pressed"]
+[connection signal="pressed" from="Control/BtnRight" to="." method="_on_BtnRight_pressed"]
+[connection signal="pressed" from="Control/BtnRight2" to="." method="_on_BtnRight2_pressed"]
+[connection signal="pressed" from="Control/BtnSetting" to="." method="_on_BtnSetting_pressed"]
 [connection signal="pressed" from="LbLevel/Button" to="." method="_on_level_unlocked"]
