@@ -5,10 +5,18 @@ onready var btn_vibrate: Button = $VBoxContainer/BtnVibrate
 onready var btn_control: Button = $VBoxContainer/BtnControl
 
 func _ready() -> void:
+	update_sfx()
+	update_vibrate()
 	update_control_mode()
 
 func on_open(data):
-	pass
+	match Global.Cur_Platform:
+		Global.Platform.CrazyGame:
+			btn_vibrate.visible = false
+			btn_control.visible = false
+		Global.Platform.TapTap:
+			btn_vibrate.visible = true
+			btn_control.visible = true
 
 func on_close(data):
 	pass
@@ -37,10 +45,14 @@ func update_control_mode()->void:
 		Global.ControlMode.Click: btn_control.text = "操作方式：点击"
 
 func update_sfx()->void:
-	btn_sfx.text = "声音：开" if Setting.sfx_enabled else "声音：关"
+	var str_sfx_on:String = tr("key_sfx_switch") + tr("key_on")
+	var str_sfx_off:String = tr("key_sfx_switch") + tr("key_off")
+	btn_sfx.text = str_sfx_on if Setting.sfx_enabled else str_sfx_off
 
 func update_vibrate()->void:
-	btn_vibrate.text = "震动：开" if Setting.vibrate_enabled else "震动：关"
+	var str_vibrate_on:String = tr("key_vibrate_switch") + tr("key_on")
+	var str_vibrate_off:String = tr("key_vibrate_switch") + tr("key_off")
+	btn_vibrate.text = str_vibrate_on if Setting.vibrate_enabled else str_vibrate_off
 
 func _on_BtnTip_pressed() -> void:
 	match Setting.control_mode:

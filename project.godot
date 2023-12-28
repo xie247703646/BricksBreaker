@@ -233,6 +233,10 @@ texture={
 2d_physics/layer_5="DeadArea"
 2d_physics/layer_6="Paddle"
 
+[locale]
+
+translations=PoolStringArray( "res://asset/localization/localization.en.translation", "res://asset/localization/localization.zh.translation" )
+
 [physics]
 
 common/enable_pause_aware_picking=true

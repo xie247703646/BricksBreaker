@@ -44,7 +44,7 @@ custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/disabled = ExtResource( 2 )
 custom_styles/normal = ExtResource( 4 )
-text = "声音：开"
+text = "key_sfx_switch"
 
 [node name="BtnVibrate" type="Button" parent="VBoxContainer"]
 margin_top = 96.0
@@ -56,7 +56,7 @@ custom_styles/hover = ExtResource( 5 )
 custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 4 )
-text = "震动：开"
+text = "key_vibrate_switch"
 
 [node name="BtnControl" type="Button" parent="VBoxContainer"]
 margin_top = 192.0
@@ -98,7 +98,7 @@ custom_styles/hover = ExtResource( 5 )
 custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 4 )
-text = "返回"
+text = "key_back"
 
 [connection signal="pressed" from="VBoxContainer/BtnSfx" to="." method="_on_BtnSfx_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnVibrate" to="." method="_on_BtnVibrate_pressed"]

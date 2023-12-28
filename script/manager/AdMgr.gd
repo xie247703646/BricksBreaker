@@ -24,7 +24,7 @@ func show_reward_video()->void:
 	if is_valid():
 		sdk_ad.call("show_reward_video")
 	else:
-		UIMgr.show_toast(UI.UIToast,"暂无合适广告")
+		UIMgr.show_toast(UI.UIToast,tr("key_no_ad"))
 		Debug.Warn(name,"reward_video展示失败")
 
 func is_valid()->bool:

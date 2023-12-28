@@ -16,18 +16,27 @@ var pre_mouse_pos_x:float = INF
 
 func _ready() -> void:
 	_update_move_offset()
+	if Global.Cur_Platform == Global.Platform.CrazyGame:
+		Setting.control_mode == Global.ControlMode.Key
 
 func _physics_process(delta: float) -> void:
 	var mouse_pos = get_global_mouse_position()
 	if mouse_pos.y < 640: return
-	if Input.is_mouse_button_pressed(BUTTON_LEFT):
-		match Setting.control_mode:
-			Global.ControlMode.Follow: _update_follow_move(mouse_pos)
-			Global.ControlMode.Slide: _update_slide_move(mouse_pos,delta)
-			Global.ControlMode.Click: _update_click_move(mouse_pos,delta)
-	else:
-		cur_move_speed = 0.0
-		pre_mouse_pos_x = INF
+	
+	if Global.Cur_Platform == Global.Platform.TapTap:
+		if Input.is_mouse_button_pressed(BUTTON_LEFT):
+			match Setting.control_mode:
+				Global.ControlMode.Follow: _update_follow_move(mouse_pos)
+				Global.ControlMode.Slide: _update_slide_move(mouse_pos,delta)
+				Global.ControlMode.Click: _update_click_move(mouse_pos,delta)
+		else:
+			cur_move_speed = 0.0
+			pre_mouse_pos_x = INF
+	elif Global.Cur_Platform == Global.Platform.CrazyGame:
+		if Input.is_mouse_button_pressed(BUTTON_LEFT):
+			_update_follow_move(mouse_pos)
+		else:
+			_update_key_move(delta)
 
 func _update_follow_move(mouse_pos:Vector2)->void:
 	var global_pos_x:float = lerp(global_position.x,mouse_pos.x,0.5)
@@ -45,6 +54,11 @@ func _update_click_move(mouse_pos:Vector2,delta:float)->void:
 	var dir:int = 1 if mouse_pos.x > 360 else -1
 	cur_move_speed = lerp(cur_move_speed,move_speed,0.25)
 	global_position.x += cur_move_speed * dir * delta
+	global_position.x = clamp(global_position.x,min_move_offset,max_move_offset)
+
+func _update_key_move(delta:float)->void:
+	var dir:int = Input.get_axis("ui_left","ui_right")
+	global_position.x += move_speed * dir * delta
 	global_position.x = clamp(global_position.x,min_move_offset,max_move_offset)
 
 func _update_move_offset()->void:

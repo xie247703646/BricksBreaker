@@ -13,7 +13,7 @@ MERGED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\
 MERGED from [gdt_ad_sdk_230210.aar] C:\Users\egoist\.gradle\caches\transforms-3\391199589ec9c4edd51fe78db707f67e\transformed\jetified-gdt_ad_sdk_230210\AndroidManifest.xml:2:1-75:12
 MERGED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:2:1-228:12
 MERGED from [pocket_ad_sdk_3.2.8.aar] C:\Users\egoist\.gradle\caches\transforms-3\34d50d6b85bce8a4b77fe078266f76a3\transformed\jetified-pocket_ad_sdk_3.2.8\AndroidManifest.xml:2:1-20:12
-MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:2:1-16:12
+MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:2:1-16:12
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\c2d2a33f85140c16aae2c842f67b35ef\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -109,8 +109,8 @@ MERGED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\f
 MERGED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:21:5-226:19
 MERGED from [pocket_ad_sdk_3.2.8.aar] C:\Users\egoist\.gradle\caches\transforms-3\34d50d6b85bce8a4b77fe078266f76a3\transformed\jetified-pocket_ad_sdk_3.2.8\AndroidManifest.xml:9:5-18:19
 MERGED from [pocket_ad_sdk_3.2.8.aar] C:\Users\egoist\.gradle\caches\transforms-3\34d50d6b85bce8a4b77fe078266f76a3\transformed\jetified-pocket_ad_sdk_3.2.8\AndroidManifest.xml:9:5-18:19
-MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:10:5-14:19
-MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:10:5-14:19
+MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:10:5-14:19
+MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:10:5-14:19
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:11:5-35:19
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:11:5-35:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -266,8 +266,8 @@ MERGED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\f
 MERGED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:8:5-11:50
 MERGED from [pocket_ad_sdk_3.2.8.aar] C:\Users\egoist\.gradle\caches\transforms-3\34d50d6b85bce8a4b77fe078266f76a3\transformed\jetified-pocket_ad_sdk_3.2.8\AndroidManifest.xml:5:5-7:41
 MERGED from [pocket_ad_sdk_3.2.8.aar] C:\Users\egoist\.gradle\caches\transforms-3\34d50d6b85bce8a4b77fe078266f76a3\transformed\jetified-pocket_ad_sdk_3.2.8\AndroidManifest.xml:5:5-7:41
-MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:6:5-8:41
-MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:6:5-8:41
+MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:6:5-8:41
+MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:6:5-8:41
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:7:5-9:41
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
@@ -1365,11 +1365,11 @@ ADDED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd
 	android:name
 		ADDED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:223:17-67
 meta-data#org.godotengine.plugin.v1.PocketAd
-ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
+ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
 	android:value
-		ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
+		ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
 	android:name
-		ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\4b9a30b4402d24167c59ef21f5f9efb1\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
+		ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\20962503d598de73a6140029bf6e9252\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
 meta-data#org.godotengine.library.version
 ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:9-16:44
 	android:value

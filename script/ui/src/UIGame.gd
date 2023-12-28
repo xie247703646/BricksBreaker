@@ -7,6 +7,15 @@ onready var btn_pause: TextureButton = $BtnPause
 
 func on_open(data):
 	AdMgr.show_banner()
+	match Global.Cur_Platform:
+		Global.Platform.CrazyGame:
+			btn_vibrate.visible = false
+			btn_ad.visible = false
+		Global.Platform.TapTap:
+			btn_vibrate.visible = true
+			btn_ad.visible = true
+	
+	
 	btn_sound.pressed = not Setting.sfx_enabled
 	btn_vibrate.pressed = not Setting.vibrate_enabled
 	btn_ad.pressed = not Setting.ad_enabled

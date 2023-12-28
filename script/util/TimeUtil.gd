@@ -12,12 +12,12 @@ static func format(ms: int) -> String:
 	
 	var res:String = ""
 	
-	if h > 0: res += "%s小时" % h
+	if h > 0: res += "%sh" % h
 	
-	if m > 0: res += "%s分钟" % m
+	if m > 0: res += "%sm" % m
 	
 	if res != "" and s == 0: return res
 	
-	res += "%s秒" % s
+	res += "%ss" % s
 	
 	return res

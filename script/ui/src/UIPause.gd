@@ -1,11 +1,20 @@
 extends UIBase
 
 onready var lb_time: Label = $Ct/LbTime
+onready var btn_roast: Button = $GameMode/BtnRoast
 
 func on_open(data):
+	
+	match Global.Cur_Platform:
+		Global.Platform.CrazyGame:
+			btn_roast.visible = false
+		Global.Platform.TapTap:
+			btn_roast.visible = true
+	
 	get_tree().paused = true
 	var time:int = Time.get_ticks_msec() - GameMgr.start_time
-	lb_time.text = "已用时 %s" % TimeUtil.format(time)
+#	lb_time.text = "已用时 %s" % TimeUtil.format(time)
+	lb_time.text = tr("key_time") % TimeUtil.format(time)
 
 func on_close(data):
 	get_tree().paused = false

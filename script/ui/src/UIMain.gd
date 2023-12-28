@@ -9,11 +9,23 @@ onready var lb_version: Label = $LbVersion
 onready var btn_unlock: Button = $Control/VBoxContainer/BtnUnlock
 onready var btn_start: Button = $Control/VBoxContainer/BtnStart
 onready var btn_editor: Button = $Control/VBoxContainer/BtnEditor
+onready var btn_notice: TextureButton = $Control/BtnNotice
 
 var select_level:int = 1
 var level_ins:TileMap = null
 
 func on_open(data):
+	
+	match Global.Cur_Platform:
+		Global.Platform.CrazyGame:
+			btn_notice.visible = false
+			btn_editor.visible = false
+			lb_maker.visible = false
+		Global.Platform.TapTap:
+			btn_notice.visible = true
+			btn_editor.visible = true
+			lb_maker.visible = true
+	
 	if data:
 		select_level = data
 	else:
@@ -38,14 +50,16 @@ func show_level()->void:
 	if level_ins: level_ins.free()
 	level_ins = GameMgr.load_level(select_level)
 	level_container.add_child(level_ins)
-	lb_level.text = "关卡-%s" % select_level
+#	lb_level.text = "关卡-%s" % select_level
+	lb_level.text = tr("key_level") % select_level
 	lb_maker.text = "作者:%s" % level_ins.get("maker")
 	
 	var record_dic:Dictionary = SaveMgr.get_value(GameMgr.CONFIG_SECTION,"record",{})
 	lb_record.visible = record_dic.has(select_level)
 	if lb_record.visible:
 		var time:int = record_dic[select_level]
-		lb_record.text = "最佳记录 %s" % TimeUtil.format(time)
+#		lb_record.text = "最佳记录 %s" % TimeUtil.format(time)
+		lb_record.text = tr("key_record") % TimeUtil.format(time)
 	if not GameMgr.is_debug: update_level_state()
 
 func update_level_state()->void:
@@ -88,7 +102,9 @@ func _on_level_unlocked()->void:
 	update_level_state()
 
 func _on_reward_video_failed()->void:
-	UIMgr.show_toast(UI.UIToast,"暂无合适的广告")
+	var msg:String = tr("key_no_ad")
+	print(msg)
+	UIMgr.show_toast(UI.UIToast,msg)
 
 func _on_BtnSetting_pressed() -> void:
 	UIMgr.open_ui(UI.UISetting)

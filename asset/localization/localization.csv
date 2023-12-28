@@ -1,0 +1,24 @@
+keys,en,zh
+key_locale,en,zh
+key_language,Language,语言
+key_back,Back,返回
+key_confirm,Confirm,确定
+key_next_level,Next Level,下一关
+key_try_again,Try Again,再次尝试
+key_stage_clear,Stage Clear,砖块已全部清除
+key_start_game,Start Game,开始游戏
+key_maker,Maker:,作者：
+key_record,Best Record:%s,最佳纪录：%s
+key_level,Level-%s,关卡-%s
+key_resume_game,Resume Game,继续游戏
+key_quit_game,Quit Game,退出游戏
+key_pause,Pause,暂停
+key_time,Time:%s,已用时：%s
+key_sfx_switch,SFX:,声音：
+key_vibrate_switch,Vibrate:,震动：
+key_on,On,开
+key_off,Off,关
+key_new_record,New Record!,新的记录！
+key_no_ad,No Ad,暂无合适的广告
+key_unlock_level,Unlock Level,观看广告解锁
+key_game_over,Game Over,游戏结束

@@ -33,7 +33,7 @@ anchor_bottom = 0.5
 margin_top = -320.0
 margin_bottom = -256.0
 custom_fonts/font = ExtResource( 2 )
-text = "暂停"
+text = "key_pause"
 align = 1
 valign = 1
 __meta__ = {
@@ -47,7 +47,7 @@ anchor_bottom = 0.5
 margin_top = -120.0
 margin_bottom = -72.0
 custom_fonts/font = ExtResource( 3 )
-text = "已用时：1分20秒"
+text = "key_time"
 align = 1
 __meta__ = {
 "_edit_lock_": true
@@ -75,7 +75,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 5 )
 custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
-text = "继续游戏"
+text = "key_resume_game"
 
 [node name="BtnRoast" type="Button" parent="GameMode"]
 margin_top = 78.0
@@ -101,7 +101,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 5 )
 custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
-text = "退出游戏"
+text = "key_quit_game"
 
 [connection signal="pressed" from="GameMode/BtnResume" to="." method="_on_BtnResume_pressed"]
 [connection signal="pressed" from="GameMode/BtnRoast" to="." method="_on_BtnRoast_pressed"]

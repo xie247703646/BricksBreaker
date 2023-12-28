@@ -6,10 +6,18 @@ onready var lb_time: Label = $CtWin/LbTime
 
 onready var btn_restart: Button = $Content/BtnRestart
 onready var btn_next: Button = $Content/BtnNext
+onready var btn_roast: Button = $Content/BtnRoast
 
 var win:bool = false
 
 func on_open(data):
+	match Global.Cur_Platform:
+		Global.Platform.CrazyGame:
+			btn_roast.visible = false
+		Global.Platform.TapTap:
+			btn_roast.visible = true
+	
+	
 	win = data
 	btn_restart.visible = not win and GameMgr.mode == GameMgr.Mode.Normal
 	btn_next.visible = win and GameMgr.mode == GameMgr.Mode.Normal
@@ -22,8 +30,8 @@ func on_open(data):
 		if record_time == -1 or time < record_time:
 			record_dic[GameMgr.cur_level] = time
 			SaveMgr.set_value(GameMgr.CONFIG_SECTION,"record",record_dic)
-			UIMgr.show_toast(UI.UIToast,"新的记录！")
-		lb_time.text = "用时 %s" % TimeUtil.format(time)
+			UIMgr.show_toast(UI.UIToast,tr("key_new_record"))
+		lb_time.text = tr("key_time") % TimeUtil.format(time)
 
 func on_close(data):
 	pass
