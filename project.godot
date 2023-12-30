@@ -40,11 +40,6 @@ _global_script_classes=[ {
 "path": "res://script/game/item/ItemBase.gd"
 }, {
 "base": "Reference",
-"class": "LevelMaker",
-"language": "GDScript",
-"path": "res://script/LevelMaker.gd"
-}, {
-"base": "Reference",
 "class": "ManualTimer",
 "language": "GDScript",
 "path": "res://script/misc/ManualTimer.gd"
@@ -136,7 +131,6 @@ _global_script_class_icons={
 "Game": "",
 "Global": "",
 "ItemBase": "",
-"LevelMaker": "",
 "ManualTimer": "",
 "MathUtil": "",
 "NormalLevelHandler": "",
@@ -168,6 +162,7 @@ config/icon="res://icon.png"
 SignalMgr="*res://script/manager/SignalMgr.gd"
 SaveMgr="*res://script/manager/SaveMgr.gd"
 Setting="*res://Setting.gd"
+CloudDataMgr="*res://script/manager/CloudDataMgr.gd"
 AudioMgr="*res://script/manager/AudioMgr.gd"
 GameMgr="*res://script/manager/GameMgr.gd"
 UIMgr="*res://script/manager/UIMgr.gd"

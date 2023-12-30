@@ -6,7 +6,9 @@ onready var btn_ad: TextureButton = $BtnAd
 onready var btn_pause: TextureButton = $BtnPause
 
 func on_open(data):
+	
 	AdMgr.show_banner()
+	
 	match Global.Cur_Platform:
 		Global.Platform.CrazyGame:
 			btn_vibrate.visible = false
@@ -15,6 +17,7 @@ func on_open(data):
 			btn_vibrate.visible = true
 			btn_ad.visible = true
 	
+	btn_ad.visible = not SaveMgr.has_section_key(Global.Section_Misc,"is_new")
 	
 	btn_sound.pressed = not Setting.sfx_enabled
 	btn_vibrate.pressed = not Setting.vibrate_enabled
