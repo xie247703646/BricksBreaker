@@ -49,7 +49,6 @@ public class PolicyActivity extends AppCompatActivity {
 
         String policy_url = "<a href='https://note.youdao.com/s/UavDadxu'>隐私政策</a>";
 
-
         String str = "感谢您信任并选择我们的游戏《game_name》\n" +
                 "我们非常重视您的个人信息和隐私保护，为了保障您的个人权益，在您进入游戏前，请务必审核阅读隐私政策内的所有条款，尤其是：\n" +
                 "1、为了为您推荐您可能感兴趣的内容/商业广告信息，可能需要您开启地理位置权限，您有权拒绝授权。\n" +

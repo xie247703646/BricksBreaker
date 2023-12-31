@@ -479,10 +479,10 @@ library {
   maven_library {
     groupId: "com.google.code.gson"
     artifactId: "gson"
-    version: "2.8.8"
+    version: "2.8.9"
   }
   digests {
-    sha256: "\306\363\025+\f9\301\267\353\342g\351\226\004\247P\351\325X[/?.\031\326\373\327\354\220\200\320\373"
+    sha256: "\323\231\222\221\205]\344\225\311Lt7a\270\253Qv\317\352\276(\032Z\260\330\350\324S&\375p>"
   }
   repo_index {
     value: 1
@@ -621,6 +621,175 @@ library {
   }
 }
 library {
+  maven_library {
+    groupId: "cn.leancloud"
+    artifactId: "storage-android"
+    version: "8.2.19"
+  }
+  digests {
+    sha256: "8\032(Q\267\256\305{\314K\022\230\3056\020~\226\205\366\213\t\350\344\300\033\003~m\216\2207Q"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "io.reactivex.rxjava2"
+    artifactId: "rxandroid"
+    version: "2.1.1"
+  }
+  digests {
+    sha256: "\277QP\251_\017o\030\337\222u~\ni\254\366\236|\207x\213\'k\214#\371itd\331\355\201"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "io.reactivex.rxjava2"
+    artifactId: "rxjava"
+    version: "2.2.19"
+  }
+  digests {
+    sha256: "\025?\264\223J\023^\224\223T\275wr`\247\t\"\266\247\220\262$&\217\356>\374\206~B\" "
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "org.reactivestreams"
+    artifactId: "reactive-streams"
+    version: "1.0.3"
+  }
+  digests {
+    sha256: "\035\356\004\201\a-\031\311)\266#\341U\341M/`\205\334\001\025)\240\240\333\357\310L\365q\330e"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "cn.leancloud"
+    artifactId: "storage-core"
+    version: "8.2.19"
+  }
+  digests {
+    sha256: "\230\300k\277\322\200\002H]\0305\345\334\355\214[\274\004\232\"\321Q\004\307`\2447\262\373\177\217\016"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "com.squareup.retrofit2"
+    artifactId: "retrofit"
+    version: "2.9.0"
+  }
+  digests {
+    sha256: "\346\352\031)\304hR\365\276\306j\2635}\243\203Gl\357N\215\035\356\375\277\031[y\314Me\201"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "com.squareup.retrofit2"
+    artifactId: "adapter-rxjava2"
+    version: "2.9.0"
+  }
+  digests {
+    sha256: "\350\267o\242\fzi\322\006\233r\263\314q\302<%\233\'\343\270\t\372g%Z)!U\214\373K"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "com.squareup.retrofit2"
+    artifactId: "converter-gson"
+    version: "2.9.0"
+  }
+  digests {
+    sha256: "2\252 k\232)\311\337^\332\223\240\222\317\263\260\271\023>#,\006+\252\210/\003\031\360\347\237\016"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "cn.leancloud"
+    artifactId: "realtime-android"
+    version: "8.2.19"
+  }
+  digests {
+    sha256: "\362\276[\224\022c\0039\332Y:\340\231\347\200\370H\313\222}\3447d\234S\357\265\237a\230\000\340"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "cn.leancloud"
+    artifactId: "realtime-core"
+    version: "8.2.19"
+  }
+  digests {
+    sha256: "\277\223\220\351:J\312J\f\322\027\310\243\254L\034\371\245\257\2604\216\226)\252\365\335@ P\330,"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.protobuf"
+    artifactId: "protobuf-java"
+    version: "3.16.3"
+  }
+  digests {
+    sha256: "m7X\264\203\341\254u\005d\223q\245\260X\247\027&\016\364p\020\017\357\255z\036*\272u\340o"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "org.java-websocket"
+    artifactId: "Java-WebSocket"
+    version: "1.4.1"
+  }
+  digests {
+    sha256: "4\'\005C).C\v\210Q\005\304(\3046#\352\315\351\005\206\202B\fu\353\273\004\226\016|\254"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "org.slf4j"
+    artifactId: "slf4j-api"
+    version: "1.7.25"
+  }
+  digests {
+    sha256: "\030\304\240\t]\\\035\246\270\027Y.v{\262=)\335/V\n\327M\367_\363\226\035\275\342[y"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
   digests {
     sha256: "\374i\344\260\021\261u%\2254\301\030\343\312\227\213\265E[\034\310\255\3339\373\315*\315\310\337\225Y"
   }
@@ -642,7 +811,27 @@ library {
 }
 library {
   digests {
+    sha256: "p\300\356\261\n\201\234G\367\310\aM`\002m\317 \034\361D\037e\034\023\326\273U\366M\374\334h"
+  }
+}
+library {
+  digests {
+    sha256: "\006\324\366\030\036\364zj3\301\245\365\226\030w\031\257\313\240\031|\032\316\340\250\036\245;\a%\'<"
+  }
+}
+library {
+  digests {
+    sha256: "\355w\333]\237\306:\364M.\020\220\216g1\354\225\322\301\343\361&h\021\251\346\345r\306\363\034\263"
+  }
+}
+library {
+  digests {
     sha256: "3\003\003DlW\nXr\303\342\247\331v\255\274H8\003H\352\\\204g\241L\310F\216\251E "
+  }
+}
+library {
+  digests {
+    sha256: "\205)\316\341\237HG9o\200F_\327\033\"]\213\301\035\234\005\255\307\003|\023\001*\350tN<"
   }
 }
 library {
@@ -927,6 +1116,58 @@ library_dependencies {
   library_dep_index: 5
   library_dep_index: 50
 }
+library_dependencies {
+  library_index: 51
+  library_dep_index: 52
+  library_dep_index: 55
+}
+library_dependencies {
+  library_index: 52
+  library_dep_index: 53
+}
+library_dependencies {
+  library_index: 53
+  library_dep_index: 54
+}
+library_dependencies {
+  library_index: 55
+  library_dep_index: 56
+  library_dep_index: 57
+  library_dep_index: 37
+  library_dep_index: 53
+  library_dep_index: 39
+  library_dep_index: 58
+}
+library_dependencies {
+  library_index: 56
+  library_dep_index: 37
+}
+library_dependencies {
+  library_index: 57
+  library_dep_index: 56
+  library_dep_index: 54
+}
+library_dependencies {
+  library_index: 58
+  library_dep_index: 56
+  library_dep_index: 39
+}
+library_dependencies {
+  library_index: 59
+  library_dep_index: 51
+  library_dep_index: 60
+  library_dep_index: 55
+}
+library_dependencies {
+  library_index: 60
+  library_dep_index: 55
+  library_dep_index: 61
+  library_dep_index: 62
+}
+library_dependencies {
+  library_index: 62
+  library_dep_index: 63
+}
 module_dependencies {
   module_name: "base"
   dependency_index: 0
@@ -937,11 +1178,17 @@ module_dependencies {
   dependency_index: 40
   dependency_index: 49
   dependency_index: 51
-  dependency_index: 52
-  dependency_index: 53
-  dependency_index: 54
-  dependency_index: 55
-  dependency_index: 56
+  dependency_index: 59
+  dependency_index: 64
+  dependency_index: 65
+  dependency_index: 66
+  dependency_index: 67
+  dependency_index: 68
+  dependency_index: 69
+  dependency_index: 70
+  dependency_index: 71
+  dependency_index: 72
+  dependency_index: 73
 }
 repositories {
   maven_repo {

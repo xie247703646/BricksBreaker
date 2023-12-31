@@ -58,12 +58,20 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.9.2'
     implementation 'com.google.code.gson:gson:2.8.8'
     implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
+    //PocketAd
     implementation files('libs/csj_ad_sdk_230215.aar')
     implementation files('libs/gdt_ad_sdk_230210.aar')
     implementation files('libs/ks_ad_sdk_230116.aar')
     implementation files('libs/pocket_ad_sdk_3.2.8.aar')
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
+    //TapTap
+    implementation files('libs/TapBootstrap_3.27.0.aar') // TapTap 启动器
+    implementation files('libs/TapCommon_3.27.0.aar') // TapTap 基础库
+    implementation files('libs/TapLogin_3.27.0.aar') // TapTap 登录
+    implementation 'cn.leancloud:storage-android:8.2.19'
+    implementation 'cn.leancloud:realtime-android:8.2.19'
 
     if (rootProject.findProject(":lib")) {
         implementation project(":lib")
@@ -172,6 +180,12 @@ android {
                 keyPassword getReleaseKeystorePassword()
             }
         }
+//        release{
+//            storeFile file("C:\\release.keystore")
+//            storePassword "123456"
+//            keyAlias "egoist"
+//            keyPassword "123456"
+//        }
     }
 
     buildTypes {

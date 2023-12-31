@@ -52,10 +52,62 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapBootstrap_3.27.0.aar:unspecified@jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\61ed21e5854767bdc9dae220ce0bc8d4\transformed\jetified-TapBootstrap_3.27.0\jars\classes.jar"
+      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapBootstrap_3.27.0.aar:unspecified"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\61ed21e5854767bdc9dae220ce0bc8d4\transformed\jetified-TapBootstrap_3.27.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapCommon_3.27.0.aar:unspecified@jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\jars\classes.jar;C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\jars\libs\native-core.jar;C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\jars\libs\single-click-0.0.1.jar;C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\jars\libs\tds-lz4-java-1.7.1.jar;C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\jars\libs\tds-protobuf-lite-3.0.0.jar"
+      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapCommon_3.27.0.aar:unspecified"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapLogin_3.27.0.aar:unspecified@jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\jars\classes.jar"
+      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapLogin_3.27.0.aar:unspecified"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified@jar"
       jars="C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified"
       folder="C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\taptap.aar:unspecified@jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\jars\classes.jar"
+      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\taptap.aar:unspecified"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -77,6 +129,34 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="cn.leancloud:realtime-android:8.2.19@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\cn.leancloud\realtime-android\8.2.19\49d71e613006d11a528032ee5da1a757627d63f2\realtime-android-8.2.19.jar"
+      resolved="cn.leancloud:realtime-android:8.2.19"/>
+  <library
+      name="cn.leancloud:storage-android:8.2.19@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\cn.leancloud\storage-android\8.2.19\9cf6ead40bcf791cfd78d2500bba3ce8881c591e\storage-android-8.2.19.jar"
+      resolved="cn.leancloud:storage-android:8.2.19"/>
+  <library
+      name="cn.leancloud:realtime-core:8.2.19@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\cn.leancloud\realtime-core\8.2.19\3c70ecc8dd7d4967aa7c4c58eb12c7a89d3bc7e3\realtime-core-8.2.19.jar"
+      resolved="cn.leancloud:realtime-core:8.2.19"/>
+  <library
+      name="cn.leancloud:storage-core:8.2.19@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\cn.leancloud\storage-core\8.2.19\d18356229552f260fe67ec484fd6c44ebe729d20\storage-core-8.2.19.jar"
+      resolved="cn.leancloud:storage-core:8.2.19"/>
+  <library
+      name="com.squareup.retrofit2:adapter-rxjava2:2.9.0@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava2\2.9.0\180ad7353dbf0480cabc215948b5a234e3692f0a\adapter-rxjava2-2.9.0.jar"
+      resolved="com.squareup.retrofit2:adapter-rxjava2:2.9.0"/>
+  <library
+      name="com.squareup.retrofit2:converter-gson:2.9.0@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.9.0\fc93484fc67ab52b1e0ccbdaa3922d8a6678e097\converter-gson-2.9.0.jar"
+      resolved="com.squareup.retrofit2:converter-gson:2.9.0"/>
+  <library
+      name="com.squareup.retrofit2:retrofit:2.9.0@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.9.0\d8fdfbd5da952141a665a403348b74538efc05ff\retrofit-2.9.0.jar"
+      resolved="com.squareup.retrofit2:retrofit:2.9.0"/>
   <library
       name="com.squareup.okhttp3:okhttp:4.9.2@jar"
       jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\4.9.2\5302714ee9320b64cf65ed865e5f65981ef9ba46\okhttp-4.9.2.jar"
@@ -116,9 +196,9 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.code.gson:gson:2.8.8@jar"
-      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.8\431fc3cbc0ff81abdbfde070062741089c3ba874\gson-2.8.8.jar"
-      resolved="com.google.code.gson:gson:2.8.8"/>
+      name="com.google.code.gson:gson:2.8.9@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.9\8a432c1d6825781e21a02db2e2c33c5fde2833b9\gson-2.8.9.jar"
+      resolved="com.google.code.gson:gson:2.8.9"/>
   <library
       name="androidx.legacy:legacy-support-core-ui:1.0.0@aar"
       jars="C:\Users\egoist\.gradle\caches\transforms-3\6cec4d64c0ba497fae09f7ce22063e98\transformed\legacy-support-core-ui-1.0.0\jars\classes.jar"
@@ -533,6 +613,39 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="io.reactivex.rxjava2:rxandroid:2.1.1@aar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\c331441a363cce6313415490ed272b6a\transformed\jetified-rxandroid-2.1.1\jars\classes.jar"
+      resolved="io.reactivex.rxjava2:rxandroid:2.1.1"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\c331441a363cce6313415490ed272b6a\transformed\jetified-rxandroid-2.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="io.reactivex.rxjava2:rxjava:2.2.19@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxjava\2.2.19\1a79a902bbfcde95ad6f34eb6d1860e6b37f0da9\rxjava-2.2.19.jar"
+      resolved="io.reactivex.rxjava2:rxjava:2.2.19"/>
+  <library
+      name="org.reactivestreams:reactive-streams:1.0.3@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.3\d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0\reactive-streams-1.0.3.jar"
+      resolved="org.reactivestreams:reactive-streams:1.0.3"/>
+  <library
+      name="com.google.protobuf:protobuf-java:3.16.3@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.16.3\c5a5719be44c6cd94e478bfe17c4cbe4b0948f4\protobuf-java-3.16.3.jar"
+      resolved="com.google.protobuf:protobuf-java:3.16.3"/>
+  <library
+      name="org.java-websocket:Java-WebSocket:1.4.1@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\org.java-websocket\Java-WebSocket\1.4.1\c51ca19769e13b895facc2e0a218cbe3fe3c336\Java-WebSocket-1.4.1.jar"
+      resolved="org.java-websocket:Java-WebSocket:1.4.1"/>
+  <library
+      name="org.slf4j:slf4j-api:1.7.25@jar"
+      jars="C:\Users\egoist\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar"
+      resolved="org.slf4j:slf4j-api:1.7.25"/>
   <library
       name="androidx.emoji2:emoji2-views-helper:1.0.0@aar"
       jars="C:\Users\egoist\.gradle\caches\transforms-3\6d6e094f0d1fff6f524556d375e62fa3\transformed\jetified-emoji2-views-helper-1.0.0\jars\classes.jar"

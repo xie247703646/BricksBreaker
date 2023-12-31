@@ -168,6 +168,7 @@ GameMgr="*res://script/manager/GameMgr.gd"
 UIMgr="*res://script/manager/UIMgr.gd"
 LevelEditorMgr="*res://script/manager/LevelEditorMgr.gd"
 AdMgr="*res://script/manager/AdMgr.gd"
+TapTap="*res://script/sdk/TapTap.gd"
 
 [debug]
 

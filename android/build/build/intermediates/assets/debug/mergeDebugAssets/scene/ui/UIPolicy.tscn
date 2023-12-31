@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://script/ui/src/UIPolicy.gd" type="Script" id=1]
+[ext_resource path="res://asset/resource/font_24px.tres" type="DynamicFont" id=2]
+[ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=3]
+[ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=4]
+[ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=5]
+[ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=6]
+[ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=7]
+[ext_resource path="res://asset/resource/StyleBox_BtnDisabled.stylebox" type="StyleBox" id=8]
+
+[node name="UIPolicy" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -360.0
+margin_top = -416.0
+margin_right = 360.0
+margin_bottom = 122.0
+custom_styles/panel = ExtResource( 7 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -351.0
+margin_top = -250.0
+margin_right = 351.0
+margin_bottom = 250.0
+custom_fonts/mono_font = ExtResource( 2 )
+custom_fonts/bold_italics_font = ExtResource( 2 )
+custom_fonts/italics_font = ExtResource( 2 )
+custom_fonts/bold_font = ExtResource( 2 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "欢迎您使用【BricksBreaker】！我们非常重视保护您的个人信息和隐私。
+您可以通过[url=https://note.youdao.com/s/UavDadxu]《【BricksBreaker】隐私政策》[/url]了解我们收集、使用、存储用户个人信息的情况，以及您所享有的相关权利。
+请您仔细阅读并充分理解相关内容：
+1.为向您提供游戏服务，我们将依据[url=https://note.youdao.com/s/UavDadxu]《【BricksBreaker】隐私政策》[/url]收集、使用、存储必要的信息。
+2.基于您的明示授权，我们可能会申请开启您的【读取Android ID、陀螺仪等】设备权限，您有权拒绝或取消授权。
+3.您可以访问、更正、删除您的个人信息，还可以撤回授权同意、注销账号、投诉举报以及调整其他隐私设置。
+4.我们已采取符合业界标准的安全防护措施保护您的个人信息。
+5.如您是未成年人，请您和您的监护人仔细阅读本隐私政策，并在征得您的监护人授权同意的前提下使用我们的服务或向我们提供个人信息。
+请您阅读完整版[url=https://note.youdao.com/s/UavDadxu]《【BricksBreaker】隐私政策》[/url]了解详细信息。
+如您同意[url=https://note.youdao.com/s/UavDadxu]《【BricksBreaker】隐私政策》[/url]，请您点击“同意”开始使用我们的产品和服务，我们将尽全力保护您的个人信息安全。"
+text = "欢迎您使用【BricksBreaker】！我们非常重视保护您的个人信息和隐私。
+您可以通过《【BricksBreaker】隐私政策》了解我们收集、使用、存储用户个人信息的情况，以及您所享有的相关权利。
+请您仔细阅读并充分理解相关内容：
+1.为向您提供游戏服务，我们将依据《【BricksBreaker】隐私政策》收集、使用、存储必要的信息。
+2.基于您的明示授权，我们可能会申请开启您的【读取Android ID、陀螺仪等】设备权限，您有权拒绝或取消授权。
+3.您可以访问、更正、删除您的个人信息，还可以撤回授权同意、注销账号、投诉举报以及调整其他隐私设置。
+4.我们已采取符合业界标准的安全防护措施保护您的个人信息。
+5.如您是未成年人，请您和您的监护人仔细阅读本隐私政策，并在征得您的监护人授权同意的前提下使用我们的服务或向我们提供个人信息。
+请您阅读完整版《【BricksBreaker】隐私政策》了解详细信息。
+如您同意《【BricksBreaker】隐私政策》，请您点击“同意”开始使用我们的产品和服务，我们将尽全力保护您的个人信息安全。"
+fit_content_height = true
+
+[node name="BtnAgree" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -296.0
+margin_top = 168.0
+margin_right = -136.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 3 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/disabled = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "同意"
+
+[node name="BtnDisagree" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 88.0
+margin_top = 168.0
+margin_right = 280.0
+margin_bottom = 232.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/disabled = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "不同意并退出"
+
+[connection signal="meta_clicked" from="Panel/RichTextLabel" to="." method="_on_RichTextLabel_meta_clicked"]
+[connection signal="pressed" from="BtnAgree" to="." method="_on_BtnAgree_pressed"]
+[connection signal="pressed" from="BtnDisagree" to="." method="_on_BtnDisagree_pressed"]

@@ -13,13 +13,16 @@ func _ready() -> void:
 	
 	GameMgr.is_debug = is_debug
 	_game_init()
-	_game_ready()
+#	_game_ready()
 
 func _game_init()->void:
 #	CloudDataMgr.init()
 	UIMgr.init($UIRoot,$"%InputBlock",$"%WindowMask")
 	GameMgr.init($GameRoot)
 	AdMgr.init()
+	TapTap.init()
+	yield(get_tree().create_timer(1),"timeout")
+	TapTap.login()
 
 func _game_ready()->void:
 	var ui = UI.UIAdvice if DeviceUtil.is_mobile() else UI.UIMain

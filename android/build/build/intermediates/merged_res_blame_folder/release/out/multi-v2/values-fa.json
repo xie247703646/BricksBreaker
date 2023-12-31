@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeReleaseResources-21:/values-fa/values-fa.xml",
+            "outputFile": "com.godot.game-mergeReleaseResources-23:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\5bc700ba9090d50813e1063492c99fc8\\transformed\\core-1.7.0\\res\\values-fa\\values-fa.xml",

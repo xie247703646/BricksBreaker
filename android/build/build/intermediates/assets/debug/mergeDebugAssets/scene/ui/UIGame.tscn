@@ -1,0 +1,143 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://asset/resource/icon_pause.svg" type="Texture" id=1]
+[ext_resource path="res://asset/resource/icon_sfx_on.svg" type="Texture" id=2]
+[ext_resource path="res://asset/resource/icon_ad_on.svg" type="Texture" id=3]
+[ext_resource path="res://asset/resource/icon_sfx_off.svg" type="Texture" id=4]
+[ext_resource path="res://script/ui/src/UIGame.gd" type="Script" id=5]
+[ext_resource path="res://asset/resource/icon_ad_off.svg" type="Texture" id=6]
+[ext_resource path="res://asset/resource/icon_vibrate_off.svg" type="Texture" id=8]
+[ext_resource path="res://asset/resource/icon_vibrate_on.svg" type="Texture" id=9]
+
+[node name="UIGame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="BtnSound" type="TextureButton" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 80.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 48, 48 )
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="BtnSound"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
+
+[node name="BtnVibrate" type="TextureButton" parent="."]
+margin_left = 120.0
+margin_top = 32.0
+margin_right = 168.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 48, 48 )
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="BtnVibrate"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
+
+[node name="BtnAd" type="TextureButton" parent="."]
+margin_left = 208.0
+margin_top = 32.0
+margin_right = 256.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 48, 48 )
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="BtnAd"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
+
+[node name="BtnPause" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -80.0
+margin_top = 32.0
+margin_right = -32.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 48, 48 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 1 )
+texture_hover = ExtResource( 1 )
+texture_disabled = ExtResource( 1 )
+texture_focused = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="BtnPause"]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
+
+[connection signal="toggled" from="BtnVibrate" to="." method="_on_BtnVibrate_toggled"]
+[connection signal="toggled" from="BtnAd" to="." method="_on_BtnAd_toggled"]
+[connection signal="pressed" from="BtnPause" to="." method="_on_BtnPause_pressed"]

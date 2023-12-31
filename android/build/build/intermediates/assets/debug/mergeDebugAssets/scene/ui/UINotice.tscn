@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://script/ui/src/UINotice.gd" type="Script" id=1]
+[ext_resource path="res://asset/resource/font_64px.tres" type="DynamicFont" id=2]
+[ext_resource path="res://asset/resource/StyleBox_BtnDisabled.stylebox" type="StyleBox" id=3]
+[ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=4]
+[ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=5]
+[ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=6]
+[ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=7]
+[ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=8]
+
+[node name="UINotice" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+ui_type = 1
+
+[node name="Bg" type="ColorRect" parent="."]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -248.0
+margin_top = -384.0
+margin_right = 248.0
+margin_bottom = 256.0
+color = Color( 0, 0, 0, 0.670588 )
+
+[node name="LbTitle" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -360.0
+margin_top = -464.0
+margin_right = 360.0
+margin_bottom = -400.0
+custom_fonts/font = ExtResource( 2 )
+text = "公告"
+align = 1
+valign = 1
+
+[node name="LbContent" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.0
+margin_top = -368.0
+margin_right = 240.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 480, 240 )
+custom_constants/line_spacing = 16
+custom_fonts/font = ExtResource( 7 )
+text = "1、新增关卡111~150"
+autowrap = true
+
+[node name="BtnClose" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.0
+margin_top = 288.0
+margin_right = 240.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 480, 48 )
+custom_fonts/font = ExtResource( 7 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/disabled = ExtResource( 3 )
+custom_styles/normal = ExtResource( 5 )
+text = "返回"
+
+[connection signal="pressed" from="BtnClose" to="." method="_on_BtnClose_pressed"]

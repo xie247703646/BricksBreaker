@@ -1,0 +1,11 @@
+[config]
+
+name="TapTap"
+binary_type="local"
+binary="taptap.aar"
+
+[dependencies]
+
+local=[]
+remote=[]
+custom_maven_repos=["https://jitpack.io"]
