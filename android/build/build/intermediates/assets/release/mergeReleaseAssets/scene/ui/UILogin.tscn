@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://script/ui/src/UILogin.gd" type="Script" id=1]
+[ext_resource path="res://asset/resource/icon_taptap_2.png" type="Texture" id=2]
+[ext_resource path="res://asset/resource/icon_taptap_1.png" type="Texture" id=3]
+
+[node name="UILogin" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BtnLogin" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -210.0
+margin_top = -60.0
+margin_right = 210.0
+margin_bottom = 60.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+texture_disabled = ExtResource( 3 )
+
+[connection signal="pressed" from="BtnLogin" to="." method="_on_BtnLogin_pressed"]

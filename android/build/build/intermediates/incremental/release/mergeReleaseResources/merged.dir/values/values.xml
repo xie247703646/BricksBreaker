@@ -901,6 +901,19 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="achievement_dialog_earned_date">- %s 获得 -</string>
+    <string name="achievement_dialog_percent">"有%.1f%%的玩家达成此项成就"</string>
+    <string name="achievement_dialog_percent_low">"只有不到0.1%的玩家达成此项成就"</string>
+    <string name="achievement_dialog_status">已解锁%1$s项成就，共%2$s项成就</string>
+    <string name="achievement_invisible_subtitle">继续玩下去就会知道了</string>
+    <string name="achievement_invisible_title">隐藏</string>
+    <string name="achievement_locked">未解锁</string>
+    <string name="achievement_pop_title">恭喜解锁新成就！</string>
+    <string name="achievement_rarity_common">普通</string>
+    <string name="achievement_rarity_rare">珍贵</string>
+    <string name="achievement_rarity_ultra_rare">极为珍贵</string>
+    <string name="achievement_rarity_uncommon">稀有</string>
+    <string name="achievement_unlocked">已解锁</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">GDTMobStub</string>
     <string name="godot_project_name_string">BricksBreaker</string>

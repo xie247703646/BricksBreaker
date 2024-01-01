@@ -68,6 +68,24 @@ func create_ball(global_pos:Vector2,dir:Vector2)->void:
 	ball_container.call_deferred("add_child",ball_ins)
 	ball_ins.set_deferred("global_position",global_pos)
 	ball_ins.call_deferred("set_dir",dir)
+	
+	var ball_cnt:int = ball_container.get_child_count()
+	
+	if ball_cnt >= 100 and not AchieveMgr.is_finish("Ach005"):
+		AchieveMgr.reach("Ach005")
+		
+	if ball_cnt >= 200 and not AchieveMgr.is_finish("Ach006"):
+		AchieveMgr.reach("Ach006")
+		
+	if ball_cnt >= 300 and not AchieveMgr.is_finish("Ach007"):
+		AchieveMgr.reach("Ach007")
+		
+	if ball_cnt >= 400 and not AchieveMgr.is_finish("Ach008"):
+		AchieveMgr.reach("Ach008")
+	
+	if ball_cnt >= 490 and not AchieveMgr.is_finish("Ach009"):
+		AchieveMgr.reach("Ach009")
+	
 
 func create_paddle_ball()->void:
 	var rad = PI / 3

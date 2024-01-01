@@ -27,6 +27,19 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Teilen mit"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Mit <ns1:g id="APPLICATION_NAME">%s</ns1:g> teilen"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Minimieren"</string>
+    <string name="achievement_dialog_earned_date">- Abgeschlossen am %s -</string>
+    <string name="achievement_dialog_percent">%.1f%% der Spieler haben dies erreicht\'</string>
+    <string name="achievement_dialog_percent_low">‘Weniger als 0.1% Spieler haben das erreicht’</string>
+    <string name="achievement_dialog_status">%1$s/%2$s Leistungen</string>
+    <string name="achievement_invisible_subtitle">Spiele weiter, um es herauszufinden</string>
+    <string name="achievement_invisible_title">Verborgen</string>
+    <string name="achievement_locked">GESPERRT</string>
+    <string name="achievement_pop_title">Leistung freigeschaltet!</string>
+    <string name="achievement_rarity_common">Normal</string>
+    <string name="achievement_rarity_rare">Sehr selten</string>
+    <string name="achievement_rarity_ultra_rare">Ultra Selten</string>
+    <string name="achievement_rarity_uncommon">Selten</string>
+    <string name="achievement_unlocked">ENTSPERRT</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">Eingeloggt Konto: %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Suche"</string>

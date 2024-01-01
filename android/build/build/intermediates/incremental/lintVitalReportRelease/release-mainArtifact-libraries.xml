@@ -91,6 +91,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapAchievement_3.27.0.aar:unspecified@jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\jars\classes.jar"
+      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapAchievement_3.27.0.aar:unspecified"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified@jar"
       jars="C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified"
@@ -105,9 +118,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\taptap.aar:unspecified@jar"
-      jars="C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\jars\classes.jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\taptap.aar:unspecified"
-      folder="C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

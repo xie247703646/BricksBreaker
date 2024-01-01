@@ -27,6 +27,19 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Şununla paylaş:"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ile paylaş"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="achievement_dialog_earned_date">- %s tarihinde başarıldı - </string>
+    <string name="achievement_dialog_percent">Buna sahip olan oyuncuların oranı: %%.1f%\'</string>
+    <string name="achievement_dialog_percent_low">Oyuncuların %0,1\'inden daha azı bunu başardı\'</string>
+    <string name="achievement_dialog_status">%1$s/%2$s Başarı</string>
+    <string name="achievement_invisible_subtitle">Öğrenmek için oynamaya devam et</string>
+    <string name="achievement_invisible_title">Gizli</string>
+    <string name="achievement_locked">KİLİTLİ</string>
+    <string name="achievement_pop_title">Başarının kilidi açıldı!</string>
+    <string name="achievement_rarity_common">Yaygın</string>
+    <string name="achievement_rarity_rare">Nadir</string>
+    <string name="achievement_rarity_ultra_rare">İstisnai</string>
+    <string name="achievement_rarity_uncommon">Seyrek</string>
+    <string name="achievement_unlocked">KİLİDİ AÇILDI</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">Giriş yapılan hesap: %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Ara"</string>

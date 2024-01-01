@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeReleaseResources-23:/values-en/values-en.xml",
+            "outputFile": "com.godot.game-mergeReleaseResources-24:/values-en/values-en.xml",
             "map": [
                 {
                     "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\ee3c8b658bed8da9fd48f98bdf90d100\\transformed\\jetified-TapLogin_3.27.0\\res\\values-en\\values-en.xml",
@@ -13,11 +13,11 @@
                         "endOffsets": "125"
                     },
                     "to": {
-                        "startLines": "3",
+                        "startLines": "16",
                         "startColumns": "4",
-                        "startOffsets": "123",
+                        "startOffsets": "1063",
                         "endColumns": "74",
-                        "endOffsets": "193"
+                        "endOffsets": "1133"
                     }
                 },
                 {
@@ -30,11 +30,21 @@
                         "endOffsets": "175"
                     },
                     "to": {
-                        "startLines": "2",
+                        "startLines": "15",
                         "startColumns": "4",
-                        "startOffsets": "55",
+                        "startOffsets": "995",
                         "endColumns": "67",
-                        "endOffsets": "118"
+                        "endOffsets": "1058"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\32b249b56e76a0e32c0aa361f8dfea2b\\transformed\\jetified-TapAchievement_3.27.0\\res\\values-en\\values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,137,224,333,410,494,557,611,683,744,807,876,937",
+                        "endColumns": "81,86,108,76,83,62,53,71,60,62,68,60,57",
+                        "endOffsets": "132,219,328,405,489,552,606,678,739,802,871,932,990"
                     }
                 }
             ]

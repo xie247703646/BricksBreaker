@@ -64,9 +64,8 @@ __meta__ = {
 }
 
 [node name="BtnStart" type="Button" parent="Control/VBoxContainer"]
-margin_top = 22.0
 margin_right = 480.0
-margin_bottom = 70.0
+margin_bottom = 48.0
 rect_min_size = Vector2( 480, 48 )
 custom_fonts/font = ExtResource( 10 )
 custom_styles/hover = ExtResource( 6 )
@@ -77,9 +76,9 @@ custom_styles/normal = ExtResource( 7 )
 text = "key_start_game"
 
 [node name="BtnUnlock" type="Button" parent="Control/VBoxContainer"]
-margin_top = 118.0
+margin_top = 96.0
 margin_right = 480.0
-margin_bottom = 166.0
+margin_bottom = 144.0
 rect_min_size = Vector2( 480, 48 )
 custom_fonts/font = ExtResource( 10 )
 custom_styles/hover = ExtResource( 6 )
@@ -90,9 +89,9 @@ custom_styles/normal = ExtResource( 7 )
 text = "key_unlock_level"
 
 [node name="BtnEditor" type="Button" parent="Control/VBoxContainer"]
-margin_top = 214.0
+margin_top = 192.0
 margin_right = 480.0
-margin_bottom = 262.0
+margin_bottom = 240.0
 rect_min_size = Vector2( 480, 48 )
 custom_fonts/font = ExtResource( 10 )
 custom_styles/hover = ExtResource( 6 )
@@ -100,6 +99,18 @@ custom_styles/pressed = ExtResource( 5 )
 custom_styles/focus = ExtResource( 8 )
 custom_styles/normal = ExtResource( 7 )
 text = "玩创关卡"
+
+[node name="BtnAchieve" type="Button" parent="Control/VBoxContainer"]
+margin_top = 288.0
+margin_right = 480.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 480, 48 )
+custom_fonts/font = ExtResource( 10 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/normal = ExtResource( 7 )
+text = "成就"
 
 [node name="BtnLeft" type="TextureButton" parent="Control"]
 anchor_top = 0.5
@@ -340,13 +351,14 @@ margin_top = -48.0
 margin_right = -16.0
 margin_bottom = -14.0
 custom_fonts/font = SubResource( 6 )
-text = "Version: 1.4"
+text = "Version: 1.6"
 align = 2
 valign = 1
 
 [connection signal="pressed" from="Control/VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/BtnUnlock" to="." method="_on_BtnUnlock_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/BtnEditor" to="." method="_on_BtnEditor_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/BtnAchieve" to="." method="_on_BtnAchieve_pressed"]
 [connection signal="pressed" from="Control/BtnLeft" to="." method="_on_BtnLeft_pressed"]
 [connection signal="pressed" from="Control/BtnLeft2" to="." method="_on_BtnLeft2_pressed"]
 [connection signal="pressed" from="Control/BtnRight" to="." method="_on_BtnRight_pressed"]

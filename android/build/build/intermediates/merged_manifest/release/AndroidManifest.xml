@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.egoist.bricksbreaker"
     android:installLocation="auto"
-    android:versionCode="14"
+    android:versionCode="16"
     android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
     <uses-sdk
         android:minSdkVersion="21"
@@ -572,6 +572,9 @@
             android:authorities="com.egoist.bricksbreaker.tap_user.provider"
             android:exported="false" />
 
+        <meta-data
+            android:name="com.tapsdk.achievement.loader"
+            android:value="true" />
         <meta-data
             android:name="org.godotengine.plugin.v1.PocketAd"
             android:value="com.godot.pocketad.PocketAd" />

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeReleaseResources-23:/values-sv/values-sv.xml",
+            "outputFile": "com.godot.game-mergeReleaseResources-24:/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\c2d2a33f85140c16aae2c842f67b35ef\\transformed\\appcompat-1.4.1\\res\\values-sv\\values-sv.xml",

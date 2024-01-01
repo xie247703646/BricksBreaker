@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="achievement_dialog_earned_date">- Accomplished on %s -</string>
+    <string name="achievement_dialog_percent">\'%.1f%% of players have this\'</string>
+    <string name="achievement_dialog_percent_low">\'Fewer than 0.1% of players have achieved this\'</string>
+    <string name="achievement_dialog_status">%1$s/%2$s Achievements</string>
+    <string name="achievement_invisible_subtitle">Keep playing to find out</string>
+    <string name="achievement_invisible_title">Hidden</string>
+    <string name="achievement_locked">LOCKED</string>
+    <string name="achievement_pop_title">Achievement unlocked!</string>
+    <string name="achievement_rarity_common">Common</string>
+    <string name="achievement_rarity_rare">Super Rare</string>
+    <string name="achievement_rarity_ultra_rare">Ultra Rare</string>
+    <string name="achievement_rarity_uncommon">Rare</string>
+    <string name="achievement_unlocked">UNLOCKED</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">Logged-in account: %s</string>
 </resources>

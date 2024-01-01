@@ -113,3 +113,6 @@ func _on_BtnSetting_pressed() -> void:
 func _on_BtnNotice_pressed() -> void:
 	UIMgr.open_ui(UI.UINotice)
 	on_hide()
+
+func _on_BtnAchieve_pressed() -> void:
+	TapTap.show_achieve_page()

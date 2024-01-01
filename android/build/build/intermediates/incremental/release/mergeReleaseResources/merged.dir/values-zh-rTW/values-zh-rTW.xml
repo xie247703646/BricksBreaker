@@ -27,6 +27,19 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"分享對象"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"與「<ns1:g id="APPLICATION_NAME">%s</ns1:g>」分享"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"收合"</string>
+    <string name="achievement_dialog_earned_date">- %s 獲得 -</string>
+    <string name="achievement_dialog_percent">\"有%.1f%%的玩家達成此項成就\"</string>
+    <string name="achievement_dialog_percent_low">\"只有不到0.1%的玩家達成此項成就\"</string>
+    <string name="achievement_dialog_status">已解鎖%1$s項成就，共%2$s項成就</string>
+    <string name="achievement_invisible_subtitle">繼續玩下去就會知道囉</string>
+    <string name="achievement_invisible_title">隱藏</string>
+    <string name="achievement_locked">未解鎖</string>
+    <string name="achievement_pop_title">恭喜解鎖新成就！</string>
+    <string name="achievement_rarity_common">普通</string>
+    <string name="achievement_rarity_rare">珍貴</string>
+    <string name="achievement_rarity_ultra_rare">極為珍貴</string>
+    <string name="achievement_rarity_uncommon">稀有</string>
+    <string name="achievement_unlocked">已解鎖</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">已登入帳號：%s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"搜尋"</string>

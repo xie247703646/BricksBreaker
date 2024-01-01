@@ -16,8 +16,9 @@ MERGED from [pocket_ad_sdk_3.2.8.aar] C:\Users\egoist\.gradle\caches\transforms-
 MERGED from [TapBootstrap_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\61ed21e5854767bdc9dae220ce0bc8d4\transformed\jetified-TapBootstrap_3.27.0\AndroidManifest.xml:2:1-14:12
 MERGED from [TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\AndroidManifest.xml:2:1-20:12
 MERGED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:2:1-29:12
+MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:2:1-17:12
 MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:2:1-16:12
-MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:2:1-16:12
+MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:2:1-16:12
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\egoist\.gradle\caches\transforms-3\c2d2a33f85140c16aae2c842f67b35ef\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -120,10 +121,12 @@ MERGED from [TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8
 MERGED from [TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\AndroidManifest.xml:13:5-18:19
 MERGED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:11:5-27:19
 MERGED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:11:5-27:19
+MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:11:5-15:19
+MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:11:5-15:19
 MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:10:5-14:19
 MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:10:5-14:19
-MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:10:5-14:19
-MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:10:5-14:19
+MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:10:5-14:19
+MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:10:5-14:19
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:11:5-35:19
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:11:5-35:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -285,10 +288,12 @@ MERGED from [TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8
 MERGED from [TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\AndroidManifest.xml:7:5-9:41
 MERGED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:7:5-9:41
 MERGED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:7:5-9:41
+MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:7:5-9:41
 MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:6:5-8:41
 MERGED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:6:5-8:41
-MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:6:5-8:41
-MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:6:5-8:41
+MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:6:5-8:41
+MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:6:5-8:41
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:7:5-9:41
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
@@ -1425,6 +1430,12 @@ ADDED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3
 		ADDED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:26:13-37
 	android:name
 		ADDED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:24:13-76
+meta-data#com.tapsdk.achievement.loader
+ADDED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:12:9-14:36
+	android:value
+		ADDED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:14:13-33
+	android:name
+		ADDED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:13:13-57
 meta-data#org.godotengine.plugin.v1.PocketAd
 ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
 	android:value
@@ -1432,11 +1443,11 @@ ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a
 	android:name
 		ADDED from [app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
 meta-data#org.godotengine.plugin.v1.TapTap
-ADDED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
+ADDED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
 	android:value
-		ADDED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:13:13-53
+		ADDED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:13:13-53
 	android:name
-		ADDED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\29780daa02a1f1939396eb7a9fdadd32\transformed\jetified-taptap\AndroidManifest.xml:12:13-60
+		ADDED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:12:13-60
 meta-data#org.godotengine.library.version
 ADDED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:9-16:44
 	android:value

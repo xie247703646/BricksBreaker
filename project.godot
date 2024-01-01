@@ -15,6 +15,11 @@ _global_script_classes=[ {
 "path": "res://script/game/Ball.gd"
 }, {
 "base": "Reference",
+"class": "CfgAchieve",
+"language": "GDScript",
+"path": "res://script/cfg/CfgAchieve.gd"
+}, {
+"base": "Reference",
 "class": "Debug",
 "language": "GDScript",
 "path": "res://script/util/Debug.gd"
@@ -126,6 +131,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Ball": "",
+"CfgAchieve": "",
 "Debug": "",
 "DeviceUtil": "",
 "Game": "",
@@ -169,6 +175,7 @@ UIMgr="*res://script/manager/UIMgr.gd"
 LevelEditorMgr="*res://script/manager/LevelEditorMgr.gd"
 AdMgr="*res://script/manager/AdMgr.gd"
 TapTap="*res://script/sdk/TapTap.gd"
+AchieveMgr="*res://script/manager/AchieveMgr.gd"
 
 [debug]
 

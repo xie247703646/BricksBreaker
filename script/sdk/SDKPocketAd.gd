@@ -44,7 +44,7 @@ func _init_signal()->void:
 	pocket_ad.connect("reward_video_showed",self,"_on_reward_video_showed")
 	pocket_ad.connect("reward_video_exposure",self,"_on_reward_video_exposure")
 	pocket_ad.connect("reward_video_rewarded",self,"_on_reward_video_rewarded")
-	pocket_ad.connect("reward_video_clicked",self,"_on_reward_video_clicked")
+	pocket_ad.connect("reward_video_clicked",self,"")
 	pocket_ad.connect("reward_video_completed",self,"_on_reward_video_completed")
 	pocket_ad.connect("reward_video_closed",self,"_on_reward_video_closed")
 	pocket_ad.connect("reward_video_succeeded",self,"_on_reward_video_succeeded")

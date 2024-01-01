@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeReleaseResources-23:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.godot.game-mergeReleaseResources-24:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\egoist\\.gradle\\caches\\transforms-3\\8259e87a1982c8d5cb48dd9335eb0a97\\transformed\\jetified-TapCommon_3.27.0\\res\\values-w600dp-v13\\values-w600dp-v13.xml",

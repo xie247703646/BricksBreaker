@@ -66,12 +66,15 @@ dependencies {
     implementation files('libs/ks_ad_sdk_230116.aar')
     implementation files('libs/pocket_ad_sdk_3.2.8.aar')
 
-    //TapTap
+    //TapTap登录
     implementation files('libs/TapBootstrap_3.27.0.aar') // TapTap 启动器
     implementation files('libs/TapCommon_3.27.0.aar') // TapTap 基础库
     implementation files('libs/TapLogin_3.27.0.aar') // TapTap 登录
     implementation 'cn.leancloud:storage-android:8.2.19'
     implementation 'cn.leancloud:realtime-android:8.2.19'
+
+    //TapTap成就
+    implementation files('libs/TapAchievement_3.27.0.aar')
 
     if (rootProject.findProject(":lib")) {
         implementation project(":lib")

@@ -27,6 +27,19 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Поделиться с помощью"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Поделиться с помощью <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Свернуть"</string>
+    <string name="achievement_dialog_earned_date">- Достигнуто %s -</string>
+    <string name="achievement_dialog_percent">Менее %.1f%% игроков приобрели это\'</string>
+    <string name="achievement_dialog_percent_low">Менее 0,1% игроков достигли этого\'</string>
+    <string name="achievement_dialog_status">%1$s/%2$s достижения</string>
+    <string name="achievement_invisible_subtitle">Продолжайте играть, чтобы узнать</string>
+    <string name="achievement_invisible_title">Скрыто</string>
+    <string name="achievement_locked">ЗАКРЫТО</string>
+    <string name="achievement_pop_title">Достижение открыто!</string>
+    <string name="achievement_rarity_common">Обыч.</string>
+    <string name="achievement_rarity_rare">Очень редк.</string>
+    <string name="achievement_rarity_ultra_rare">Ультра редк.</string>
+    <string name="achievement_rarity_uncommon">Редк.</string>
+    <string name="achievement_unlocked">ОТКРЫТО</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">Залогиненный аккаунт: %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Поиск"</string>

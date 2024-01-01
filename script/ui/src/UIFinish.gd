@@ -17,7 +17,6 @@ func on_open(data):
 		Global.Platform.TapTap:
 			btn_roast.visible = true
 	
-	
 	win = data
 	btn_restart.visible = not win and GameMgr.mode == GameMgr.Mode.Normal
 	btn_next.visible = win and GameMgr.mode == GameMgr.Mode.Normal
@@ -32,6 +31,8 @@ func on_open(data):
 			SaveMgr.set_value(GameMgr.CONFIG_SECTION,"record",record_dic)
 			UIMgr.show_toast(UI.UIToast,tr("key_new_record"))
 		lb_time.text = tr("key_time") % TimeUtil.format(time)
+		if time < 31000 and not AchieveMgr.is_finish("Ach010"):
+			AchieveMgr.reach("Ach010")
 
 func on_close(data):
 	pass

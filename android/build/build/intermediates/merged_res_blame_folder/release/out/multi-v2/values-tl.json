@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeReleaseResources-23:/values-tl/values-tl.xml",
+            "outputFile": "com.godot.game-mergeReleaseResources-24:/values-tl/values-tl.xml",
             "map": [
                 {
                     "source": "D:\\godotProjects\\remote\\BricksBreaker\\android\\build\\res\\values-tl\\godot_project_name_string.xml",

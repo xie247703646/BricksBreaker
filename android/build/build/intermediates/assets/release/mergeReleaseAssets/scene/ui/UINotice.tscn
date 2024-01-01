@@ -56,7 +56,8 @@ margin_bottom = 240.0
 rect_min_size = Vector2( 480, 240 )
 custom_constants/line_spacing = 16
 custom_fonts/font = ExtResource( 7 )
-text = "1、新增关卡111~150"
+text = "1、新增关卡151~160
+2、新增taptap登录"
 autowrap = true
 
 [node name="BtnClose" type="Button" parent="."]

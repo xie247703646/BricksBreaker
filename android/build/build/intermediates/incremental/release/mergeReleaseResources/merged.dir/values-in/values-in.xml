@@ -27,6 +27,19 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Bagikan dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ciutkan"</string>
+    <string name="achievement_dialog_earned_date">- Mendapat achievement pada %s -</string>
+    <string name="achievement_dialog_percent">\"%.1f%% pemain mendapat Achievement ini\"</string>
+    <string name="achievement_dialog_percent_low">\"Kurang dari 0.1% pemain memiliki achievement ini\"</string>
+    <string name="achievement_dialog_status">%1$s/%2$s Achievement</string>
+    <string name="achievement_invisible_subtitle">Tetaplah bermain untuk membukanya</string>
+    <string name="achievement_invisible_title">Tersembunyi</string>
+    <string name="achievement_locked">LOCKED</string>
+    <string name="achievement_pop_title">Mendapatkan achievement!</string>
+    <string name="achievement_rarity_common">Common</string>
+    <string name="achievement_rarity_rare">Super Rare</string>
+    <string name="achievement_rarity_ultra_rare">Ultra Rare</string>
+    <string name="achievement_rarity_uncommon">Rare</string>
+    <string name="achievement_unlocked">UNLOCKED</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">Akun yang login: %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Telusuri"</string>

@@ -27,6 +27,19 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"แชร์กับ"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"แชร์ทาง <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"ยุบ"</string>
+    <string name="achievement_dialog_earned_date">- สำเร็จเมื่อ %s -</string>
+    <string name="achievement_dialog_percent">\"%.1f%% ของผู้เล่นได้รับความสำเร็จนี้\"</string>
+    <string name="achievement_dialog_percent_low">\"ผู้เล่นน้อยกว่า 0.1% ได้รับความสำเร็จนี้\"</string>
+    <string name="achievement_dialog_status">%1$s/%2$s ความสำเร็จ</string>
+    <string name="achievement_invisible_subtitle">เล่นเพื่อปลดล็อกความสำเร็จลับ</string>
+    <string name="achievement_invisible_title">ความสำเร็จลับ</string>
+    <string name="achievement_locked">ล็อก</string>
+    <string name="achievement_pop_title">ปลดล็อกความสำเร็จ!</string>
+    <string name="achievement_rarity_common">คอมมอน</string>
+    <string name="achievement_rarity_rare">ซุปเปอร์แรร์</string>
+    <string name="achievement_rarity_ultra_rare">อัลตราแรร์</string>
+    <string name="achievement_rarity_uncommon">แรร์</string>
+    <string name="achievement_unlocked">ปลดล็อก</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">บัญชีที่ล็อกอิน: %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"ค้นหา"</string>

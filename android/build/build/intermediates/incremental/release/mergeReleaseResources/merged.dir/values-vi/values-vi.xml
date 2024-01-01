@@ -27,6 +27,19 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Chia sẻ với <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Thu gọn"</string>
+    <string name="achievement_dialog_earned_date">- Hoàn thành %s-</string>
+    <string name="achievement_dialog_percent">%.1f%% người có cái này\'</string>
+    <string name="achievement_dialog_percent_low">Ít hơn 0.1% người chơi đạt được thành tựu này\'</string>
+    <string name="achievement_dialog_status">%1$s/%2$s Thành tựu</string>
+    <string name="achievement_invisible_subtitle">Chơi tiếp để tìm hiểu</string>
+    <string name="achievement_invisible_title">Ẩn</string>
+    <string name="achievement_locked">KHÓA</string>
+    <string name="achievement_pop_title">Mở Thành tựu!</string>
+    <string name="achievement_rarity_common">Thường</string>
+    <string name="achievement_rarity_rare">Siêu Hiếm</string>
+    <string name="achievement_rarity_ultra_rare">Cực Hiếm</string>
+    <string name="achievement_rarity_uncommon">Hiếm</string>
+    <string name="achievement_unlocked">MỞ</string>
     <string name="godot_project_name_string">BricksBreaker</string>
     <string name="login_account_logged_tip">Đã đăng nhập tài khoản: %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Tìm kiếm"</string>

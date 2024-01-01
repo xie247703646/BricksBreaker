@@ -2,6 +2,7 @@ extends ItemBase
 class_name SplitBall
 
 func execute()->void:
+	if not AchieveMgr.is_finish("Ach001"): AchieveMgr.update_step("Ach001")
 	var game = GameMgr.get_game()
 	var ball_container = game.ball_container
 	var balls = ball_container.get_children()
