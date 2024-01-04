@@ -23,6 +23,7 @@ func on_open(data):
 	ct_win.visible = win
 	ct_fail.visible = not win
 	if win:
+		EventTracker.track("#level_win")
 		var time:int = Time.get_ticks_msec() - GameMgr.start_time
 		var record_dic:Dictionary = SaveMgr.get_value(GameMgr.CONFIG_SECTION,"record",{})
 		var record_time:int = record_dic.get(GameMgr.cur_level,-1)
@@ -33,6 +34,8 @@ func on_open(data):
 		lb_time.text = tr("key_time") % TimeUtil.format(time)
 		if time < 31000 and not AchieveMgr.is_finish("Ach010"):
 			AchieveMgr.reach("Ach010")
+	else:
+		EventTracker.track("#level_fail")
 
 func on_close(data):
 	pass
@@ -56,6 +59,7 @@ func _on_BtnClose_pressed() -> void:
 			SaveMgr.set_value(GameMgr.CONFIG_SECTION,"select_level",level)
 
 func _on_BtnRestart_pressed() -> void:
+	EventTracker.track("#level_try_again")
 	GameMgr.game_quit()
 	GameMgr.start_normal_level(GameMgr.cur_level)
 	close()

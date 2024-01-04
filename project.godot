@@ -29,6 +29,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://script/util/DeviceUtil.gd"
 }, {
+"base": "Reference",
+"class": "EventTracker",
+"language": "GDScript",
+"path": "res://script/util/EventTracker.gd"
+}, {
 "base": "Node2D",
 "class": "Game",
 "language": "GDScript",
@@ -134,6 +139,7 @@ _global_script_class_icons={
 "CfgAchieve": "",
 "Debug": "",
 "DeviceUtil": "",
+"EventTracker": "",
 "Game": "",
 "Global": "",
 "ItemBase": "",
@@ -175,6 +181,7 @@ UIMgr="*res://script/manager/UIMgr.gd"
 LevelEditorMgr="*res://script/manager/LevelEditorMgr.gd"
 AdMgr="*res://script/manager/AdMgr.gd"
 TapTap="*res://script/sdk/TapTap.gd"
+CrazyGame="*res://script/sdk/CrazyGame.gd"
 AchieveMgr="*res://script/manager/AchieveMgr.gd"
 
 [debug]

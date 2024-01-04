@@ -104,6 +104,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapDB_3.27.0.aar:unspecified@jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\jars\classes.jar"
+      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\TapDB_3.27.0.aar:unspecified"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified@jar"
       jars="C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified"
@@ -118,9 +131,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\taptap.aar:unspecified@jar"
-      jars="C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\jars\classes.jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\taptap.aar:unspecified"
-      folder="C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

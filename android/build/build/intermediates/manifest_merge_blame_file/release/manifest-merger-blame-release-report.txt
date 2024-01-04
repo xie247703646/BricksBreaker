@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.egoist.bricksbreaker"
 4    android:installLocation="auto"
-5    android:versionCode="16"
+5    android:versionCode="17"
 6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -1124,77 +1124,93 @@
 577            android:value="true" />
 577-->[TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:14:13-33
 578        <meta-data
-578-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
-579            android:name="org.godotengine.plugin.v1.PocketAd"
-579-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
-580            android:value="com.godot.pocketad.PocketAd" />
-580-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
-581        <meta-data
-581-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
-582            android:name="org.godotengine.plugin.v1.TapTap"
-582-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:12:13-60
-583            android:value="com.taptap.plugin.TapTap" /> <!-- Records the version of the Godot library -->
-583-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\b02a29df1c69e514b2a65949697b82f9\transformed\jetified-taptap\AndroidManifest.xml:13:13-53
-584        <meta-data
-584-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:9-16:44
-585            android:name="org.godotengine.library.version"
-585-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:15:13-59
-586            android:value="3.5.3.stable" />
-586-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:16:13-41
-587
-588        <service android:name="org.godotengine.godot.GodotDownloaderService" />
-588-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:18:9-80
-588-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:18:18-77
-589
-590        <activity
-590-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:20:9-24:75
-591            android:name="org.godotengine.godot.utils.ProcessPhoenix"
-591-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:21:13-70
-592            android:exported="false"
-592-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:22:13-37
-593            android:process=":phoenix"
-593-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:23:13-39
-594            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-594-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:24:13-72
-595
-596        <provider
-596-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:26:9-34:20
-597            android:name="androidx.core.content.FileProvider"
-597-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:27:13-62
-598            android:authorities="com.egoist.bricksbreaker.fileprovider"
-598-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:28:13-64
-599            android:exported="false"
-599-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:29:13-37
-600            android:grantUriPermissions="true" >
-600-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:30:13-47
-601            <meta-data
-601-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:222:13-224:59
-602                android:name="android.support.FILE_PROVIDER_PATHS"
-602-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:223:17-67
-603                android:resource="@xml/godot_provider_paths" />
-603-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:224:17-56
-604        </provider>
+578-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:23:9-25:36
+579            android:name="com.tapsdk.tapdb.loader"
+579-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:24:13-51
+580            android:value="true" />
+580-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:25:13-33
+581
+582        <provider
+582-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:27:9-30:40
+583            android:name="com.tds.tapdb.internal.device.DeviceProvider"
+583-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:28:13-72
+584            android:authorities="com.egoist.bricksbreaker.device.provider"
+584-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:29:13-67
+585            android:exported="false" />
+585-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:30:13-37
+586
+587        <meta-data
+587-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
+588            android:name="org.godotengine.plugin.v1.PocketAd"
+588-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
+589            android:value="com.godot.pocketad.PocketAd" />
+589-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
+590        <meta-data
+590-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
+591            android:name="org.godotengine.plugin.v1.TapTap"
+591-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap\AndroidManifest.xml:12:13-60
+592            android:value="com.taptap.plugin.TapTap" /> <!-- Records the version of the Godot library -->
+592-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap\AndroidManifest.xml:13:13-53
+593        <meta-data
+593-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:9-16:44
+594            android:name="org.godotengine.library.version"
+594-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:15:13-59
+595            android:value="3.5.3.stable" />
+595-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:16:13-41
+596
+597        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+597-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:18:9-80
+597-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:18:18-77
+598
+599        <activity
+599-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:20:9-24:75
+600            android:name="org.godotengine.godot.utils.ProcessPhoenix"
+600-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:21:13-70
+601            android:exported="false"
+601-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:22:13-37
+602            android:process=":phoenix"
+602-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:23:13-39
+603            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+603-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:24:13-72
+604
 605        <provider
-605-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-606            android:name="androidx.startup.InitializationProvider"
-606-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-607            android:authorities="com.egoist.bricksbreaker.androidx-startup"
-607-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-608            android:exported="false" >
-608-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-609            <meta-data
-609-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-610                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-610-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-611                android:value="androidx.startup" />
-611-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-612            <meta-data
-612-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\9841f93b088814fef45498d8400e7f50\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-613                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-613-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\9841f93b088814fef45498d8400e7f50\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-614                android:value="androidx.startup" />
-614-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\9841f93b088814fef45498d8400e7f50\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-615        </provider>
-616    </application>
-617
-618</manifest>
+605-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:26:9-34:20
+606            android:name="androidx.core.content.FileProvider"
+606-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:27:13-62
+607            android:authorities="com.egoist.bricksbreaker.fileprovider"
+607-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:28:13-64
+608            android:exported="false"
+608-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:29:13-37
+609            android:grantUriPermissions="true" >
+609-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:30:13-47
+610            <meta-data
+610-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:222:13-224:59
+611                android:name="android.support.FILE_PROVIDER_PATHS"
+611-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:223:17-67
+612                android:resource="@xml/godot_provider_paths" />
+612-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:224:17-56
+613        </provider>
+614        <provider
+614-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+615            android:name="androidx.startup.InitializationProvider"
+615-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+616            android:authorities="com.egoist.bricksbreaker.androidx-startup"
+616-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+617            android:exported="false" >
+617-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+618            <meta-data
+618-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+619                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+619-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+620                android:value="androidx.startup" />
+620-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+621            <meta-data
+621-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\9841f93b088814fef45498d8400e7f50\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+622                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+622-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\9841f93b088814fef45498d8400e7f50\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+623                android:value="androidx.startup" />
+623-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\egoist\.gradle\caches\transforms-3\9841f93b088814fef45498d8400e7f50\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+624        </provider>
+625    </application>
+626
+627</manifest>

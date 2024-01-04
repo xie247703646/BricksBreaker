@@ -29,7 +29,9 @@ func _on_BtnImport_pressed() -> void:
 	if LevelEditorMgr.encode_map_data(level_map_data) == map_str:
 		LevelEditorMgr.save_co_create_level(map_str)
 		UIMgr.show_toast(UI.UIToast,"导入成功")
+		EventTracker.track("#import_cocreate_level_success")
 		close()
 	else:
 		UIMgr.show_toast(UI.UIToast,"导入失败")
+		EventTracker.track("#import_cocreate_level_fail")
 	

@@ -15,6 +15,7 @@ var select_level:int = 1
 var level_ins:TileMap = null
 
 func on_open(data):
+	lb_version.text = "Version " + Setting.version
 	
 	match Global.Cur_Platform:
 		Global.Platform.CrazyGame:
@@ -25,6 +26,8 @@ func on_open(data):
 			btn_notice.visible = true
 			btn_editor.visible = true
 			lb_maker.visible = true
+	
+	btn_notice.visible = false
 	
 	if data:
 		select_level = data
@@ -115,4 +118,5 @@ func _on_BtnNotice_pressed() -> void:
 	on_hide()
 
 func _on_BtnAchieve_pressed() -> void:
+	EventTracker.track("#open_ui_achieve")
 	TapTap.show_achieve_page()

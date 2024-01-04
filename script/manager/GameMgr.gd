@@ -44,6 +44,7 @@ func start_normal_level(level:int)->void:
 	level_ins = load_level(level)
 	game.init_level(level_ins)
 	start_time = Time.get_ticks_msec()
+	EventTracker.track("#level_start",{"#level_id":"Level_%s" % level})
 
 func start_test_level(level_ins:TileMap)->void:
 	mode = Mode.Test
@@ -51,6 +52,7 @@ func start_test_level(level_ins:TileMap)->void:
 	game_root.add_child(game)
 	game.init_level(level_ins)
 	start_time = Time.get_ticks_msec()
+	EventTracker.track("#start_test_level")
 
 func start_cocreate_level(level_ins:TileMap)->void:
 	mode = Mode.CoCreate
@@ -58,6 +60,7 @@ func start_cocreate_level(level_ins:TileMap)->void:
 	game_root.add_child(game)
 	game.init_level(level_ins)
 	start_time = Time.get_ticks_msec()
+	EventTracker.track("#start_cocreate_level")
 
 func game_over(win:bool)->void:
 	if win: unlock_level(cur_level + 1)

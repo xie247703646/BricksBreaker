@@ -38,14 +38,14 @@ func _on_BtnPause_pressed() -> void:
 	UIMgr.open_ui(UI.UIPause)
 
 func _on_BtnAd_toggled(button_pressed: bool) -> void:
-	
 	var limit:int = 50
-	
 	if GameMgr.unlocked_levels.size() >= limit:
 		Setting.ad_enabled = not button_pressed
 		if button_pressed:
+			EventTracker.track("#disable_banner")
 			AdMgr.hide_banner()
 		else:
+			EventTracker.track("#enable_banner")
 			AdMgr.show_banner()
 	else:
 		Setting.ad_enabled = true

@@ -108,6 +108,7 @@ func _on_BtnSave_pressed() -> void:
 		level_saved.append(encode_map_str)
 		SaveMgr.set_value(Global.Section_Co_Create_Level,"co_create_level",level_saved)
 		UIMgr.show_toast(UI.UIToast,"保存成功")
+		EventTracker.track("#cocreate_level_saved")
 
 func _on_BtnClose_pressed() -> void:
 	close()

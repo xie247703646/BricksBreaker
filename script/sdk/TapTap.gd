@@ -12,13 +12,16 @@ const Server_Url:String = "https://s53etn2v.cloud.tds1.tapapis.cn"
 var taptap
 
 func init() -> void:
-	if Engine.has_singleton(TapTap):
+	if is_valid():
 		taptap = Engine.get_singleton(TapTap)
 		taptap.init(Client_Id,Client_Token,Server_Url)
 		init_signal()
 		Debug.Log(TapTap,"初始化成功")
 	else:
 		Debug.Error(TapTap,"初始化失败")
+
+func is_valid()->bool:
+	return Engine.has_singleton(TapTap)
 
 func init_signal()->void:
 	taptap.connect("login_success",self,"_on_login_success")
@@ -49,3 +52,8 @@ func reach_achieve(achieve_id:String):
 func show_achieve_page():
 	if not taptap: return
 	taptap.showAchievePage()
+
+func track_event(event_name:String,data:Dictionary = {})->void:
+	Debug.Log(name,"追踪事件%s -- %s" % [event_name,data])
+	if not taptap: return
+	taptap.trackEvent(event_name,JSON.print(data))

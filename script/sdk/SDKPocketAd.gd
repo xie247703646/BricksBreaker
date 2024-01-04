@@ -77,64 +77,80 @@ func show_reward_video()->void:
 
 func _on_reward_video_loaded()->void:
 	emit_signal("reward_video_loaded")
+	EventTracker.track("#reward_video_loaded")
 	Debug.Log(PocketAd,"视频加载成功")
 
 func _on_reward_video_cached()->void:
 	emit_signal("reward_video_cached")
+	EventTracker.track("#reward_video_cached")
 	Debug.Log(PocketAd,"视频缓存成功")
 
 func _on_reward_video_showed()->void:
 	emit_signal("reward_video_showed")
+	EventTracker.track("#reward_video_showed")
 	Debug.Log(PocketAd,"视频展示成功")
 
 func _on_reward_video_exposure()->void:
 	emit_signal("reward_video_exposure")
+	EventTracker.track("#reward_video_exposure")
 	Debug.Log(PocketAd,"视频曝光成功")
 
 func _on_reward_video_rewarded()->void:
 	emit_signal("reward_video_rewarded")
+	EventTracker.track("#reward_video_rewarded")
 	Debug.Log(PocketAd,"视频奖励发放")
 
 func _on_reward_video_clicked()->void:
 	emit_signal("reward_video_clicked")
+	EventTracker.track("#reward_video_clicked")
 	Debug.Log(PocketAd,"视频被点击")
 
 func _on_reward_video_completed()->void:
 	emit_signal("reward_video_completed")
+	EventTracker.track("#reward_video_completed")
 	Debug.Log(PocketAd,"视频播放完毕")
 
 func _on_reward_video_closed()->void:
 	emit_signal("reward_video_closed")
+	EventTracker.track("#reward_video_closed")
 	Debug.Log(PocketAd,"视频关闭")
 
 func _on_reward_video_succeeded()->void:
 	emit_signal("reward_video_succeeded")
+	EventTracker.track("#reward_video_succeeded")
 	Debug.Log(PocketAd,"视频加载成功")
 
 func _on_reward_video_failed()->void:
 	emit_signal("reward_video_failed")
+	EventTracker.track("#reward_video_failed")
 	Debug.Log(PocketAd,"视频加载失败")
 
 func _on_reward_video_skipped()->void:
 	emit_signal("reward_video_skipped")
+	EventTracker.track("#reward_video_skipped")
 	Debug.Log(PocketAd,"视频被跳过")
 
 func _on_banner_load_success()->void:
 	emit_signal("banner_load_success")
+	EventTracker.track("#banner_load_success")
 	Debug.Log(PocketAd,"banner加载成功")
 
 func _on_banner_load_fail()->void:
 	emit_signal("banner_load_fail")
+	EventTracker.track("#banner_load_fail")
 	Debug.Log(PocketAd,"banner加载失败")
 
 func _on_banner_exposure()->void:
 	emit_signal("banner_exposure")
+	EventTracker.track("#banner_exposure")
 	Debug.Log(PocketAd,"banner曝光")
 
 func _on_banner_clicked()->void:
 	emit_signal("banner_clicked")
+	EventTracker.track("#banner_clicked")
 	Debug.Log(PocketAd,"banner被点击")
 
 func _on_banner_closed()->void:
 	emit_signal("banner_closed")
+	EventTracker.track("#banner_closed")
 	Debug.Log(PocketAd,"banner被关闭")

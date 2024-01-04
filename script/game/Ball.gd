@@ -13,13 +13,13 @@ func _on_Ball_body_entered(body: Node2D) -> void:
 	
 	if "Static" in body.get_groups():
 		if dir.x < 0.1 and dir.x >= 0:
-			dir += Vector2(rand_range(0,0.3),0)
+			dir += Vector2(rand_range(0,0.2),0)
 		elif dir.x > -0.1 and dir.x < 0:
-			dir += Vector2(rand_range(-0.3,0),0)
+			dir += Vector2(rand_range(-0.2,0),0)
 		if dir.y < 0.2 and dir.y >= 0:
-			dir += Vector2(0,rand_range(0,0.4))
+			dir += Vector2(0,rand_range(0,0.3))
 		elif dir.y > -0.2 and dir.y < 0:
-			dir += Vector2(0,rand_range(-0.4,0))
+			dir += Vector2(0,rand_range(-0.3,0))
 		dir = dir.normalized()
 		set_dir(dir)
 	elif "Paddle" in body.get_groups():
@@ -36,5 +36,3 @@ func _on_Ball_body_entered(body: Node2D) -> void:
 		body.free()
 		SignalMgr.emit_signal("brick_broken",global_pos)
 		AudioMgr.play_sfx("dong")
-
-

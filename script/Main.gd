@@ -24,6 +24,7 @@ func _game_init()->void:
 	TapTap.init()
 
 func _game_ready()->void:
+	EventTracker.track("#game_launch")
 	if DeviceUtil.is_mobile():
 		UIMgr.open_ui(UI.UIAdvice)
 	else:

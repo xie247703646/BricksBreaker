@@ -17,5 +17,7 @@ func _on_BtnCopy_pressed() -> void:
 	OS.clipboard = text_edit.text
 	if OS.clipboard:
 		UIMgr.show_toast(UI.UIToast,"复制成功，分享给其他玩家吧！")
+		EventTracker.track("#copy_cocreate_level_code_success")
 	else:
 		UIMgr.show_toast(UI.UIToast,"复制失败，请尝试手动复制!")
+		EventTracker.track("#copy_cocreate_level_code_fail")
