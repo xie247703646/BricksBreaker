@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://asset/resource/font_48px.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scene/item/RankItem.gd" type="Script" id=2]
+
+[node name="RankItem" type="HBoxContainer"]
+margin_right = 720.0
+margin_bottom = 48.0
+script = ExtResource( 2 )
+
+[node name="LbRank" type="Label" parent="."]
+margin_right = 237.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="LbName" type="Label" parent="."]
+margin_left = 241.0
+margin_right = 478.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Name"
+align = 1
+valign = 1
+
+[node name="LbScore" type="Label" parent="."]
+margin_left = 482.0
+margin_right = 720.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Score"
+align = 1
+valign = 1

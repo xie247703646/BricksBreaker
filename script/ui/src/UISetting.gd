@@ -24,7 +24,7 @@ func on_close(data):
 func _on_BtnClose_pressed() -> void:
 	close()
 	var ui_main = UIMgr.get_ui(UI.UIMain)
-	ui_main.call("on_show")
+	if ui_main: ui_main.call("on_show")
 
 func _on_BtnSfx_pressed() -> void:
 	Setting.sfx_enabled = not Setting.sfx_enabled

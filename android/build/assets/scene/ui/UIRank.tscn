@@ -1,0 +1,123 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://script/ui/src/UIRank.gd" type="Script" id=1]
+[ext_resource path="res://asset/resource/font_64px.tres" type="DynamicFont" id=2]
+[ext_resource path="res://asset/resource/font_48px.tres" type="DynamicFont" id=3]
+[ext_resource path="res://asset/resource/StyleBox_BtnHover.stylebox" type="StyleBox" id=4]
+[ext_resource path="res://asset/resource/StyleBox_BtnNormal.stylebox" type="StyleBox" id=5]
+[ext_resource path="res://asset/resource/StyleBox_BtnPressed.stylebox" type="StyleBox" id=6]
+[ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=7]
+[ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=8]
+
+[node name="UIRank" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 176.0 ],
+"_edit_lock_": true
+}
+
+[node name="LbTitle" type="Label" parent="."]
+visible = false
+anchor_right = 1.0
+margin_top = 64.0
+margin_bottom = 128.0
+custom_fonts/font = ExtResource( 2 )
+text = "排行榜"
+align = 1
+valign = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 208.0
+margin_bottom = -256.0
+color = Color( 0, 0, 0, 0.784314 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 224.0
+margin_bottom = -256.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 720.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 64 )
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_top = 8.0
+margin_right = 237.0
+margin_bottom = 56.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "排名"
+align = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_left = 241.0
+margin_top = 8.0
+margin_right = 478.0
+margin_bottom = 56.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "玩家名"
+align = 1
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_left = 482.0
+margin_top = 8.0
+margin_right = 720.0
+margin_bottom = 56.0
+size_flags_horizontal = 11
+custom_fonts/font = ExtResource( 3 )
+text = "用时"
+align = 1
+
+[node name="RankScroller" type="ScrollContainer" parent="VBoxContainer"]
+margin_top = 68.0
+margin_right = 720.0
+margin_bottom = 800.0
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+
+[node name="Content" type="VBoxContainer" parent="VBoxContainer/RankScroller"]
+margin_right = 720.0
+size_flags_horizontal = 3
+
+[node name="BtnClose" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -240.0
+margin_top = -208.0
+margin_right = 240.0
+margin_bottom = -160.0
+rect_min_size = Vector2( 480, 48 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 7 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/focus = ExtResource( 8 )
+custom_styles/normal = ExtResource( 5 )
+text = "返回"
+
+[node name="LbTip" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -24.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 3 )
+text = "正在获取数据。。。"
+align = 1
+
+[node name="Timer" type="Timer" parent="LbTip"]
+wait_time = 0.25
+autostart = true
+
+[connection signal="pressed" from="BtnClose" to="." method="_on_BtnClose_pressed"]
+[connection signal="timeout" from="LbTip/Timer" to="." method="_on_Timer_timeout"]

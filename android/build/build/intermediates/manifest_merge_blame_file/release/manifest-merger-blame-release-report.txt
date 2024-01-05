@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.egoist.bricksbreaker"
 4    android:installLocation="auto"
-5    android:versionCode="17"
+5    android:versionCode="18"
 6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -1146,11 +1146,11 @@
 589            android:value="com.godot.pocketad.PocketAd" />
 589-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
 590        <meta-data
-590-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
+590-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
 591            android:name="org.godotengine.plugin.v1.TapTap"
-591-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap\AndroidManifest.xml:12:13-60
+591-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:12:13-60
 592            android:value="com.taptap.plugin.TapTap" /> <!-- Records the version of the Godot library -->
-592-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\6c7ae695ae16e8925f5d5f135489ab58\transformed\jetified-taptap\AndroidManifest.xml:13:13-53
+592-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:13:13-53
 593        <meta-data
 593-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:9-16:44
 594            android:name="org.godotengine.library.version"

@@ -2,14 +2,13 @@ extends UIBase
 
 onready var level_container: Control = $LevelContainer
 onready var control: Control = $Control
-onready var lb_level: Label = $Control/LbLevel
-onready var lb_record: Label = $Control/LbLevel/LbRecord
+onready var lb_level: Label = $LbLevel
+onready var lb_record: Label = $LbLevel/LbRecord
 onready var lb_maker: Label = $LbMaker
 onready var lb_version: Label = $LbVersion
 onready var btn_unlock: Button = $Control/VBoxContainer/BtnUnlock
 onready var btn_start: Button = $Control/VBoxContainer/BtnStart
 onready var btn_editor: Button = $Control/VBoxContainer/BtnEditor
-onready var btn_notice: TextureButton = $Control/BtnNotice
 
 var select_level:int = 1
 var level_ins:TileMap = null
@@ -19,15 +18,12 @@ func on_open(data):
 	
 	match Global.Cur_Platform:
 		Global.Platform.CrazyGame:
-			btn_notice.visible = false
 			btn_editor.visible = false
 			lb_maker.visible = false
 		Global.Platform.TapTap:
-			btn_notice.visible = true
 			btn_editor.visible = true
 			lb_maker.visible = true
 	
-	btn_notice.visible = false
 	
 	if data:
 		select_level = data
@@ -113,10 +109,10 @@ func _on_BtnSetting_pressed() -> void:
 	UIMgr.open_ui(UI.UISetting)
 	on_hide()
 
-func _on_BtnNotice_pressed() -> void:
-	UIMgr.open_ui(UI.UINotice)
-	on_hide()
-
 func _on_BtnAchieve_pressed() -> void:
 	EventTracker.track("#open_ui_achieve")
 	TapTap.show_achieve_page()
+
+func _on_BtnRank_pressed() -> void:
+	UIMgr.open_ui(UI.UIRank,select_level)
+	on_hide()

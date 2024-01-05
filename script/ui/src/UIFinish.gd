@@ -31,6 +31,7 @@ func on_open(data):
 			record_dic[GameMgr.cur_level] = time
 			SaveMgr.set_value(GameMgr.CONFIG_SECTION,"record",record_dic)
 			UIMgr.show_toast(UI.UIToast,tr("key_new_record"))
+			TapTap.submit_rank_data("Level_%s" % GameMgr.cur_level,time)
 		lb_time.text = tr("key_time") % TimeUtil.format(time)
 		if time < 31000 and not AchieveMgr.is_finish("Ach010"):
 			AchieveMgr.reach("Ach010")
@@ -43,7 +44,6 @@ func on_close(data):
 func _on_BtnRoast_pressed() -> void:
 	GameMgr.open_game_page()
 	
-
 func _on_BtnClose_pressed() -> void:
 	UIMgr.close_ui(UI.UIGame)
 	GameMgr.game_quit()

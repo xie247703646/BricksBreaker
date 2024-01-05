@@ -13,7 +13,7 @@
 [ext_resource path="res://asset/resource/icon_double_arrow.svg" type="Texture" id=11]
 [ext_resource path="res://asset/resource/font_24px.tres" type="DynamicFont" id=12]
 [ext_resource path="res://asset/resource/icon_setting.svg" type="Texture" id=13]
-[ext_resource path="res://asset/resource/icon_notice.svg" type="Texture" id=14]
+[ext_resource path="res://asset/resource/icon_rank.svg" type="Texture" id=14]
 
 [sub_resource type="StyleBoxFlat" id=7]
 content_margin_top = 4.0
@@ -38,6 +38,40 @@ anchor_bottom = 1.0
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="LbLevel" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 64.0
+margin_bottom = 128.0
+custom_fonts/font = ExtResource( 4 )
+text = "关卡-1"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="LbLevel"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -104.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 96, 48 )
+flat = true
+
+[node name="LbRecord" type="Label" parent="LbLevel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 16.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 10 )
+custom_styles/normal = SubResource( 7 )
+text = "key_record"
+align = 1
+valign = 1
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
@@ -266,7 +300,7 @@ rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
 color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
 
-[node name="BtnNotice" type="TextureButton" parent="Control"]
+[node name="BtnRank" type="TextureButton" parent="Control"]
 margin_left = 32.0
 margin_top = 32.0
 margin_right = 80.0
@@ -282,7 +316,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="ColorRect" type="ColorRect" parent="Control/BtnNotice"]
+[node name="ColorRect" type="ColorRect" parent="Control/BtnRank"]
 show_behind_parent = true
 anchor_left = 0.5
 anchor_top = 0.5
@@ -295,40 +329,6 @@ margin_bottom = 32.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
 color = Color( 0.0392157, 0.0392157, 0.117647, 0.627451 )
-
-[node name="LbLevel" type="Label" parent="Control"]
-anchor_right = 1.0
-margin_top = 64.0
-margin_bottom = 128.0
-custom_fonts/font = ExtResource( 4 )
-text = "关卡-1"
-align = 1
-valign = 1
-
-[node name="Button" type="Button" parent="Control/LbLevel"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -104.0
-margin_top = -32.0
-margin_right = 88.0
-margin_bottom = 32.0
-rect_min_size = Vector2( 96, 48 )
-flat = true
-
-[node name="LbRecord" type="Label" parent="Control/LbLevel"]
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 16.0
-margin_bottom = 48.0
-custom_fonts/font = ExtResource( 10 )
-custom_styles/normal = SubResource( 7 )
-text = "key_record"
-align = 1
-valign = 1
 
 [node name="LbMaker" type="Label" parent="."]
 anchor_top = 1.0
@@ -355,6 +355,7 @@ text = "Version: 1.6"
 align = 2
 valign = 1
 
+[connection signal="pressed" from="LbLevel/Button" to="." method="_on_level_unlocked"]
 [connection signal="pressed" from="Control/VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/BtnUnlock" to="." method="_on_BtnUnlock_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/BtnEditor" to="." method="_on_BtnEditor_pressed"]
@@ -364,5 +365,4 @@ valign = 1
 [connection signal="pressed" from="Control/BtnRight" to="." method="_on_BtnRight_pressed"]
 [connection signal="pressed" from="Control/BtnRight2" to="." method="_on_BtnRight2_pressed"]
 [connection signal="pressed" from="Control/BtnSetting" to="." method="_on_BtnSetting_pressed"]
-[connection signal="pressed" from="Control/BtnNotice" to="." method="_on_BtnNotice_pressed"]
-[connection signal="pressed" from="Control/LbLevel/Button" to="." method="_on_level_unlocked"]
+[connection signal="pressed" from="Control/BtnRank" to="." method="_on_BtnRank_pressed"]
