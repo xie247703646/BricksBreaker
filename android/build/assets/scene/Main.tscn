@@ -53,13 +53,3 @@ unique_name_in_owner = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-
-[node name="HTTPRequest" type="HTTPRequest" parent="."]
-
-[node name="TextureRect" type="TextureRect" parent="."]
-margin_left = 319.0
-margin_top = 652.0
-margin_right = 359.0
-margin_bottom = 692.0
-
-[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
