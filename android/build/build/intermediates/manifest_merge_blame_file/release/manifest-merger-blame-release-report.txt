@@ -2,8 +2,8 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.egoist.bricksbreaker"
 4    android:installLocation="auto"
-5    android:versionCode="18"
-6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+5    android:versionCode="24"
+6    android:versionName="2.4" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
 7    <uses-sdk
 8        android:minSdkVersion="21"
 9        android:targetSdkVersion="33" />
@@ -1140,11 +1140,11 @@
 585-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:30:13-37
 586
 587        <meta-data
-587-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:11:9-13:59
+587-->[pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:11:9-13:59
 588            android:name="org.godotengine.plugin.v1.PocketAd"
-588-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:12:13-62
+588-->[pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:12:13-62
 589            android:value="com.godot.pocketad.PocketAd" />
-589-->[app-debug.aar] C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\AndroidManifest.xml:13:13-56
+589-->[pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:13:13-56
 590        <meta-data
 590-->[taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
 591            android:name="org.godotengine.plugin.v1.TapTap"

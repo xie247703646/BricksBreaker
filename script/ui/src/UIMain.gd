@@ -114,5 +114,6 @@ func _on_BtnAchieve_pressed() -> void:
 	TapTap.show_achieve_page()
 
 func _on_BtnRank_pressed() -> void:
+#	UIMgr.show_toast(UI.UIToast,"出于成本考虑，暂时关闭排行榜")
 	UIMgr.open_ui(UI.UIRank,select_level)
 	on_hide()

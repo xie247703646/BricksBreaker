@@ -14,6 +14,7 @@ func on_open(data):
 	TapTap.connect("get_rank_data_fail",self,"_on_get_rank_data_fail")
 	TapTap.get_rank_data("Level_%s" % level_id,Limit)
 #	TapTap.get_rank_data("pass_time",Limit)
+	EventTracker.track("#open_ui_rank")
 
 func on_close(data):
 	TapTap.disconnect("get_rank_data_success",self,"_on_get_rank_data_success")

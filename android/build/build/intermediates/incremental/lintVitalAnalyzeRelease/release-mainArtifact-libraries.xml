@@ -117,10 +117,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified@jar"
-      jars="C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug\jars\classes.jar"
-      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\app-debug.aar:unspecified"
-      folder="C:\Users\egoist\.gradle\caches\transforms-3\e83bd8c2a4865f69dcda0d47edd76165\transformed\jetified-app-debug"
+      name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\pocket.aar:unspecified@jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\jars\classes.jar"
+      resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\plugins\pocket.aar:unspecified"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

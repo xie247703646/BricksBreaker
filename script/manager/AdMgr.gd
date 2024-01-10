@@ -27,5 +27,11 @@ func show_reward_video()->void:
 		UIMgr.show_toast(UI.UIToast,tr("key_no_ad"))
 		Debug.Warn(name,"reward_video展示失败")
 
+func show_inter()->void:
+	if is_valid():
+		sdk_ad.call("show_inter")
+	else:
+		Debug.Warn(name,"插屏展示失败")
+
 func is_valid()->bool:
 	return sdk_ad != null

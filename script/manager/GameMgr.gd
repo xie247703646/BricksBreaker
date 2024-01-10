@@ -20,6 +20,7 @@ var level_cnt = 0
 var unlocked_levels:Array = [1]
 var is_debug:bool = true
 var start_time:int = 0
+var win_cnt:int = 0
 
 var mode:int = Mode.Normal
 

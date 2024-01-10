@@ -15,6 +15,8 @@ func on_open(data = null)->void:
 	if data.has("text_yes"): btn_yes.text = data["text_yes"]
 	if data.has("func_no"): func_no = data["func_no"]
 	if data.has("func_yes"): func_yes = data["func_yes"]
+	if data.has("hide_yes"): btn_yes.visible = false
+	if data.has("hide_no"): btn_no.visible = false
 
 func on_close(data = null)->void:
 	func_no = null

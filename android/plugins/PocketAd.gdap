@@ -2,7 +2,7 @@
 
 name="PocketAd"
 binary_type="local"
-binary="app-debug.aar"
+binary="pocket.aar"
 
 [dependencies]
 

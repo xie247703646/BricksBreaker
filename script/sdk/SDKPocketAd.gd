@@ -19,6 +19,13 @@ signal banner_exposure
 signal banner_clicked
 signal banner_closed
 
+signal inter_loaded
+signal inter_exposure
+signal inter_clicked
+signal inter_closed
+signal inter_success
+signal inter_failed
+
 const PocketAd:String = "PocketAd"
 const Platform:String = "taptap"
 
@@ -26,6 +33,7 @@ const Pocket_ID:String = "12328"
 
 const BANNER_ID:String = "57566"
 const REWARD_VIDEO_ID:String = "56618"
+const INTER_ID:String = "57633"
 
 var pocket_ad
 
@@ -56,6 +64,13 @@ func _init_signal()->void:
 	pocket_ad.connect("banner_exposure",self,"_on_banner_exposure")
 	pocket_ad.connect("banner_clicked",self,"_on_banner_clicked")
 	pocket_ad.connect("banner_closed",self,"_on_banner_closed")
+	
+	pocket_ad.connect("inter_loaded",self,"_on_inter_loaded")
+	pocket_ad.connect("inter_exposure",self,"_on_inter_exposure")
+	pocket_ad.connect("inter_clicked",self,"_on_inter_clicked")
+	pocket_ad.connect("inter_closed",self,"_on_inter_closed")
+	pocket_ad.connect("inter_success",self,"_on_inter_success")
+	pocket_ad.connect("inter_failed",self,"_on_inter_failed")
 
 func show_banner()->void:
 	if not pocket_ad:
@@ -74,6 +89,12 @@ func show_reward_video()->void:
 		Debug.Error(PocketAd,"插件实例不存在，无法展示RewardVideo")
 		return
 	pocket_ad.loadRewardVideoAd(REWARD_VIDEO_ID)
+
+func show_inter()->void:
+	if not pocket_ad:
+		Debug.Error(PocketAd,"插件实例不存在，无法展示插屏")
+		return
+	pocket_ad.showInterAD(INTER_ID)
 
 func _on_reward_video_loaded()->void:
 	emit_signal("reward_video_loaded")
@@ -154,3 +175,33 @@ func _on_banner_closed()->void:
 	emit_signal("banner_closed")
 	EventTracker.track("#banner_closed")
 	Debug.Log(PocketAd,"banner被关闭")
+
+func _on_inter_loaded()->void:
+	emit_signal("inter_loaded")
+	EventTracker.track("#inter_loaded")
+	Debug.Log(PocketAd,"插屏加载完毕")
+
+func _on_inter_exposure()->void:
+	emit_signal("inter_exposure")
+	EventTracker.track("#inter_exposure")
+	Debug.Log(PocketAd,"插屏曝光")
+
+func _on_inter_clicked()->void:
+	emit_signal("inter_clicked")
+	EventTracker.track("#inter_clicked")
+	Debug.Log(PocketAd,"插屏被点击")
+
+func _on_inter_closed()->void:
+	emit_signal("inter_closed")
+	EventTracker.track("#inter_closed")
+	Debug.Log(PocketAd,"插屏被关闭")
+
+func _on_inter_success()->void:
+	emit_signal("inter_success")
+	EventTracker.track("#inter_success")
+	Debug.Log(PocketAd,"插屏加载成功")
+
+func _on_inter_failed()->void:
+	emit_signal("inter_failed")
+	EventTracker.track("#inter_failed")
+	Debug.Log(PocketAd,"插屏加载失败")

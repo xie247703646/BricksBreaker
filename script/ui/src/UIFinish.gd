@@ -23,18 +23,38 @@ func on_open(data):
 	ct_win.visible = win
 	ct_fail.visible = not win
 	if win:
-		EventTracker.track("#level_win")
+		
 		var time:int = Time.get_ticks_msec() - GameMgr.start_time
-		var record_dic:Dictionary = SaveMgr.get_value(GameMgr.CONFIG_SECTION,"record",{})
-		var record_time:int = record_dic.get(GameMgr.cur_level,-1)
-		if record_time == -1 or time < record_time:
-			record_dic[GameMgr.cur_level] = time
-			SaveMgr.set_value(GameMgr.CONFIG_SECTION,"record",record_dic)
-			UIMgr.show_toast(UI.UIToast,tr("key_new_record"))
-			TapTap.submit_rank_data("Level_%s" % GameMgr.cur_level,time)
 		lb_time.text = tr("key_time") % TimeUtil.format(time)
-		if time < 31000 and not AchieveMgr.is_finish("Ach010"):
-			AchieveMgr.reach("Ach010")
+		
+		if GameMgr.mode == GameMgr.Mode.Normal:
+			GameMgr.win_cnt += 1
+			if GameMgr.win_cnt % 3 == 0: 
+	#			var is_new:bool = SaveMgr.has_section_key(Global.Section_Misc,"is_new")
+	#			if is_new: AdMgr.show_inter()
+				AdMgr.show_inter()
+				hide()
+				
+				var confirm_data:Dictionary = {
+					"tip":"即将播放插屏广告\n\n被迫投喂创作者们几分钱^_^",
+					"func_yes":funcref(self,"show"),
+					"hide_no":true
+				}
+				
+				UIMgr.open_ui(UI.UIConfirm,confirm_data)
+				
+			EventTracker.track("#level_win")
+			var record_dic:Dictionary = SaveMgr.get_value(GameMgr.CONFIG_SECTION,"record",{})
+			var record_time:int = record_dic.get(GameMgr.cur_level,-1)
+			
+			if record_time == -1 or time < record_time:
+				record_dic[GameMgr.cur_level] = time
+				SaveMgr.set_value(GameMgr.CONFIG_SECTION,"record",record_dic)
+				UIMgr.show_toast(UI.UIToast,tr("key_new_record"))
+				TapTap.submit_rank_data("Level_%s" % GameMgr.cur_level,time)
+		
+			if time < 31000 and not AchieveMgr.is_finish("Ach010"):
+				AchieveMgr.reach("Ach010")
 	else:
 		EventTracker.track("#level_fail")
 
