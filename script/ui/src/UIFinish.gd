@@ -28,20 +28,15 @@ func on_open(data):
 		lb_time.text = tr("key_time") % TimeUtil.format(time)
 		
 		if GameMgr.mode == GameMgr.Mode.Normal:
-			GameMgr.win_cnt += 1
-			if GameMgr.win_cnt % 3 == 0: 
-	#			var is_new:bool = SaveMgr.has_section_key(Global.Section_Misc,"is_new")
-	#			if is_new: AdMgr.show_inter()
-				AdMgr.show_inter()
-				hide()
-				
-				var confirm_data:Dictionary = {
-					"tip":"即将播放插屏广告\n\n被迫投喂创作者们几分钱^_^",
-					"func_yes":funcref(self,"show"),
-					"hide_no":true
-				}
-				
-				UIMgr.open_ui(UI.UIConfirm,confirm_data)
+			
+			var cloud_data_key:String = "new_inter_show_rate" if Setting.is_new else "old_inter_show_rate"
+			
+			var inter_show_rate:float = CloudDataMgr.get_value(cloud_data_key,0.3)
+			var inter_show_level_threshold:int = CloudDataMgr.get_value("inter_show_level_threshold",20)
+			var unlocked_level_cnt:int = GameMgr.unlocked_levels.size()
+			
+			if unlocked_level_cnt >= inter_show_level_threshold and randf() <= inter_show_rate: 
+				show_inter()
 				
 			EventTracker.track("#level_win")
 			var record_dic:Dictionary = SaveMgr.get_value(GameMgr.CONFIG_SECTION,"record",{})
@@ -60,6 +55,18 @@ func on_open(data):
 
 func on_close(data):
 	pass
+
+func show_inter()->void:
+	AdMgr.show_inter()
+	hide()
+	
+	var confirm_data:Dictionary = {
+		"tip":"即将播放广告(5秒后可关闭)\n\n感谢投喂^_^",
+		"func_yes":funcref(self,"show"),
+		"hide_no":true
+	}
+	
+	UIMgr.open_ui(UI.UIConfirm,confirm_data)
 
 func _on_BtnRoast_pressed() -> void:
 	GameMgr.open_game_page()

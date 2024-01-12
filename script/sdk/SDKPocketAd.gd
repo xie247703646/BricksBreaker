@@ -164,6 +164,10 @@ func _on_banner_load_fail()->void:
 func _on_banner_exposure()->void:
 	emit_signal("banner_exposure")
 	EventTracker.track("#banner_exposure")
+	if Setting.is_new:
+		EventTracker.track("#new_banner_exposure")
+	else:
+		EventTracker.track("#old_banner_exposure")
 	Debug.Log(PocketAd,"banner曝光")
 
 func _on_banner_clicked()->void:
@@ -184,6 +188,10 @@ func _on_inter_loaded()->void:
 func _on_inter_exposure()->void:
 	emit_signal("inter_exposure")
 	EventTracker.track("#inter_exposure")
+	if Setting.is_new:
+		EventTracker.track("#new_inter_exposure")
+	else:
+		EventTracker.track("#old_inter_exposure")
 	Debug.Log(PocketAd,"插屏曝光")
 
 func _on_inter_clicked()->void:

@@ -17,7 +17,7 @@ func on_open(data):
 			btn_vibrate.visible = true
 			btn_ad.visible = true
 	
-	btn_ad.visible = not SaveMgr.has_section_key(Global.Section_Misc,"is_new")
+	btn_ad.visible = not Setting.is_new
 	
 	btn_sound.pressed = not Setting.sfx_enabled
 	btn_vibrate.pressed = not Setting.vibrate_enabled

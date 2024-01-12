@@ -20,7 +20,6 @@ var level_cnt = 0
 var unlocked_levels:Array = [1]
 var is_debug:bool = true
 var start_time:int = 0
-var win_cnt:int = 0
 
 var mode:int = Mode.Normal
 
@@ -46,6 +45,10 @@ func start_normal_level(level:int)->void:
 	game.init_level(level_ins)
 	start_time = Time.get_ticks_msec()
 	EventTracker.track("#level_start",{"#level_id":"Level_%s" % level})
+	if Setting.is_new:
+		EventTracker.track("#new_level_start")
+	else:
+		EventTracker.track("#old_level_start")
 
 func start_test_level(level_ins:TileMap)->void:
 	mode = Mode.Test

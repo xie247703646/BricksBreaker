@@ -1,6 +1,8 @@
 extends Node
 
-const version:String = "2.4"
+const version:String = "2.5"
+
+var is_new:bool = true
 
 var sfx_enabled:bool = true setget _set_sfx_enabled
 func _set_sfx_enabled(v:bool)->void:
