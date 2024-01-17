@@ -27,4 +27,5 @@ func _on_request_completed(result, response_code, headers, body):
 		return
 	data = parse_json(body.get_string_from_utf8())
 	Debug.Log(name,"cloud data download completed")
+	Debug.Log(name,JSON.print(data))
 	

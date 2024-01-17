@@ -22,8 +22,8 @@ var item_scenes:Array = [
 	preload("res://scene/game/item/PaddleShrink.tscn")
 ]
 
-var item_weight:Array = [
-	30,35,25,10
+var item_weight_arr:Array = [
+	35,35,20,10
 ]
 
 const MAX_BALL_CNT = 500
@@ -36,6 +36,9 @@ var paddle: Paddle
 
 func _ready() -> void:
 	UIMgr.open_ui(UI.UIGame)
+
+	item_weight_arr = CloudDataMgr.get_value("item_weight_arr",item_weight_arr)
+	
 	SignalMgr.connect("brick_broken",self,"_on_brick_broken")
 	paddle = create_paddle()
 	yield(get_tree().create_timer(1),"timeout")
@@ -107,7 +110,7 @@ func _on_brick_broken(global_pos:Vector2)->void:
 	var p = 0.1 * (MAX_BALL_CNT - ball_cnt * 10 + 10) / MAX_BALL_CNT
 	p = clamp(p,0.01,0.1)
 	if randf() < p:
-		var idx = MathUtil.rand_weight(item_weight)
+		var idx = MathUtil.rand_weight(item_weight_arr)
 		create_item(idx,global_pos)
 
 func _on_DeadArea_body_entered(body: Node2D) -> void:

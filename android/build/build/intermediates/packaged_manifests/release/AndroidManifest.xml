@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.egoist.bricksbreaker"
     android:installLocation="auto"
-    android:versionCode="25"
-    android:versionName="2.5" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+    android:versionCode="27"
+    android:versionName="2.7" >
+
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="33" />
@@ -14,13 +15,14 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
-    <uses-feature
-        android:glEsVersion="0x00030000"
-        android:required="true" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <uses-permission android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN" />
     <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
 

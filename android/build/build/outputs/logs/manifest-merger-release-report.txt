@@ -18,7 +18,7 @@ MERGED from [TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8
 MERGED from [TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:2:1-29:12
 MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:2:1-17:12
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:2:1-33:12
-MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:2:1-16:12
+MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:2:1-16:12
 MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:2:1-16:12
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\egoist\.gradle\caches\transforms-3\d2bc005dea0d0f0618139db3dcfc83f2\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
@@ -59,9 +59,9 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\d3b28d87830d00998418c82be693cb95\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\egoist\.gradle\caches\transforms-3\c2e7a6f7c18e58aee699d724727cbaf5\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\egoist\.gradle\caches\transforms-3\c331441a363cce6313415490ed272b6a\transformed\jetified-rxandroid-2.1.1\AndroidManifest.xml:15:1-20:12
-INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-31:12
-INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-31:12
-INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:4:5-29
 		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
@@ -99,7 +99,6 @@ REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifes
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:16:9-37
 uses-feature#0x00020000
 ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:19:5-21:35
-REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:19:5-21:35
 	android:glEsVersion
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:20:9-41
 	android:required
@@ -126,8 +125,8 @@ MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transform
 MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:11:5-15:19
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:20:5-31:19
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:20:5-31:19
-MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:10:5-14:19
-MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:10:5-14:19
+MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:10:5-14:19
+MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:10:5-14:19
 MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:10:5-14:19
 MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:10:5-14:19
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:11:5-35:19
@@ -162,7 +161,7 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\egoist\.gradle\cac
 		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:68-95
 		REJECTED from [gdt_ad_sdk_230210.aar] C:\Users\egoist\.gradle\caches\transforms-3\391199589ec9c4edd51fe78db707f67e\transformed\jetified-gdt_ad_sdk_230210\AndroidManifest.xml:23:9-36
 	tools:replace
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:19:9-123
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:18:9-123
 	android:isGame
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:96-117
 		REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:30:96-117
@@ -175,7 +174,7 @@ meta-data#xr_mode_metadata_name
 ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:41:9-43:54
 REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:41:9-43:54
 	tools:node
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:23:20-39
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:22:20-39
 	android:value
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:43:13-51
 	android:name
@@ -184,7 +183,7 @@ meta-data#xr_hand_tracking_metadata_name
 ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:48:9-50:62
 REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:48:9-50:62
 	tools:node
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:25:20-39
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:24:20-39
 	android:value
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:50:13-60
 	android:name
@@ -193,7 +192,7 @@ meta-data#xr_hand_tracking_version_name
 ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:55:9-57:61
 REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:55:9-57:61
 	tools:node
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:24:20-39
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:23:20-39
 	android:value
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:57:13-59
 	android:name
@@ -202,7 +201,7 @@ meta-data#com.oculus.supportedDevices
 ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:61:9-63:35
 REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:61:9-63:35
 	tools:node
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:26:20-39
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:25:20-39
 	android:value
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:63:13-32
 	android:name
@@ -261,14 +260,14 @@ MERGED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:78:13-55
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:78:13-55
 	tools:replace
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:27:58-153
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:26:58-153
 	android:name
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:76:13-37
 meta-data#com.oculus.vr.focusaware
 ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:88:13-87
 REJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:88:13-87
 	tools:node
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:28:24-43
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:27:24-43
 	android:value
 		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:88:64-84
 	android:name
@@ -295,8 +294,8 @@ MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transform
 MERGED from [TapAchievement_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\32b249b56e76a0e32c0aa361f8dfea2b\transformed\jetified-TapAchievement_3.27.0\AndroidManifest.xml:7:5-9:41
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:8:5-11:52
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:8:5-11:52
-MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:6:5-8:41
-MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:6:5-8:41
+MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:6:5-8:41
+MERGED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:6:5-8:41
 MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:6:5-8:41
 MERGED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:6:5-8:41
 MERGED from [godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:7:5-9:41
@@ -387,14 +386,8 @@ INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\An
 	android:minSdkVersion
 		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml
 		INJECTED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml
-uses-feature#0x00030000
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:5-78
-	android:glEsVersion
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:19-51
-	android:required
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:52-75
 uses-permission#android.permission.INTERNET
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:11:5-67
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:5-67
 MERGED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:22:5-66
 MERGED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:22:5-66
 MERGED from [gdt_ad_sdk_230210.aar] C:\Users\egoist\.gradle\caches\transforms-3\391199589ec9c4edd51fe78db707f67e\transformed\jetified-gdt_ad_sdk_230210\AndroidManifest.xml:16:5-67
@@ -406,19 +399,19 @@ MERGED from [TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:13:5-67
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:13:5-67
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:11:22-64
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:10:22-64
 uses-permission#android.permission.VIBRATE
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:12:5-66
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:11:5-66
 MERGED from [gdt_ad_sdk_230210.aar] C:\Users\egoist\.gradle\caches\transforms-3\391199589ec9c4edd51fe78db707f67e\transformed\jetified-gdt_ad_sdk_230210\AndroidManifest.xml:20:5-66
 MERGED from [gdt_ad_sdk_230210.aar] C:\Users\egoist\.gradle\caches\transforms-3\391199589ec9c4edd51fe78db707f67e\transformed\jetified-gdt_ad_sdk_230210\AndroidManifest.xml:20:5-66
 MERGED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:19:5-66
 MERGED from [ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:19:5-66
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:12:22-63
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:11:22-63
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:13:5-68
+ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:12:5-68
 	android:name
-		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:13:22-65
+		ADDED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:12:22-65
 uses-permission#${applicationId}.openadsdk.permission.TT_PANGOLIN
 ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:6:5-88
 	android:name
@@ -888,7 +881,7 @@ ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1
 	android:name
 		ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:98:19-119
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-31:12 reason: com.bytedance.sdk.openadsdk requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\godotProjects\remote\BricksBreaker\android\build\src\release\AndroidManifest.xml:2:1-30:12 reason: com.bytedance.sdk.openadsdk requested WRITE_EXTERNAL_STORAGE
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:17:5-80
 MERGED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:17:5-80
 uses-permission#android.permission.CHANGE_NETWORK_STATE
@@ -1468,11 +1461,11 @@ ADDED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36ba
 	android:name
 		ADDED from [TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:28:13-72
 meta-data#org.godotengine.plugin.v1.PocketAd
-ADDED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:11:9-13:59
+ADDED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:11:9-13:59
 	android:value
-		ADDED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:13:13-56
+		ADDED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:13:13-56
 	android:name
-		ADDED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\4da5554876b56defbf28cfd6d378c074\transformed\jetified-pocket\AndroidManifest.xml:12:13-62
+		ADDED from [pocket.aar] C:\Users\egoist\.gradle\caches\transforms-3\9940c0761890fd13ee9117404e2aed0d\transformed\jetified-pocket\AndroidManifest.xml:12:13-62
 meta-data#org.godotengine.plugin.v1.TapTap
 ADDED from [taptap.aar] C:\Users\egoist\.gradle\caches\transforms-3\568827889c87c615b42604811da0da94\transformed\jetified-taptap\AndroidManifest.xml:11:9-13:56
 	android:value

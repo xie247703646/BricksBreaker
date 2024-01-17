@@ -254,4 +254,8 @@ common/physics_interpolation=true
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=1
+vram_compression/import_etc=true
 environment/default_clear_color=Color( 0.0980392, 0.113725, 0.403922, 1 )
