@@ -15,6 +15,7 @@ key_quit_game,Quit Game,退出游戏
 key_pause,Pause,暂停
 key_time,Time:%s,已用时：%s
 key_sfx_switch,SFX:,声音：
+key_music_switch,Music,音乐：
 key_vibrate_switch,Vibrate:,震动：
 key_on,On,开
 key_off,Off,关

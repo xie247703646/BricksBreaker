@@ -13,7 +13,7 @@ func execute()->void:
 	pass
 
 func _on_body_entered(body)->void:
-	AudioMgr.play_sfx("ding")
+	AudioMgr.play_sfx("ding",true)
 	execute()
 	queue_free()
 

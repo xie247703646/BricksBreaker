@@ -26,6 +26,7 @@ func _on_BtnResume_pressed() -> void:
 func _on_BtnClose_pressed() -> void:
 	GameMgr.game_quit()
 	close()
+	AudioMgr.stop_music()
 	UIMgr.close_ui(UI.UIGame)
 	
 	match GameMgr.mode:

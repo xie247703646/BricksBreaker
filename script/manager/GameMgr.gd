@@ -70,7 +70,7 @@ func game_over(win:bool)->void:
 	if win: unlock_level(cur_level + 1)
 	UIMgr.show_input_block()
 	get_tree().paused = true
-	AudioMgr.clear()
+	AudioMgr.clear_sfx()
 	yield(get_tree().create_timer(1),"timeout")
 	UIMgr.hide_input_block()
 	get_tree().paused = false
@@ -79,7 +79,7 @@ func game_over(win:bool)->void:
 	UIMgr.open_ui(UI.UIFinish,win)
 
 func game_quit()->void:
-	AudioMgr.clear()
+	AudioMgr.clear_sfx()
 	if game: game.queue_free()
 	game = null
 

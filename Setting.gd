@@ -1,6 +1,6 @@
 extends Node
 
-const version:String = "2.7"
+const version:String = "2.9"
 
 var is_new:bool = true
 
@@ -9,6 +9,12 @@ func _set_sfx_enabled(v:bool)->void:
 	sfx_enabled = v
 	AudioMgr.set_sound_mute(not v)
 	if _inited: SaveMgr.set_value(Global.Section_Misc,"sfx_enabled",v)
+
+var music_enabled:bool = true setget _set_music_enabled
+func _set_music_enabled(v:bool)->void:
+	music_enabled = v
+	AudioMgr.set_music_mute(not v)
+	if _inited: SaveMgr.set_value(Global.Section_Misc,"music_enabled",v)
 
 var vibrate_enabled:bool = true setget _set_vibrate_enabled
 func _set_vibrate_enabled(v:bool)->void:
@@ -29,6 +35,7 @@ var _inited:bool = false
 
 func _ready() -> void:
 	sfx_enabled = SaveMgr.get_value(Global.Section_Misc,"sfx_enabled",true)
+	music_enabled = SaveMgr.get_value(Global.Section_Misc,"music_enabled",true)
 	vibrate_enabled = SaveMgr.get_value(Global.Section_Misc,"vibrate_enabled",true)
 	ad_enabled = SaveMgr.get_value(Global.Section_Misc,"ad_enabled",true)
 	control_mode = SaveMgr.get_value(Global.Section_Misc,"control_mode",Global.ControlMode.Slide)

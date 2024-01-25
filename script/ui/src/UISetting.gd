@@ -1,11 +1,13 @@
 extends UIBase
 
 onready var btn_sfx: Button = $VBoxContainer/BtnSfx
+onready var btn_music: Button = $VBoxContainer/BtnMusic
 onready var btn_vibrate: Button = $VBoxContainer/BtnVibrate
 onready var btn_control: Button = $VBoxContainer/BtnControl
 
 func _ready() -> void:
 	update_sfx()
+	update_music()
 	update_vibrate()
 	update_control_mode()
 
@@ -30,6 +32,10 @@ func _on_BtnSfx_pressed() -> void:
 	Setting.sfx_enabled = not Setting.sfx_enabled
 	update_sfx()
 
+func _on_BtnMusic_pressed() -> void:
+	Setting.music_enabled = not Setting.music_enabled
+	update_music()
+
 func _on_BtnVibrate_pressed() -> void:
 	Setting.vibrate_enabled = not Setting.vibrate_enabled
 	update_vibrate()
@@ -48,6 +54,11 @@ func update_sfx()->void:
 	var str_sfx_on:String = tr("key_sfx_switch") + tr("key_on")
 	var str_sfx_off:String = tr("key_sfx_switch") + tr("key_off")
 	btn_sfx.text = str_sfx_on if Setting.sfx_enabled else str_sfx_off
+	
+func update_music()->void:
+	var str_music_on:String = tr("key_music_switch") + tr("key_on")
+	var str_music_off:String = tr("key_music_switch") + tr("key_off")
+	btn_music.text = str_music_on if Setting.music_enabled else str_music_off
 
 func update_vibrate()->void:
 	var str_vibrate_on:String = tr("key_vibrate_switch") + tr("key_on")

@@ -24,13 +24,13 @@ func on_open(data):
 	ct_win.visible = win
 	ct_fail.visible = not win
 	
+	try_show_inter()
+	
 	if win:
-		
 		var time:int = Time.get_ticks_msec() - GameMgr.start_time
 		lb_time.text = tr("key_time") % TimeUtil.format(time)
 		
 		if GameMgr.mode == GameMgr.Mode.Normal:
-			try_show_inter()
 			
 			EventTracker.track("#level_win")
 			var record_dic:Dictionary = SaveMgr.get_value(GameMgr.CONFIG_SECTION,"record",{})
@@ -52,8 +52,8 @@ func on_close(data):
 
 func try_show_inter()->void:
 	var cloud_data_key:String = "new_inter_show_rate" if Setting.is_new else "old_inter_show_rate"
-			
 	var inter_show_rate:float = CloudDataMgr.get_value(cloud_data_key,0.3)
+	if not win: inter_show_rate *= 0.5
 	var inter_show_level_threshold:int = CloudDataMgr.get_value("inter_show_level_threshold",20)
 	var unlocked_level_cnt:int = GameMgr.unlocked_levels.size()
 	
@@ -79,6 +79,7 @@ func _on_BtnClose_pressed() -> void:
 	UIMgr.close_ui(UI.UIGame)
 	GameMgr.game_quit()
 	close()
+	AudioMgr.stop_music()
 	
 	match GameMgr.mode:
 		GameMgr.Mode.Test: UIMgr.open_ui(UI.UILevelEditor)
@@ -101,5 +102,5 @@ func _on_BtnNext_pressed() -> void:
 	SaveMgr.set_value(GameMgr.CONFIG_SECTION,"select_level",level)
 	GameMgr.game_quit()
 	GameMgr.start_normal_level(level)
-	AdMgr.show_banner()
+#	AdMgr.show_banner()
 	

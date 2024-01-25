@@ -14,6 +14,7 @@ var select_level:int = 1
 var level_ins:TileMap = null
 
 func on_open(data):
+	
 	lb_version.text = "Version " + Setting.version
 	
 	match Global.Cur_Platform:
@@ -23,7 +24,6 @@ func on_open(data):
 		Global.Platform.TapTap:
 			btn_editor.visible = true
 			lb_maker.visible = true
-	
 	
 	if data:
 		select_level = data
@@ -63,11 +63,14 @@ func show_level()->void:
 
 func update_level_state()->void:
 	var is_level_locked = not GameMgr.is_level_unlocked(select_level)
-	btn_unlock.visible = GameMgr.is_debug or is_level_locked
-	btn_start.visible = not is_level_locked
+#	btn_unlock.visible = GameMgr.is_debug or is_level_locked
+#	btn_start.visible = not is_level_locked
+	btn_unlock.visible = false
+	btn_start.visible = true
 
 func _on_BtnStart_pressed() -> void:
 	close()
+	GameMgr.unlock_level(select_level)
 	GameMgr.start_normal_level(select_level)
 
 func _on_BtnRight_pressed() -> void:
