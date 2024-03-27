@@ -916,7 +916,7 @@
     <string name="achievement_unlocked">已解锁</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">GDTMobStub</string>
-    <string name="godot_project_name_string">BricksBreaker</string>
+    <string name="godot_project_name_string">BricksBreaker（TapTap测试版）</string>
     <string name="kilobytes_per_second">%1$s KB/s</string>
     <string name="ksad_ad_default_username_normal">可爱的广告君</string>
     <string name="ksad_card_tips_interested">感兴趣</string>

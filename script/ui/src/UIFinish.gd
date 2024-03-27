@@ -52,16 +52,25 @@ func on_close(data):
 
 func try_show_inter()->void:
 	var cloud_data_key:String = "new_inter_show_rate" if Setting.is_new else "old_inter_show_rate"
-	var inter_show_rate:float = CloudDataMgr.get_value(cloud_data_key,0.3)
-	if not win: inter_show_rate *= 0.5
-	var inter_show_level_threshold:int = CloudDataMgr.get_value("inter_show_level_threshold",20)
+	var inter_show_rate:float = CloudDataMgr.get_value(cloud_data_key,0.5)
+#	if not win: inter_show_rate *= 0.5
+	var inter_show_level_threshold:int = CloudDataMgr.get_value("inter_show_level_threshold",5)
 	var unlocked_level_cnt:int = GameMgr.unlocked_levels.size()
+	var inter_show_gape:bool = CloudDataMgr.get_value("inter_show_gape",false)
 	
-	if unlocked_level_cnt >= inter_show_level_threshold and randf() <= inter_show_rate: 
-		hide()
+	var is_hit:bool = unlocked_level_cnt >= inter_show_level_threshold and randf() <= inter_show_rate
+	
+	if inter_show_gape:
+		if AdMgr.is_just_show_inter:
+			AdMgr.is_just_show_inter = false
+		elif is_hit:
+			AdMgr.is_just_show_inter = true
+			show_inter()
+	elif is_hit:
 		show_inter()
 
 func show_inter()->void:
+	hide()
 	AdMgr.show_inter()
 	
 	var confirm_data:Dictionary = {

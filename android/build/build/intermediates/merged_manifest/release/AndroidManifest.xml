@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.egoist.bricksbreaker"
+    package="game.taptap.bricksbreaker"
     android:installLocation="auto"
-    android:versionCode="29"
-    android:versionName="2.9" >
+    android:versionCode="31"
+    android:versionName="3.1" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -23,11 +23,11 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <uses-permission android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN" />
+    <uses-permission android:name="game.taptap.bricksbreaker.openadsdk.permission.TT_PANGOLIN" />
     <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
 
     <permission
-        android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN"
+        android:name="game.taptap.bricksbreaker.openadsdk.permission.TT_PANGOLIN"
         android:protectionLevel="signature" />
 
     <queries>
@@ -145,24 +145,24 @@
 
         <provider
             android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
-            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+            android:authorities="game.taptap.bricksbreaker.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
             android:exported="false"
             android:process=":downloader" />
         <provider
             android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"
-            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.main"
+            android:authorities="game.taptap.bricksbreaker.pangle.servermanager.main"
             android:exported="false" />
         <provider
             android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
-            android:authorities="com.egoist.bricksbreaker.TTMultiProvider"
+            android:authorities="game.taptap.bricksbreaker.TTMultiProvider"
             android:exported="false" />
         <provider
             android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
-            android:authorities="com.egoist.bricksbreaker.pangle.provider.proxy.main"
+            android:authorities="game.taptap.bricksbreaker.pangle.provider.proxy.main"
             android:exported="false" />
         <provider
             android:name="com.bytedance.pangle.FileProvider"
-            android:authorities="com.egoist.bricksbreaker.pangle.fileprovider"
+            android:authorities="game.taptap.bricksbreaker.pangle.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" />
 
@@ -546,7 +546,7 @@
 
         <provider
             android:name="com.kwad.sdk.api.proxy.app.AdSdkFileProvider"
-            android:authorities="com.egoist.bricksbreaker.adFileProvider"
+            android:authorities="game.taptap.bricksbreaker.adFileProvider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -555,7 +555,7 @@
         </provider>
         <provider
             android:name="com.tds.common.provider.CurrentConfigProvider"
-            android:authorities="com.egoist.bricksbreaker.tap_config.provider"
+            android:authorities="game.taptap.bricksbreaker.tap_config.provider"
             android:exported="false" />
 
         <activity
@@ -571,7 +571,7 @@
 
         <provider
             android:name="com.taptap.sdk.internal.user.CurrentUserProvider"
-            android:authorities="com.egoist.bricksbreaker.tap_user.provider"
+            android:authorities="game.taptap.bricksbreaker.tap_user.provider"
             android:exported="false" />
 
         <meta-data
@@ -583,7 +583,7 @@
 
         <provider
             android:name="com.tds.tapdb.internal.device.DeviceProvider"
-            android:authorities="com.egoist.bricksbreaker.device.provider"
+            android:authorities="game.taptap.bricksbreaker.device.provider"
             android:exported="false" />
 
         <meta-data
@@ -606,7 +606,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.egoist.bricksbreaker.fileprovider"
+            android:authorities="game.taptap.bricksbreaker.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -615,7 +615,7 @@
         </provider>
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.egoist.bricksbreaker.androidx-startup"
+            android:authorities="game.taptap.bricksbreaker.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

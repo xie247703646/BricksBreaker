@@ -40,7 +40,7 @@
     <string name="achievement_rarity_ultra_rare">Ultra Rare</string>
     <string name="achievement_rarity_uncommon">Rare</string>
     <string name="achievement_unlocked">UNLOCKED</string>
-    <string name="godot_project_name_string">BricksBreaker</string>
+    <string name="godot_project_name_string">BricksBreaker（TapTap测试版）</string>
     <string name="login_account_logged_tip">Akun yang login: %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Telusuri"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>

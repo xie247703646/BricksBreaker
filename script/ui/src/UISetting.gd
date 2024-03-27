@@ -70,3 +70,12 @@ func _on_BtnTip_pressed() -> void:
 		Global.ControlMode.Follow: UIMgr.show_toast(UI.UIToast,"反弹板跟随手指移动")
 		Global.ControlMode.Slide: UIMgr.show_toast(UI.UIToast,"手指左右滑动以控制反弹板")
 		Global.ControlMode.Click: UIMgr.show_toast(UI.UIToast,"点击左右屏幕以控制反弹板")
+
+func _on_BtnAd_pressed() -> void:
+	AdMgr.show_inter()
+
+func _on_BtnAd1_pressed() -> void:
+	AdMgr.show_reward_video()
+
+func _on_BtnICP_pressed() -> void:
+	OS.shell_open("https://beian.miit.gov.cn/#/Integrated/index")

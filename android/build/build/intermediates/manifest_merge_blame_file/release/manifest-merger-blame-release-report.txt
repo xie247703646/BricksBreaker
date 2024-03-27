@@ -1,9 +1,9 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.egoist.bricksbreaker"
+3    package="game.taptap.bricksbreaker"
 4    android:installLocation="auto"
-5    android:versionCode="29"
-6    android:versionName="2.9" >
+5    android:versionCode="31"
+6    android:versionName="3.1" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="21"
@@ -37,7 +37,7 @@
 24        android:required="true" />
 24-->D:\godotProjects\remote\BricksBreaker\android\build\AndroidManifest.xml:21:9-32
 25
-26    <uses-permission android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN" />
+26    <uses-permission android:name="game.taptap.bricksbreaker.openadsdk.permission.TT_PANGOLIN" />
 26-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:6:5-88
 26-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:6:22-86
 27    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
@@ -46,7 +46,7 @@
 28
 29    <permission
 29-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:9:5-119
-30        android:name="com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN"
+30        android:name="game.taptap.bricksbreaker.openadsdk.permission.TT_PANGOLIN"
 30-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:9:17-81
 31        android:protectionLevel="signature" />
 31-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:9:82-117
@@ -276,7 +276,7 @@
 146-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:37:9-260
 147            android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
 147-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:37:19-97
-148            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+148            android:authorities="game.taptap.bricksbreaker.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
 148-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:37:98-203
 149            android:exported="false"
 149-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:37:204-228
@@ -286,7 +286,7 @@
 151-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:38:9-183
 152            android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"
 152-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:38:19-91
-153            android:authorities="com.egoist.bricksbreaker.pangle.servermanager.main"
+153            android:authorities="game.taptap.bricksbreaker.pangle.servermanager.main"
 153-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:38:92-156
 154            android:exported="false" />
 154-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:38:157-181
@@ -294,7 +294,7 @@
 155-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:39:9-168
 156            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
 156-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:39:19-86
-157            android:authorities="com.egoist.bricksbreaker.TTMultiProvider"
+157            android:authorities="game.taptap.bricksbreaker.TTMultiProvider"
 157-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:39:87-141
 158            android:exported="false" />
 158-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:39:142-166
@@ -302,7 +302,7 @@
 159-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:41:9-181
 160            android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
 160-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:41:19-88
-161            android:authorities="com.egoist.bricksbreaker.pangle.provider.proxy.main"
+161            android:authorities="game.taptap.bricksbreaker.pangle.provider.proxy.main"
 161-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:41:89-154
 162            android:exported="false" />
 162-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:41:155-179
@@ -310,7 +310,7 @@
 163-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:42:9-188
 164            android:name="com.bytedance.pangle.FileProvider"
 164-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:42:19-67
-165            android:authorities="com.egoist.bricksbreaker.pangle.fileprovider"
+165            android:authorities="game.taptap.bricksbreaker.pangle.fileprovider"
 165-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:42:68-126
 166            android:exported="false"
 166-->[csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:42:162-186
@@ -1067,7 +1067,7 @@
 547-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:217:9-225:20
 548            android:name="com.kwad.sdk.api.proxy.app.AdSdkFileProvider"
 548-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:218:13-72
-549            android:authorities="com.egoist.bricksbreaker.adFileProvider"
+549            android:authorities="game.taptap.bricksbreaker.adFileProvider"
 549-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:219:13-66
 550            android:exported="false"
 550-->[ks_ad_sdk_230116.aar] C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\AndroidManifest.xml:220:13-37
@@ -1084,7 +1084,7 @@
 556-->[TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\AndroidManifest.xml:14:9-17:40
 557            android:name="com.tds.common.provider.CurrentConfigProvider"
 557-->[TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\AndroidManifest.xml:15:13-73
-558            android:authorities="com.egoist.bricksbreaker.tap_config.provider"
+558            android:authorities="game.taptap.bricksbreaker.tap_config.provider"
 558-->[TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\AndroidManifest.xml:16:13-71
 559            android:exported="false" />
 559-->[TapCommon_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\8259e87a1982c8d5cb48dd9335eb0a97\transformed\jetified-TapCommon_3.27.0\AndroidManifest.xml:17:13-37
@@ -1114,7 +1114,7 @@
 572-->[TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:23:9-26:40
 573            android:name="com.taptap.sdk.internal.user.CurrentUserProvider"
 573-->[TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:24:13-76
-574            android:authorities="com.egoist.bricksbreaker.tap_user.provider"
+574            android:authorities="game.taptap.bricksbreaker.tap_user.provider"
 574-->[TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:25:13-69
 575            android:exported="false" />
 575-->[TapLogin_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\ee3c8b658bed8da9fd48f98bdf90d100\transformed\jetified-TapLogin_3.27.0\AndroidManifest.xml:26:13-37
@@ -1136,7 +1136,7 @@
 584-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:27:9-30:40
 585            android:name="com.tds.tapdb.internal.device.DeviceProvider"
 585-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:28:13-72
-586            android:authorities="com.egoist.bricksbreaker.device.provider"
+586            android:authorities="game.taptap.bricksbreaker.device.provider"
 586-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:29:13-67
 587            android:exported="false" />
 587-->[TapDB_3.27.0.aar] C:\Users\egoist\.gradle\caches\transforms-3\3f36baa2e3de9b18c428426f97b6711b\transformed\jetified-TapDB_3.27.0\AndroidManifest.xml:30:13-37
@@ -1179,7 +1179,7 @@
 607-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:26:9-34:20
 608            android:name="androidx.core.content.FileProvider"
 608-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:27:13-62
-609            android:authorities="com.egoist.bricksbreaker.fileprovider"
+609            android:authorities="game.taptap.bricksbreaker.fileprovider"
 609-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:28:13-64
 610            android:exported="false"
 610-->[godot-lib.release.aar] C:\Users\egoist\.gradle\caches\transforms-3\c204f6256ab1c893863f649b4d178444\transformed\jetified-godot-lib.release\AndroidManifest.xml:29:13-37
@@ -1196,7 +1196,7 @@
 616-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 617            android:name="androidx.startup.InitializationProvider"
 617-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-618            android:authorities="com.egoist.bricksbreaker.androidx-startup"
+618            android:authorities="game.taptap.bricksbreaker.androidx-startup"
 618-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 619            android:exported="false" >
 619-->[androidx.emoji2:emoji2:1.0.0] C:\Users\egoist\.gradle\caches\transforms-3\f8ad4ecbba1955e278e438ce5dfa9b77\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37

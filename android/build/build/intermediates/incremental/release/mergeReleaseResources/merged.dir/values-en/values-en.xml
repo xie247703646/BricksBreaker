@@ -13,6 +13,6 @@
     <string name="achievement_rarity_ultra_rare">Ultra Rare</string>
     <string name="achievement_rarity_uncommon">Rare</string>
     <string name="achievement_unlocked">UNLOCKED</string>
-    <string name="godot_project_name_string">BricksBreaker</string>
+    <string name="godot_project_name_string">BricksBreaker（TapTap测试版）</string>
     <string name="login_account_logged_tip">Logged-in account: %s</string>
 </resources>

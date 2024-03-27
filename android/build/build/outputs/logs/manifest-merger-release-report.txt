@@ -416,7 +416,7 @@ uses-permission#${applicationId}.openadsdk.permission.TT_PANGOLIN
 ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:6:5-88
 	android:name
 		ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:6:22-86
-uses-permission#com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN
+uses-permission#game.taptap.bricksbreaker.openadsdk.permission.TT_PANGOLIN
 ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:6:5-88
 	android:name
 		ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:6:22-86
@@ -430,7 +430,7 @@ ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1
 		ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:9:82-117
 	android:name
 		ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:9:17-81
-permission#com.egoist.bricksbreaker.openadsdk.permission.TT_PANGOLIN
+permission#game.taptap.bricksbreaker.openadsdk.permission.TT_PANGOLIN
 ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:9:5-119
 	android:protectionLevel
 		ADDED from [csj_ad_sdk_230215.aar] C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\AndroidManifest.xml:9:82-117

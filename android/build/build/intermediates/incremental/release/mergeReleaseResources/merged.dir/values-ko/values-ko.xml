@@ -40,7 +40,7 @@
     <string name="achievement_rarity_ultra_rare">울트라 유니크</string>
     <string name="achievement_rarity_uncommon">희귀</string>
     <string name="achievement_unlocked">해제</string>
-    <string name="godot_project_name_string">BricksBreaker</string>
+    <string name="godot_project_name_string">BricksBreaker（TapTap测试版）</string>
     <string name="kilobytes_per_second">%1$s KB/s</string>
     <string name="login_account_logged_tip">로그인한 계정: %s</string>
     <string name="notification_download_complete">다운로드 완료</string>

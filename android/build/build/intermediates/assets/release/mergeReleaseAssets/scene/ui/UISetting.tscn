@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://script/ui/src/UISetting.gd" type="Script" id=1]
 [ext_resource path="res://asset/resource/StyleBox_BtnDisabled.stylebox" type="StyleBox" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://asset/resource/font_32px.tres" type="DynamicFont" id=6]
 [ext_resource path="res://asset/resource/StyleBox_Empty.stylebox" type="StyleBox" id=7]
 [ext_resource path="res://asset/resource/icon_tip.svg" type="Texture" id=8]
+[ext_resource path="res://asset/resource/font_24px.tres" type="DynamicFont" id=9]
 
 [node name="UISetting" type="Control"]
 anchor_right = 1.0
@@ -113,9 +114,52 @@ custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 4 )
 text = "key_back"
 
+[node name="BtnAd" type="Button" parent="VBoxContainer"]
+visible = false
+margin_top = 480.0
+margin_right = 480.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 480, 48 )
+custom_fonts/font = ExtResource( 6 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 4 )
+text = "插屏"
+
+[node name="BtnAd1" type="Button" parent="VBoxContainer"]
+visible = false
+margin_top = 480.0
+margin_right = 480.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 480, 48 )
+custom_fonts/font = ExtResource( 6 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 4 )
+text = "激励视频"
+
+[node name="BtnICP" type="LinkButton" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -200.0
+margin_top = -48.0
+margin_right = 196.0
+margin_bottom = -24.0
+grow_horizontal = 2
+custom_fonts/font = ExtResource( 9 )
+text = "ICP备案号：湘ICP备2024053284号-2A"
+underline = 1
+
 [connection signal="pressed" from="VBoxContainer/BtnSfx" to="." method="_on_BtnSfx_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnMusic" to="." method="_on_BtnMusic_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnVibrate" to="." method="_on_BtnVibrate_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnControl" to="." method="_on_BtnControl_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnControl/BtnTip" to="." method="_on_BtnTip_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnClose" to="." method="_on_BtnClose_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnAd" to="." method="_on_BtnAd_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnAd1" to="." method="_on_BtnAd1_pressed"]
+[connection signal="pressed" from="BtnICP" to="." method="_on_BtnICP_pressed"]

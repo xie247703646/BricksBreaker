@@ -4,6 +4,8 @@ const Android:String = "Android"
 
 var sdk_ad:Reference = null
 
+var is_just_show_inter:bool = false
+
 func init()->void:
 	match OS.get_name():
 		Android: sdk_ad = SDKPocketAd.new()

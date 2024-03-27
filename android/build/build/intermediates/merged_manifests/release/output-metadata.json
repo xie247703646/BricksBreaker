@@ -4,15 +4,15 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.egoist.bricksbreaker",
+  "applicationId": "game.taptap.bricksbreaker",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 29,
-      "versionName": "2.9",
+      "versionCode": 31,
+      "versionName": "3.1",
       "outputFile": "AndroidManifest.xml"
     }
   ],

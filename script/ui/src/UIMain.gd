@@ -4,11 +4,11 @@ onready var level_container: Control = $LevelContainer
 onready var control: Control = $Control
 onready var lb_level: Label = $LbLevel
 onready var lb_record: Label = $LbLevel/LbRecord
-onready var lb_maker: Label = $LbMaker
-onready var lb_version: Label = $LbVersion
 onready var btn_unlock: Button = $Control/VBoxContainer/BtnUnlock
 onready var btn_start: Button = $Control/VBoxContainer/BtnStart
 onready var btn_editor: Button = $Control/VBoxContainer/BtnEditor
+onready var lb_maker: Label = $Control/LbMaker
+onready var lb_version: Label = $Control/LbVersion
 
 var select_level:int = 1
 var level_ins:TileMap = null
