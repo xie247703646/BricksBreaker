@@ -1,6 +1,6 @@
 extends Node
 
-const version:String = "3.1"
+const version:String = "3.3"
 
 var is_new:bool = true
 

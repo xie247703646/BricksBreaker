@@ -1,9 +1,9 @@
 <libraries>
   <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\csj_ad_sdk_230215.aar:unspecified@jar"
-      jars="C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215\jars\classes.jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\01932a6e0a3d13f897a08619e1b94edd\transformed\jetified-csj_ad_sdk_230215\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\csj_ad_sdk_230215.aar:unspecified"
-      folder="C:\Users\egoist\.gradle\caches\transforms-3\1f0f09c3d8a841a0202196e48a0a7d61\transformed\jetified-csj_ad_sdk_230215"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\01932a6e0a3d13f897a08619e1b94edd\transformed\jetified-csj_ad_sdk_230215"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -14,9 +14,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\gdt_ad_sdk_230210.aar:unspecified@jar"
-      jars="C:\Users\egoist\.gradle\caches\transforms-3\391199589ec9c4edd51fe78db707f67e\transformed\jetified-gdt_ad_sdk_230210\jars\classes.jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\515781747d47ecde1af7373a68c69044\transformed\jetified-gdt_ad_sdk_230210\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\gdt_ad_sdk_230210.aar:unspecified"
-      folder="C:\Users\egoist\.gradle\caches\transforms-3\391199589ec9c4edd51fe78db707f67e\transformed\jetified-gdt_ad_sdk_230210"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\515781747d47ecde1af7373a68c69044\transformed\jetified-gdt_ad_sdk_230210"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -27,9 +27,9 @@
       proguardRules="proguard.txt"/>
   <library
       name="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\ks_ad_sdk_230116.aar:unspecified@jar"
-      jars="C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116\jars\classes.jar"
+      jars="C:\Users\egoist\.gradle\caches\transforms-3\cbc6b66bdb35cc7c76721db66a022084\transformed\jetified-ks_ad_sdk_230116\jars\classes.jar"
       resolved="__local_aars__:D:\godotProjects\remote\BricksBreaker\android\build\libs\ks_ad_sdk_230116.aar:unspecified"
-      folder="C:\Users\egoist\.gradle\caches\transforms-3\fd76c9a0284d04a7ac181abfabaf7cc3\transformed\jetified-ks_ad_sdk_230116"
+      folder="C:\Users\egoist\.gradle\caches\transforms-3\cbc6b66bdb35cc7c76721db66a022084\transformed\jetified-ks_ad_sdk_230116"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

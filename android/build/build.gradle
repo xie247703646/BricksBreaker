@@ -169,30 +169,30 @@ android {
     }
 
     signingConfigs {
-        debug {
-            if (hasCustomDebugKeystore()) {
-                storeFile new File(getDebugKeystoreFile())
-                storePassword getDebugKeystorePassword()
-                keyAlias getDebugKeyAlias()
-                keyPassword getDebugKeystorePassword()
-            }
-        }
-
-        release {
-            File keystoreFile = new File(getReleaseKeystoreFile())
-            if (keystoreFile.isFile()) {
-                storeFile keystoreFile
-                storePassword getReleaseKeystorePassword()
-                keyAlias getReleaseKeyAlias()
-                keyPassword getReleaseKeystorePassword()
-            }
-        }
-//        release{
-//            storeFile file("C:\\release.keystore")
-//            storePassword "123456"
-//            keyAlias "egoist"
-//            keyPassword "123456"
+//        debug {
+//            if (hasCustomDebugKeystore()) {
+//                storeFile new File(getDebugKeystoreFile())
+//                storePassword getDebugKeystorePassword()
+//                keyAlias getDebugKeyAlias()
+//                keyPassword getDebugKeystorePassword()
+//            }
 //        }
+//
+//        release {
+//            File keystoreFile = new File(getReleaseKeystoreFile())
+//            if (keystoreFile.isFile()) {
+//                storeFile keystoreFile
+//                storePassword getReleaseKeystorePassword()
+//                keyAlias getReleaseKeyAlias()
+//                keyPassword getReleaseKeystorePassword()
+//            }
+//        }
+        release{
+            storeFile file("C:\\release.keystore")
+            storePassword "123456"
+            keyAlias "egoist"
+            keyPassword "123456"
+        }
     }
 
     buildTypes {

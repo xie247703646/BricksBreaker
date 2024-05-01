@@ -9,7 +9,14 @@ func _ready() -> void:
 	connect("request_completed", self, "_on_request_completed")
 
 func init()->void:
-	request(Cloud_Data_Url)
+	data = {
+	"old_inter_show_rate":0.65,
+	"new_inter_show_rate":0.6,
+	"inter_show_level_threshold":5,
+	"inter_show_gape":true,
+	"item_weight_arr":[35,35,20,10]
+}
+#	request(Cloud_Data_Url)
 
 func get_value(key:String,default = null):
 	return data.get(key,default)
